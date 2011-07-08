@@ -30,12 +30,12 @@
 -(void)returnResponse{
     
 }
--(NSArray*)getDataFromCacheWithPredicates:(NSArray *)listOfPredicate{
+-(NSArray*)getDataFromCacheWithPredicates:(NSPredicate *) predicate{
     NSFetchRequest * crntRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self.managedObjectContext];
-    for (NSPredicate * p in listOfPredicate) {
-        [crntRequest setPredicate:p];
-    }
+
+    [crntRequest setPredicate:predicate];
+
     [crntRequest setEntity:entity];
 
     NSError *error;
@@ -51,13 +51,13 @@
     [crntRequest release];
     return _crntListOfObject;
 }
--(int)numberEntityInCacheWithPredicates:(NSArray *)listOfPredicate{
+-(int)numberEntityInCacheWithPredicates:(NSPredicate *) predicate{
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity: [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext: self.managedObjectContext]];
     NSError *error=nil;
-    for (NSPredicate * p in listOfPredicate) {
-        [request setPredicate:p];
-    }
+
+    [request setPredicate:predicate];
+    
 
     NSUInteger count = [[self.managedObjectContext executeFetchRequest:request error:&error] count]; 
     [request autorelease];
@@ -125,13 +125,13 @@
     
 }
 
-- (void) deleteFromCacheWithPredicates:(NSArray *)listOfPredicate  {
+- (void) deleteFromCacheWithPredicates:(NSPredicate *) predicate  {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:_managedObjectContext];
     [fetchRequest setEntity:entity];
-    for (NSPredicate * p in listOfPredicate) {
-        [fetchRequest setPredicate:p];
-    }
+
+    [fetchRequest setPredicate:predicate];
+    
     NSError *error;
     NSArray *items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
     [fetchRequest release];
@@ -172,10 +172,13 @@
     if([string isEqualToString:@""] || [string isEqualToString:@" "] || !string || [string isEqualToString:@"\t"] || [string isEqualToString:@"\n"]){
         return;
     }
-    NSString *newString = [[[NSString alloc] initWithFormat:@"%@%@", self.crntCharacters,string]autorelease];
     if(!self.crntCharacters)
-        newString = string;
-    self.crntCharacters = newString;
+        self.crntCharacters = string;
+    else{
+        NSString *newString = [[NSString alloc] initWithFormat:@"%@%@", self.crntCharacters,string];
+        self.crntCharacters = newString;
+     [newString release];
+    }
 }
 
 @end

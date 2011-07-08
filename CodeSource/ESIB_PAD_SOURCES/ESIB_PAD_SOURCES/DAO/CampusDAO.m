@@ -26,49 +26,46 @@
 - (void)getCampusListAndDisplay{
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(latitude != %d)", 0];  
     
-    NSArray * p = [[[NSArray alloc] initWithObjects:withLocalisation, nil] autorelease];
-     int crntCount = [self numberEntityInCacheWithPredicates:p];
-        if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
+   int crntCount = [self numberEntityInCacheWithPredicates:withLocalisation];
+    if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
         [set loadValues];
-        [self deleteFromCacheWithPredicates:p];
+        [self deleteFromCacheWithPredicates:withLocalisation];
         NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                                 set.login,set.pasword,@"listeCampus"]; 
-        self.predicateForReturnValue = p;
+        self.predicateForReturnValue = withLocalisation;
         afterLoading = @selector(finishLoadingCampusList);
         [self addToCache:postParam];
-        return;
     }else{
-        [self getDataFromCacheWithPredicates:nil];
+        [self getDataFromCacheWithPredicates:withLocalisation];
         [self finishLoadingCampusList];
     }
-}
+ }
 
 - (void)getCampusAndDisplayOnMap{
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(latitude != %d)", 0];  
 
-    NSArray * p = [[[NSArray alloc] initWithObjects:withLocalisation, nil] autorelease];
     [set loadValues];
 
-    int crntCount = [self numberEntityInCacheWithPredicates:p];
+    int crntCount = [self numberEntityInCacheWithPredicates:withLocalisation];
     if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
         [set loadValues];
         [self deleteFromCacheWithPredicates:nil];
         NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                                 set.login,set.pasword,@"listeCampus"]; 
-        self.predicateForReturnValue = p;
+        self.predicateForReturnValue = withLocalisation;
         afterLoading = @selector(returnForDisplay);
         [self addToCache:postParam];
-        return;
     }else{
-        [self getDataFromCacheWithPredicates:p];
+        [self getDataFromCacheWithPredicates:withLocalisation];
         [self returnForDisplay];
     }
+
 }
 
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    NSString * recivedDataText = [NSString stringWithUTF8String:[receivedData bytes]];
-    NSLog(@"DATA: %@",recivedDataText);
+        //NSString * recivedDataText = [NSString stringWithUTF8String:[receivedData bytes]];
+        // NSLog(@"DATA: %@",recivedDataText);
     NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:receivedData];
     set.lastUpCampus = [NSDate date];
     [set save];
@@ -85,12 +82,12 @@
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     
-    NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self.managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    for (NSPredicate * p in self.predicateForReturnValue) {
-        [request setPredicate:p];
-    }
+    
+    [request setPredicate:self.predicateForReturnValue];
+    
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
     [request release];

@@ -62,9 +62,8 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    for (NSPredicate * p in self.predicateForReturnValue) {
-        [request setPredicate:p];
-    }
+    [request setPredicate:self.predicateForReturnValue];
+    
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
     [request release];

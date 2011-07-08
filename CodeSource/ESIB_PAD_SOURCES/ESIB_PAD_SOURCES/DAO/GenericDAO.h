@@ -19,7 +19,7 @@
     NSMutableData * receivedData;
     SettingsDAO * set;
     NSManagedObject * _crntObject;
-    NSArray * predicateForReturnValue;
+    NSPredicate * predicateForReturnValue;
     NSMutableArray * _crntListOfObject;
     NSString *crntCharacters;
     SEL afterLoading;
@@ -37,15 +37,15 @@
 
 @property (nonatomic, retain) NSManagedObject * crntObject;
 @property (nonatomic, retain) SettingsDAO * set;
-@property (nonatomic, retain) NSArray * predicateForReturnValue;
+@property (nonatomic, assign) NSPredicate * predicateForReturnValue;
 
 
 - (id) initWithEntityName:(NSString *)EntitiyDescription;
 - (void)returnResponse;
-- (NSArray*)getDataFromCacheWithPredicates:(NSArray *)listOfPredicate;
-- (int)numberEntityInCacheWithPredicates:(NSArray *)listOfPredicate;
+- (NSArray*)getDataFromCacheWithPredicates:(NSPredicate *) predicate;
+- (int)numberEntityInCacheWithPredicates:(NSPredicate *) listOfPredicate;
 - (void) addToCache:(NSString *) webServicePostHeader;
-- (void) deleteFromCacheWithPredicates:(NSArray *)listOfPredicate;
+- (void) deleteFromCacheWithPredicates:(NSPredicate *) listOfPredicate;
 - (bool) areDataUpToDate:(NSDate *)lastUpdateTime;
 - (bool)verifyError:(NSString *)errorTexte;
 @end

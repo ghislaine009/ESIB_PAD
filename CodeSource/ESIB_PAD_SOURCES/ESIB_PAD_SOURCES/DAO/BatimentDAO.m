@@ -24,28 +24,26 @@
 - (void)getBatimentWithLocalisationForDomaine:(NSString *) domaineName{
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus = %@)", domaineName]; 
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(campus = %@ AND latitude != %d)",domaineName, 0];  
-    int crntCount = [self numberEntityInCacheWithPredicates:[[NSArray alloc] initWithObjects:onlyDomaine, nil]];
+    int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
     
-    NSArray * p = [[NSArray alloc] initWithObjects:onlyDomaine, withLocalisation, nil];
     if(crntCount==0 || ![self areDataUpToDate:set.lastUpBatiment]){
         [set loadValues];
-        [self deleteFromCacheWithPredicates: [[[NSArray alloc] initWithObjects:onlyDomaine, nil] autorelease]];
+        [self deleteFromCacheWithPredicates: onlyDomaine];
         NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
                                 set.login,set.pasword,@"listeBatiments",domaineName]; 
-        self.predicateForReturnValue = p;
+        self.predicateForReturnValue = withLocalisation;
         afterLoading = @selector(finishLoadingBatimentWithLocalisationForDomaine);
         [self addToCache:postParam];
         return;
     }else{
-        [self getDataFromCacheWithPredicates:p];
-        self.predicateForReturnValue = p;
+        [self getDataFromCacheWithPredicates:withLocalisation];
+        self.predicateForReturnValue = withLocalisation;
         [self finishLoadingBatimentWithLocalisationForDomaine];
     }
-    [p release];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:receivedData];
+    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
     set.lastUpBatiment = [NSDate date];
     [set save];
     [parseur setDelegate: self];
@@ -64,9 +62,7 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    for (NSPredicate * p in self.predicateForReturnValue) {
-        [request setPredicate:p];
-    }
+    [request setPredicate:self.predicateForReturnValue];
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
     [request release];
@@ -82,8 +78,10 @@
 }
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if(self.crntCharacters){
-        if( [self verifyError:self.crntCharacters])
+        if( [self verifyError:self.crntCharacters]){
             [parser setDelegate:nil];
+            return;
+        }
         
         if([elementName isEqualToString:@"latitude"]){
             [self.crntObject setValue:[NSNumber numberWithFloat:[self.crntCharacters floatValue]] forKey:@"latitude"];

@@ -23,20 +23,19 @@
 - (void)getSallesWithLocalisationForDomaine:(NSString *) domaineName{
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus_id = %@)", domaineName]; 
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(campus_id = %@ AND latitude != %d)",domaineName, 0];  
-    int crntCount = [self numberEntityInCacheWithPredicates:[[[NSArray alloc] initWithObjects:onlyDomaine, nil] autorelease]];
+    int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
 
-    NSArray * p = [[[NSArray alloc] initWithObjects:withLocalisation, nil] autorelease];
     if(crntCount==0 || ![self areDataUpToDate:set.lastUpSalle]){
         [set loadValues];
-        [self deleteFromCacheWithPredicates: [[[NSArray alloc] initWithObjects:onlyDomaine, nil] autorelease]];
+        [self deleteFromCacheWithPredicates: onlyDomaine];
         NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
                         set.login,set.pasword,@"listeSalles",domaineName]; 
-        self.predicateForReturnValue = p;
+        self.predicateForReturnValue = withLocalisation;
         afterLoading = @selector(finishLoadingSallesWithLocalisationForDomaine);
         [self addToCache:postParam];
         return;
     }else{
-        [self getDataFromCacheWithPredicates:p];
+        [self getDataFromCacheWithPredicates:withLocalisation];
         [self finishLoadingSallesWithLocalisationForDomaine];
     }
 }
@@ -60,9 +59,8 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Salle" inManagedObjectContext:self. managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    for (NSPredicate * p in self.predicateForReturnValue) {
-        [request setPredicate:p];
-    }
+    [request setPredicate:self.predicateForReturnValue];
+    
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
     [request release];

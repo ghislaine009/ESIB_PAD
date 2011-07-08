@@ -9,8 +9,8 @@
 #import "ESIB_PAD_SOURCESAppDelegate_iPhone.h"
 @implementation UINavigationBar (UINavigationBarCategory)
  - (void)drawRect:(CGRect)rect {
- UIImage *img  = [UIImage imageNamed: @"HeaderNavBar.png"];
- [img drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+     UIImage *img  = [UIImage imageNamed: @"HeaderNavBar.png"];
+     [img drawInRect:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
  
  }
  @end
