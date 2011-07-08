@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lastUpCampus</key>
+	<date>2011-06-30T13:58:59Z</date>
+	<key>lastUpPerson</key>
+	<date>2011-06-27T09:55:07Z</date>
+	<key>lastUpSalle</key>
+	<date>2011-06-27T12:48:16Z</date>
+	<key>login</key>
+	<string>guest</string>
+	<key>mapType</key>
+	<string>sat</string>
+	<key>password</key>
+	<string>guest</string>
+	<key>refreshCacheEvery</key>
+	<integer>10</integer>
+	<key>retain</key>
+	<string>YES</string>
+	<key>url</key>
+	<string>http://www.usj.edu.lb/web-services/web-service.php</string>
+</dict>
+</plist>
