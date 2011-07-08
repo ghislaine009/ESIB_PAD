@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Resultat de l'appel https://www.url.com/webSerivice.php 
+    avec les parametres en POST suivant:
+    usr = 'user.login'
+    pwd = 'password'
+    op  = 'listSalles'
+    param0= 'sciences_Technologies'  // Nom du campus pour les salles.Si il n'est pas envoyé, ça veut dire tout les campus
+-->
+<response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schemaListSalles.xsd">  
+    <status>0</status>
+    <usrGroup>2</usrGroup>
+    <salles>
+        <salle id="1" nom="Auditoire a" longitude="33.864901" latitude="35.564488">
+            <description value="Test d'une déscription"/>
+            <img adresse="http://google.ch/img1.jpg"/>
+        </salle>
+        <salle id="2" nom="Labo" longitude="33.864903" latitude="35.564408">
+        </salle>
+        <salle id="3" nom="Labo" longitude="33.864903" latitude="35.564408">
+            <img adresse="http://google.ch/img1.jpg"/>
+        </salle>
+    </salles>
+</response>

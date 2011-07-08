@@ -1,0 +1,112 @@
+% ---------------------------------------------------------------
+% Latex template author: Yves Peissard ypeissard@gmail.com
+% ---------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{article}
+
+
+%Preamble --------------------------------------------------------
+\input{../comon/preamble/config.tex}
+\input{../comon/preamble/macros.tex}
+
+\input{../comon/glossary.tex}
+
+%End of preamble ---------------------------------------------------
+
+
+
+\makeglossary
+
+
+\begin{document}
+
+
+%Title page
+\input{./title.tex}
+\input{./header.tex}
+
+
+%Table of contents page
+\input{../comon/tableofcontents.tex}
+
+%CAHIER DES CHARGES
+\input{./release0_2.tex}
+
+
+
+%Examples
+
+%  1.Figures ------------------------------------------------------------------------------------------
+%    \EPSFIGTEXTWIDTH{source}{caption}{label}     sets eps image size to textwidth
+%
+%    \EPSFIGSCALE[0.5]{source}{caption}{label}    sets eps image size to 0.5 * the original size
+%
+%    \EPSFIGWRAP [0.5]{source}{caption}{label}    sets size of a wraped eps image to 0.5 * the textsize
+%
+%
+%  2.Equations ----------------------------------------------------------------------------------------
+%    \EQ{x = 1}{label}
+%
+%    \SPLITEQ{                                    used for longer calculations
+%    1 \cdot 1 & = 1\\                            the & is the alignment character
+%    2 \cdot 2 \cdot 2 & = 8
+%    }{label}
+%
+%
+%  3.Code listing --------------------------------------------------------------------------------------
+%    \begin{lstlisting}[label=samplecode,caption=A sample]   simple listing. configure language in config.tex.
+%        for (int i = 0; i < 10; i++) {                      default language is java
+%            // increment p  (*@\label{timer-1}@*)
+%            p++ = i;
+%        }
+%    \end{lstlisting}
+%
+%    \lstinputlisting[label=samplecode,caption=A sample]{listings/Graph.java}   list a whole file
+%
+%
+%  3.Bibliography reference
+%    \cite{Chaiken1995}
+%
+%
+%  4.Text outside of margin
+%    \SIDETEXT{text}
+%
+%
+%  5. Glossary Entry
+%  \gls{Latex}
+%  \glspl{Latex}    (pl for plural)
+
+%   PUT YOUR CONTENTS HERE  -----------------------------------------------------------------------------------
+
+
+
+%Bibliography: Use JabRef to manage your bibliography: http://jabref.sourceforge.net/
+%\clearpage
+%	\addcontentsline{toc}{chapter}{Referenzen}
+
+
+\newpage
+
+%\renewcommand{\bibname}{Referenzen}
+
+%\begin{flushleft}
+%\bibliography{./bibliography/references}
+%\end{flushleft}
+
+%\bibliographystyle{plain}
+
+
+
+%Glossary
+\printglossary
+
+%appendices
+%\newpage
+%\pagestyle{plain}
+%\begin{appendices}
+%	\appendix
+
+%\end{appendices}
+
+
+\end{document}

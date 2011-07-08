@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="status"/>
+        <xs:element ref="usrGroup"/>
+        <xs:element ref="bureaux"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="status" type="xs:integer"/>
+  <xs:element name="usrGroup" type="xs:integer"/>
+  <xs:element name="bureaux">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="bureau"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bureau">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="description"/>
+      </xs:sequence>
+      <xs:attribute name="etage" type="xs:integer"/>
+      <xs:attribute name="latitude" use="required" type="xs:decimal"/>
+      <xs:attribute name="longitude" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description">
+    <xs:complexType>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ESIB_PAD_SOURCESTests' target in the 'ESIB_PAD_SOURCESTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

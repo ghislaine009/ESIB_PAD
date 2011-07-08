@@ -1,0 +1,5 @@
+\newpage
+
+\begin{flushleft}
+\bibliography{./bibliography/references}
+\end{flushleft}

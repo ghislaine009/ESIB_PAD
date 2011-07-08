@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Resultat de l'appel https://www.url.com/webSerivice.php 
+    avec les parametres en POST suivant:
+    usr = 'user.login'
+    pwd = 'password'
+    op  = 'mapGeneral'
+    param0 = 'sciences_Technologies'  // Nom du campus pour la carte. Si il n'est pas envoyé, ça veut dire tout les campus
+    
+-->
+<response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="schemaMapGeneral.xsd">  
+    <status>0</status>
+    <usrGroup>2</usrGroup>
+    <map>
+        <batiement name="Département d'informatique" logitude="33.865618" latitude="35.563600">
+            <urlImage value="http://url.com/img.png"/>
+            <webPage value="http://www.fi.usj.edu.lb"/>
+            <description><![CDATA[<h1>Ceci est un déscription</h1> du bâtiment et peut être du html <img src='asd'/>]]></description>
+        </batiement>
+        <batiement name="Département télécom" logitude="33.865407" latitude="35.563605">
+            <urlImage value="http://url.com/img.png"/>
+            <description><![CDATA[<h1>Ceci est un déscription</h1> du bâtiment et peut être du html <img src='asd'/>]]></description>
+        </batiement>
+        <batiement name="Diréction" logitude="33.865661" latitude="35.564214">
+            <webPage value="http://www.fi.usj.edu.lb"/>            
+        </batiement>
+        <batiement name="Parking visiteur" logitude="33.865968" latitude="35.564423">            
+        </batiement>
+        <batiement name="Berytec" logitude="33.865186" latitude="35.562066">            
+        </batiement>
+        <batiement name="Entrée principale" logitude="33.864901" latitude="35.564488">            
+        </batiement>
+    </map>
+</response>

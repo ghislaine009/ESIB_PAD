@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="status"/>
+        <xs:element ref="usrGroup"/>
+        <xs:element ref="personnes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="status" type="xs:integer"/>
+  <xs:element name="usrGroup" type="xs:integer"/>
+  <xs:element name="personnes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="personne"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="personne">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="description"/>
+        <xs:element minOccurs="0" ref="img"/>
+      </xs:sequence>
+      <xs:attribute name="email" use="required"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="nom" use="required"/>
+      <xs:attribute name="prenom" use="required"/>
+      <xs:attribute name="tel" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:integer"/><!-- 0 représente un prof ou un étudiant, 1 représente un étudiant -->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description">
+    <xs:complexType>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="img">
+    <xs:complexType>
+      <xs:attribute name="adresse" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
