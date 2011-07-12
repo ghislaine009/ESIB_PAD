@@ -9,6 +9,7 @@
 #import "NewsViewController.h"
 #import "NewsDAO.h"
 #import "Actualite.h"
+#import "NewsDetail.h"
 #import "NewsCellViewController.h"
 @implementation NewsViewController
 
@@ -84,14 +85,19 @@
 }
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     UIViewController * c = [[UIViewController alloc]init];  
-        UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    c.view.autoresizesSubviews = YES;
+    
     [c.view addSubview:webView];
     Actualite * a = [_news objectAtIndex:[indexPath row]];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:c];
+    NewsDetail *navController = [[NewsDetail alloc] initWithRootViewController:c];
     NSString * url = [[NSString alloc] initWithFormat:@"http://www.usj.edu.lb/actualites/news.php?id=%@",a.idDB];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
     [url release];
     [webView release];
+    [navController.view sizeToFit];
+    [c.view sizeToFit];
+    [webView sizeToFit];
     navController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
        if(![[[UIDevice currentDevice] model]isEqualToString:@"iPhone"] && ! [[[UIDevice currentDevice] model]isEqualToString:@"iPhone Simulator" ]){
            navController.modalPresentationStyle = UIModalPresentationPageSheet;

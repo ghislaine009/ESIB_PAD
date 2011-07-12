@@ -45,25 +45,89 @@
 
 -(void)testCarte{
     NSLog(@"Testing the Campus DAO: You must uninstall or reset cache of the application before testing");
+    [self waitForEnableConnection];
     CampusDAO * cDao = [[CampusDAO alloc ]init];
     cDao.delegate = self;
     NSLog(@"Loading async the campus data from internet");
+    finishAsyncOperation = NO;
+    dataRecieved = NO;
     [cDao getCampusListAndDisplay];
+
     NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
-    while(!finishListCampus){
+    while(!finishAsyncOperation){
         [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
         someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
     }
-    STAssertTrue([listCampus count]!=0, @"No data geted form the net");
-    STAssertTrue([listCampus2 count]!=0, @"No data in cache");
+    STAssertTrue([listFirstCall count]!=0, @"No data geted form the net");
+    STAssertTrue([listSeconCall count]!=0, @"No data in cache");
     
-    STAssertTrue([listCampus count]==[listCampus2 count], @"The data number of data in cache is not the same that those online");
+    STAssertTrue([listFirstCall count]==[listSeconCall count], @"The data number of data in cache is not the same that those online");
     int i=0;
-    for (Campus * c in listCampus2) {
-        STAssertEqualObjects(c, [ listCampus objectAtIndex:i], @"The campus data in cache are not the same that those online");
+    for (Campus * c in listSeconCall) {
+        STAssertEqualObjects(c, [ listFirstCall objectAtIndex:i], @"The campus data in cache are not the same that those online");
         i++;
     }  
     [cDao release]; 
+}
+-(void)testNews{
+    
+
+    NSLog(@"Testing the News DAO: You must uninstall or reset cache of the application before testing");
+    [self waitForEnableConnection];
+    NewsDAO * nDao = [[NewsDAO alloc ]init];
+    nDao.delegate = self;
+    NSLog(@"Loading async the news data from internet");
+    finishAsyncOperation = NO;
+    dataRecieved = NO;
+    [nDao getNews];
+    NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
+    while(!finishAsyncOperation){
+        [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
+        someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
+    }
+    STAssertTrue([listFirstCall count]!=0, @"No data geted form the net");
+    STAssertTrue([listSeconCall count]!=0, @"No data in cache");
+    
+    STAssertTrue([listFirstCall count]==[listSeconCall count], @"The data number of data in cache is not the same that those online");
+    int i=0;
+    for (Actualite * c in listSeconCall) {
+        STAssertEqualObjects([c titre], [[ listFirstCall objectAtIndex:i] titre], @"The news title in cache are not the same that those online");
+        i++;
+    }  
+    [nDao release]; 
+}
+-(void) waitForEnableConnection{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please enable your internet connection now(You have 30 sec to do it!!!)" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
+    [alert release];    
+    NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:30.0];
+    [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
+
+}
+-(void) waitForDisableConnection{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please disable your internet connection now(You have 30 sec to do it!!!)" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
+    [alert release];   
+    NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:30.0];
+    [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
+    
+}
+-(void) displayNews: (NSArray *)listOfNews{
+    if(dataRecieved){
+        listSeconCall = listOfNews;     
+        finishAsyncOperation =YES;
+        
+    }else{
+        NSLog(@"DATA recieved");
+        listFirstCall = [listOfNews retain];
+        [condition signal];
+        dataRecieved = YES;
+        [self waitForDisableConnection];
+        NewsDAO * cDao = [[NewsDAO alloc ]init];
+        cDao.delegate = self;
+        [cDao getNews];
+    }
+
 }
 -(void) displayPersonList: (NSArray *)personArray{
     
@@ -79,21 +143,17 @@
 }
 -(void) displayListOfCampus:(NSArray *)campusArray{
     if(dataRecieved){
-        listCampus2 = campusArray;     
-        finishListCampus =YES;
+        listSeconCall = campusArray;     
+        finishAsyncOperation =YES;
 
     }else{
         NSLog(@"DATA recieved");
-        listCampus = [campusArray retain];
+        listFirstCall = [campusArray retain];
         [condition signal];
         dataRecieved = YES;
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please disable your internet connection now(You have 30 sec to do it!!!)" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-        [alert show];
-        [alert release];
-        NSLog(@"Waiting for 30 sec for disabling the internet connection");
 
-        NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:30.0];
-        [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
+        [self waitForDisableConnection];
+
         CampusDAO * cDao = [[CampusDAO alloc ]init];
         cDao.delegate = self;
         [cDao getCampusListAndDisplay];

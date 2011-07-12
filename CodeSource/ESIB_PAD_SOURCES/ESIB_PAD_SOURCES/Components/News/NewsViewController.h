@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "NewsDisplayerProtocol.h"
-#import "BeautifulTableViewController.h"
 #import "MenuItemDelegate.h"
 #import "NewsCellViewController.h"
 @interface NewsViewController : UITableViewController<NewsDisplayerProtocol> {

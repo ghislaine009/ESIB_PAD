@@ -7,7 +7,7 @@
 //
 
 #import "NewsDAO.h"
-
+#import "Reachability.h"
 
 @implementation NewsDAO
 
@@ -29,8 +29,35 @@
 }
 
 -(void)getNews{
+    Reachability * hostReach = [[Reachability reachabilityWithHostName:@"www.usj.edu.lb"] retain];
     
+    NetworkStatus netStatus = [hostReach currentReachabilityStatus];
+    
+     if( netStatus == NotReachable)    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, the data are those in the cache." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+         
+         NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
+         NSFetchRequest *request = [[NSFetchRequest alloc] init];
+         [request setEntity:entity];
+             // [request setPredicate:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]];
+         
+         NSError *error;
+         NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
+         [request release];
+         if(!self.crntListOfObject)
+             self.crntListOfObject = [[NSMutableArray  alloc]init];
+         for (NSManagedObject *managedObject in items) {
+             [self.crntListOfObject addObject:managedObject ];
+         }
+         [self finishLoadingNews];
+        [alert show];
+        [alert release];
+        return;
+    }
+    
+
     [set loadValues];
+    
     NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                             set.login,set.pasword,@"listeActualites"]; 
     afterLoading = @selector(finishLoadingNews);
@@ -63,7 +90,7 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    [request setPredicate:[NSPredicate predicateWithFormat:self.predicateForReturnValue]];
+        // [request setPredicate:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]];
     
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];

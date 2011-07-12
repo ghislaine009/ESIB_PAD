@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "MapGeneralParser.h"
 #import "MapLocations.h"
 #import "MenuItemDelegate.h"
 #import "MapDisplayerDelegate.h"

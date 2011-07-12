@@ -7,7 +7,7 @@
 //
 
 #import "GenericDAO.h"
-
+#import "Reachability.h"
 
 @implementation GenericDAO
 @synthesize crntElementName=_crntElementName,entityDescription=_entityDescription, managedObjectContext=_managedObjectContext,crntObject =_crntSalle ,set,receivedData,delegate,predicateForReturnValue,crntListOfObject=_crntListOfObject,crntCharacters,arrgumentPredicate;
@@ -75,7 +75,24 @@
     NSDate *upTime = [lastUpdateTime dateByAddingTimeInterval:ti] ;
     return ([now compare:upTime]==NSOrderedAscending);  
 }
+
 -(void)addToCache:(NSString *) webServicePostHeader{
+    Reachability * hostReach = [[Reachability reachabilityWithHostName:@"www.usj.edu.lb"] retain];
+    
+    NetworkStatus netStatus = [hostReach currentReachabilityStatus];
+    
+    switch (netStatus)
+    {
+        case NotReachable:
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, please check your connection settings" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            [alert show];
+            [alert release];
+            return;
+            break;
+        }
+    }
+
      NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:set.url] 
                                                            cachePolicy:NSURLRequestReloadIgnoringCacheData
                                                        timeoutInterval:120.0]; 

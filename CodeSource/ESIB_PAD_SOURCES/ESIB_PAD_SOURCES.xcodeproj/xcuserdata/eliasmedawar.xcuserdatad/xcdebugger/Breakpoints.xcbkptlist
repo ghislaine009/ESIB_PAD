@@ -387,11 +387,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331472865.278806"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
+         startingLineNumber = "111"
+         endingLineNumber = "111"
          landmarkName = "-parser:didStartElement:namespaceURI:qualifiedName:attributes:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -401,11 +401,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331472865.278806"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "95"
-         endingLineNumber = "95"
+         startingLineNumber = "112"
+         endingLineNumber = "112"
          landmarkName = "-parser:didStartElement:namespaceURI:qualifiedName:attributes:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -513,11 +513,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331472865.278806"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "120"
-         endingLineNumber = "120"
+         startingLineNumber = "137"
+         endingLineNumber = "137"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -695,11 +695,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "332144079.221455"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "163"
-         endingLineNumber = "163"
+         startingLineNumber = "180"
+         endingLineNumber = "180"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -821,11 +821,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "332144079.221455"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "151"
-         endingLineNumber = "151"
+         startingLineNumber = "168"
+         endingLineNumber = "168"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -835,11 +835,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "332144079.221455"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "152"
-         endingLineNumber = "152"
+         startingLineNumber = "169"
+         endingLineNumber = "169"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1115,11 +1115,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/NewsDAO.m"
-         timestampString = "331638294.365174"
+         timestampString = "332166098.159155"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "33"
-         endingLineNumber = "33"
+         startingLineNumber = "60"
+         endingLineNumber = "60"
          landmarkName = "-getNews"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1143,77 +1143,7 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553151.720032"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "25"
-         endingLineNumber = "25"
-         landmarkName = "-displayNews:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331815130.287757"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "115"
-         endingLineNumber = "115"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331627415.642395"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "71"
-         endingLineNumber = "71"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553631.272561"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
-         landmarkName = "-displayNews:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553631.272561"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "36"
-         endingLineNumber = "36"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553154.074378"
+         timestampString = "332159408.87867"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "26"
@@ -1227,11 +1157,39 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553155.840643"
+         timestampString = "332160229.019142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "24"
-         endingLineNumber = "24"
+         startingLineNumber = "121"
+         endingLineNumber = "121"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
+         timestampString = "332159408.87867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "72"
+         endingLineNumber = "72"
+         landmarkName = "-tableView:numberOfRowsInSection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
+         timestampString = "332159408.87867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-displayNews:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1241,25 +1199,67 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553631.272561"
+         timestampString = "332159408.87867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
+         timestampString = "332159408.87867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
+         landmarkName = "-displayNews:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
+         timestampString = "332159408.87867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
+         landmarkName = "-displayNews:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
+         timestampString = "332159408.87867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
+         landmarkName = "-displayNews:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
+         timestampString = "332159408.87867"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "30"
          endingLineNumber = "30"
-         landmarkName = "-displayNews:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331553808.667612"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
          landmarkName = "-displayNews:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1297,11 +1297,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331554025.321768"
+         timestampString = "332159408.87867"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "27"
-         endingLineNumber = "27"
+         startingLineNumber = "28"
+         endingLineNumber = "28"
          landmarkName = "-displayNews:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1311,11 +1311,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331647933.511735"
+         timestampString = "332159408.87867"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "75"
-         endingLineNumber = "75"
+         startingLineNumber = "76"
+         endingLineNumber = "76"
          landmarkName = "-tableView:heightForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1325,11 +1325,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331627415.642395"
+         timestampString = "332159408.87867"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "74"
-         endingLineNumber = "74"
+         startingLineNumber = "75"
+         endingLineNumber = "75"
          landmarkName = "-tableView:willSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1339,11 +1339,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331815130.287757"
+         timestampString = "332160229.019142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "125"
-         endingLineNumber = "125"
+         startingLineNumber = "131"
+         endingLineNumber = "131"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1773,11 +1773,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331650324.431997"
+         timestampString = "332160229.019142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87"
+         startingLineNumber = "91"
+         endingLineNumber = "91"
          landmarkName = "-tableView:accessoryButtonTappedForRowWithIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1787,11 +1787,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331815130.287757"
+         timestampString = "332160229.019142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "113"
-         endingLineNumber = "113"
+         startingLineNumber = "119"
+         endingLineNumber = "119"
          landmarkName = "-back"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1801,11 +1801,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331815130.287757"
+         timestampString = "332160229.019142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "112"
-         endingLineNumber = "112"
+         startingLineNumber = "118"
+         endingLineNumber = "118"
          landmarkName = "-back"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1815,11 +1815,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/Components/News/NewsViewController.m"
-         timestampString = "331815130.287757"
+         timestampString = "332160229.019142"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "99"
-         endingLineNumber = "99"
+         startingLineNumber = "105"
+         endingLineNumber = "105"
          landmarkName = "-tableView:accessoryButtonTappedForRowWithIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1857,11 +1857,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331818034.04628"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "119"
-         endingLineNumber = "119"
+         startingLineNumber = "136"
+         endingLineNumber = "136"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1871,11 +1871,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331818038.341858"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "103"
-         endingLineNumber = "103"
+         startingLineNumber = "120"
+         endingLineNumber = "120"
          landmarkName = "-connection:didFailWithError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1899,11 +1899,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "332144079.221455"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "176"
-         endingLineNumber = "176"
+         startingLineNumber = "193"
+         endingLineNumber = "193"
          landmarkName = "-parser:foundCharacters:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1955,11 +1955,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "332144079.221455"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "149"
-         endingLineNumber = "149"
+         startingLineNumber = "166"
+         endingLineNumber = "166"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1969,11 +1969,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "332144079.221455"
+         timestampString = "332165333.752448"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "150"
-         endingLineNumber = "150"
+         startingLineNumber = "167"
+         endingLineNumber = "167"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2025,11 +2025,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077738.294124"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "123"
-         endingLineNumber = "123"
+         startingLineNumber = "183"
+         endingLineNumber = "183"
          landmarkName = "-displayListOfCampus:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2039,11 +2039,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077738.294124"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "104"
-         endingLineNumber = "104"
+         startingLineNumber = "164"
+         endingLineNumber = "164"
          landmarkName = "-testCarte"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2053,11 +2053,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077738.294124"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "124"
-         endingLineNumber = "124"
+         startingLineNumber = "184"
+         endingLineNumber = "184"
          landmarkName = "-displayListOfCampus:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2067,11 +2067,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077738.294124"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "122"
-         endingLineNumber = "122"
+         startingLineNumber = "182"
+         endingLineNumber = "182"
          landmarkName = "-displayListOfCampus:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2081,11 +2081,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077705.325984"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "81"
-         endingLineNumber = "81"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
          landmarkName = "-displayListOfCampus:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2095,11 +2095,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077705.325984"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82"
+         startingLineNumber = "146"
+         endingLineNumber = "146"
          landmarkName = "-displayListOfCampus:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2109,11 +2109,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077734.301633"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
+         startingLineNumber = "61"
+         endingLineNumber = "61"
          landmarkName = "-testCarte"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2123,11 +2123,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "332077772.145834"
+         timestampString = "332174430.005854"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "99"
-         endingLineNumber = "99"
+         startingLineNumber = "159"
+         endingLineNumber = "159"
          landmarkName = "-displayListOfCampus:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -2213,6 +2213,48 @@
          startingLineNumber = "85"
          endingLineNumber = "85"
          landmarkName = "-connectionDidFinishLoading:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
+         timestampString = "332165528.048716"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "83"
+         endingLineNumber = "83"
+         landmarkName = "-addToCache:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332174430.005854"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "116"
+         endingLineNumber = "116"
+         landmarkName = "-displayNews:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332174430.005854"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "76"
+         endingLineNumber = "76"
+         landmarkName = "-testNews"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
