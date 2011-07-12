@@ -24,42 +24,40 @@
 }
 
 - (void)getCampusListAndDisplay{
-    NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(latitude != %d)", 0];  
-    
-   int crntCount = [self numberEntityInCacheWithPredicates:withLocalisation];
-    if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
-        [set loadValues];
-        [self deleteFromCacheWithPredicates:withLocalisation];
-        NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
-                                set.login,set.pasword,@"listeCampus"]; 
-        self.predicateForReturnValue = withLocalisation;
-        afterLoading = @selector(finishLoadingCampusList);
-        [self addToCache:postParam];
-    }else{
-        [self getDataFromCacheWithPredicates:withLocalisation];
-        [self finishLoadingCampusList];
-    }
- }
-
-- (void)getCampusAndDisplayOnMap{
-    NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(latitude != %d)", 0];  
-
     [set loadValues];
-
-    int crntCount = [self numberEntityInCacheWithPredicates:withLocalisation];
+    self.predicateForReturnValue = @"(latitude != %@)";  
+    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
+   int crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
     if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
         [set loadValues];
         [self deleteFromCacheWithPredicates:nil];
         NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                                 set.login,set.pasword,@"listeCampus"]; 
-        self.predicateForReturnValue = withLocalisation;
-        afterLoading = @selector(returnForDisplay);
+        afterLoading = @selector(finishLoadingCampusList);
         [self addToCache:postParam];
     }else{
-        [self getDataFromCacheWithPredicates:withLocalisation];
+        [self getDataFromCacheWithPredicates:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate] ];
+        [self finishLoadingCampusList];
+    }
+ }
+
+- (void)getCampusAndDisplayOnMap{
+
+    [set loadValues];
+    self.predicateForReturnValue = @"(latitude != %d)";  
+    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
+    int crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
+    if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
+        [set loadValues];
+        [self deleteFromCacheWithPredicates:nil];
+        NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
+                                set.login,set.pasword,@"listeCampus"]; 
+        afterLoading = @selector(returnForDisplay);
+        [self addToCache:postParam];
+    }else{        
+        [self getDataFromCacheWithPredicates:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]];
         [self returnForDisplay];
     }
-
 }
 
 
@@ -81,14 +79,14 @@
     [receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
-    
+    [self.managedObjectContext updatedObjects];    
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self.managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    
-    [request setPredicate:self.predicateForReturnValue];
+    [request setPredicate:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]];
     
     NSError *error;
+    
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
     [request release];
     if(!self.crntListOfObject)

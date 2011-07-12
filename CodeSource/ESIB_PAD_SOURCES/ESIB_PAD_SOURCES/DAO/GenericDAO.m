@@ -10,7 +10,7 @@
 
 
 @implementation GenericDAO
-@synthesize crntElementName=_crntElementName,entityDescription=_entityDescription, managedObjectContext=_managedObjectContext,crntObject =_crntSalle ,set,receivedData,delegate,predicateForReturnValue,crntListOfObject=_crntListOfObject,crntCharacters;
+@synthesize crntElementName=_crntElementName,entityDescription=_entityDescription, managedObjectContext=_managedObjectContext,crntObject =_crntSalle ,set,receivedData,delegate,predicateForReturnValue,crntListOfObject=_crntListOfObject,crntCharacters,arrgumentPredicate;
 -(id) initWithEntityName:(NSString *)EntitiyDescription{
     
     self = [super init];
@@ -145,6 +145,7 @@
     }
     
 }
+
 - (bool) verifyError:(NSString *) texte{
     
     if([self.crntElementName isEqualToString:@"TITLE"]){
@@ -175,9 +176,9 @@
     if(!self.crntCharacters)
         self.crntCharacters = string;
     else{
-        NSString *newString = [[NSString alloc] initWithFormat:@"%@%@", self.crntCharacters,string];
+        NSString *newString = [[NSString alloc] initWithFormat:@"%@%@", crntCharacters,string];
         self.crntCharacters = newString;
-     [newString release];
+        [newString release];
     }
 }
 

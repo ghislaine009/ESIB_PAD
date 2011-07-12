@@ -8,11 +8,23 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "SettingsDAO.h"
+#import "CampusDAO.h"
+#import "Campus.h"
+#import "MapDisplayerDelegate.h"
 
-
-@interface ESIB_PAD_SOURCESTests : SenTestCase {
+@interface ESIB_PAD_SOURCESTests : SenTestCase <MapDisplayerDelegate,UIAlertViewDelegate>{
 @private
-    SettingsDAO *setToTest ;
-}
+    NSArray * persons ;
+    NSArray * salles ;
+    NSArray * listCampus;
+    NSArray * listCampus2;
 
+    NSArray * listBatiment;
+    NSCondition * condition;
+    BOOL dataRecieved;
+    BOOL finishListCampus;
+
+}
+-(void)aMethod:(id)param;
+-(void)viewAlert:(id)param;
 @end

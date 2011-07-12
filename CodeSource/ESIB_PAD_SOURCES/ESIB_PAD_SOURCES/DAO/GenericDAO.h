@@ -19,7 +19,8 @@
     NSMutableData * receivedData;
     SettingsDAO * set;
     NSManagedObject * _crntObject;
-    NSPredicate * predicateForReturnValue;
+    NSString * predicateForReturnValue;
+    NSArray * arrgumentPredicate;
     NSMutableArray * _crntListOfObject;
     NSString *crntCharacters;
     SEL afterLoading;
@@ -37,7 +38,9 @@
 
 @property (nonatomic, retain) NSManagedObject * crntObject;
 @property (nonatomic, retain) SettingsDAO * set;
-@property (nonatomic, assign) NSPredicate * predicateForReturnValue;
+@property (nonatomic, retain) NSString * predicateForReturnValue;
+@property (nonatomic, retain) NSArray * arrgumentPredicate;
+
 
 
 - (id) initWithEntityName:(NSString *)EntitiyDescription;

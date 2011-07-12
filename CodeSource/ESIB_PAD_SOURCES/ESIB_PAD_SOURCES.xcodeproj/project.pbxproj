@@ -41,7 +41,6 @@
 		2F7132AE13B10F7C00876299 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71328313B10F7C00876299 /* UIKit.framework */; };
 		2F7132AF13B10F7C00876299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71328513B10F7C00876299 /* Foundation.framework */; };
 		2F7132B013B10F7C00876299 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71328713B10F7C00876299 /* CoreGraphics.framework */; };
-		2F7132B113B10F7C00876299 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71328913B10F7C00876299 /* CoreData.framework */; };
 		2F7132B913B10F7C00876299 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F7132B713B10F7C00876299 /* InfoPlist.strings */; };
 		2F7132BC13B10F7C00876299 /* ESIB_PAD_SOURCESTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2F7132BB13B10F7C00876299 /* ESIB_PAD_SOURCESTests.h */; };
 		2F7132BE13B10F7C00876299 /* ESIB_PAD_SOURCESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7132BD13B10F7C00876299 /* ESIB_PAD_SOURCESTests.m */; };
@@ -81,13 +80,12 @@
 		2F8488EC13B46CEF0034816F /* MapViewiPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8488EA13B46CEF0034816F /* MapViewiPhone.xib */; };
 		2F93851613C2E5DC00A3E624 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93851413C2E5DC00A3E624 /* NewsViewController.m */; };
 		2F93852813C2ED6E00A3E624 /* NewsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93852713C2ED6E00A3E624 /* NewsDAO.m */; };
-		2F93853C13C2F1AA00A3E624 /* BeautifulTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93853B13C2F1AA00A3E624 /* BeautifulTableViewController.m */; };
 		2F99DAA013B32E3600121C48 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F99DA9E13B32E3600121C48 /* MapViewController.m */; };
 		2F99DAA113B32E3600121C48 /* MapViewIPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F99DA9F13B32E3600121C48 /* MapViewIPad.xib */; };
 		2F99DAA313B32FB600121C48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F99DAA213B32FB600121C48 /* MapKit.framework */; };
 		2F99DAD713B33EF100121C48 /* mapGeneral.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2F99DAD613B33EF100121C48 /* mapGeneral.xml */; };
-		2F99DB0313B3880B00121C48 /* MapGeneralParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F99DB0213B3880B00121C48 /* MapGeneralParser.m */; };
 		2FA611E213C1FB2E007FA5CF /* School.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA611E113C1FB2E007FA5CF /* School.png */; };
+		2FBE124513CAD291000A890A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71328913B10F7C00876299 /* CoreData.framework */; };
 		2FC8EA0F13C18FC000B650C2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8EA0C13C18FBF00B650C2 /* DetailViewController.m */; };
 		2FC8EA1013C18FC000B650C2 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */; };
 		2FC8EA1313C192D700B650C2 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC8EA1113C192D600B650C2 /* DetailView.xib */; };
@@ -215,15 +213,11 @@
 		2F93852613C2ED6E00A3E624 /* NewsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDAO.h; sourceTree = "<group>"; };
 		2F93852713C2ED6E00A3E624 /* NewsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDAO.m; sourceTree = "<group>"; };
 		2F93852913C2EF6E00A3E624 /* NewsDisplayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDisplayerProtocol.h; sourceTree = "<group>"; };
-		2F93853A13C2F1AA00A3E624 /* BeautifulTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifulTableViewController.h; sourceTree = "<group>"; };
-		2F93853B13C2F1AA00A3E624 /* BeautifulTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautifulTableViewController.m; sourceTree = "<group>"; };
 		2F99DA9D13B32E3600121C48 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2F99DA9E13B32E3600121C48 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		2F99DA9F13B32E3600121C48 /* MapViewIPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewIPad.xib; sourceTree = "<group>"; };
 		2F99DAA213B32FB600121C48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F99DAD613B33EF100121C48 /* mapGeneral.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mapGeneral.xml; sourceTree = "<group>"; };
-		2F99DB0113B3880A00121C48 /* MapGeneralParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGeneralParser.h; sourceTree = "<group>"; };
-		2F99DB0213B3880B00121C48 /* MapGeneralParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGeneralParser.m; sourceTree = "<group>"; };
 		2FA611E113C1FB2E007FA5CF /* School.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = School.png; sourceTree = "<group>"; };
 		2FC8EA0B13C18FBE00B650C2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2FC8EA0C13C18FBF00B650C2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -253,7 +247,7 @@
 				2F7132AE13B10F7C00876299 /* UIKit.framework in Frameworks */,
 				2F7132AF13B10F7C00876299 /* Foundation.framework in Frameworks */,
 				2F7132B013B10F7C00876299 /* CoreGraphics.framework in Frameworks */,
-				2F7132B113B10F7C00876299 /* CoreData.framework in Frameworks */,
+				2FBE124513CAD291000A890A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,8 +478,6 @@
 		2F93851113C2E59600A3E624 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				2F93853A13C2F1AA00A3E624 /* BeautifulTableViewController.h */,
-				2F93853B13C2F1AA00A3E624 /* BeautifulTableViewController.m */,
 				2F93851313C2E5DC00A3E624 /* NewsViewController.h */,
 				2F93851413C2E5DC00A3E624 /* NewsViewController.m */,
 				2F93852913C2EF6E00A3E624 /* NewsDisplayerProtocol.h */,
@@ -505,8 +497,6 @@
 				2FC8EA0C13C18FBF00B650C2 /* DetailViewController.m */,
 				2FC8EA0D13C18FBF00B650C2 /* OverlayViewController.h */,
 				2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */,
-				2F99DB0113B3880A00121C48 /* MapGeneralParser.h */,
-				2F99DB0213B3880B00121C48 /* MapGeneralParser.m */,
 				2F99DAD613B33EF100121C48 /* mapGeneral.xml */,
 				2F99DA9D13B32E3600121C48 /* MapViewController.h */,
 				2F99DA9E13B32E3600121C48 /* MapViewController.m */,
@@ -699,7 +689,6 @@
 				2F71330713B1103900876299 /* MainViewControllerIPad.m in Sources */,
 				2F71330C13B1120900876299 /* MainViewController.m in Sources */,
 				2F99DAA013B32E3600121C48 /* MapViewController.m in Sources */,
-				2F99DB0313B3880B00121C48 /* MapGeneralParser.m in Sources */,
 				2F8488E613B45D690034816F /* MapLocations.m in Sources */,
 				2F4917F313B857B000DE574C /* PersonTableViewController.m in Sources */,
 				2F49180C13B86BDF00DE574C /* PersonDAO.m in Sources */,
@@ -719,7 +708,6 @@
 				2FC8EA1013C18FC000B650C2 /* OverlayViewController.m in Sources */,
 				2F93851613C2E5DC00A3E624 /* NewsViewController.m in Sources */,
 				2F93852813C2ED6E00A3E624 /* NewsDAO.m in Sources */,
-				2F93853C13C2F1AA00A3E624 /* BeautifulTableViewController.m in Sources */,
 				2F71EB7713C313B80037D88C /* Actualite.m in Sources */,
 				2F71EB8E13C345110037D88C /* NewsCellViewController.m in Sources */,
 			);

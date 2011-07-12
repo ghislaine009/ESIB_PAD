@@ -23,6 +23,9 @@
 - (void)getSallesWithLocalisationForDomaine:(NSString *) domaineName{
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus_id = %@)", domaineName]; 
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(campus_id = %@ AND latitude != %d)",domaineName, 0];  
+    self.predicateForReturnValue = @"(campus_id = %@ AND latitude != %@)";  
+    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineName,@"0", nil] autorelease];
+
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
 
     if(crntCount==0 || ![self areDataUpToDate:set.lastUpSalle]){
@@ -30,7 +33,6 @@
         [self deleteFromCacheWithPredicates: onlyDomaine];
         NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
                         set.login,set.pasword,@"listeSalles",domaineName]; 
-        self.predicateForReturnValue = withLocalisation;
         afterLoading = @selector(finishLoadingSallesWithLocalisationForDomaine);
         [self addToCache:postParam];
         return;
@@ -59,7 +61,7 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Salle" inManagedObjectContext:self. managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    [request setPredicate:self.predicateForReturnValue];
+    [request setPredicate:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]];
     
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];

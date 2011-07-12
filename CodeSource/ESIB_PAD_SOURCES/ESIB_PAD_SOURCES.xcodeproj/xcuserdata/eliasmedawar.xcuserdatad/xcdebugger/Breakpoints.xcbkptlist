@@ -555,11 +555,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
-         timestampString = "331817265.862014"
+         timestampString = "332147347.132995"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "69"
-         endingLineNumber = "69"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -569,11 +569,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
-         timestampString = "331817265.862014"
+         timestampString = "332147347.132995"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "167"
-         endingLineNumber = "167"
+         startingLineNumber = "169"
+         endingLineNumber = "169"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -583,11 +583,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
-         timestampString = "331817265.862014"
+         timestampString = "332147347.132995"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "105"
-         endingLineNumber = "105"
+         startingLineNumber = "107"
+         endingLineNumber = "107"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -597,11 +597,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
-         timestampString = "331817265.862014"
+         timestampString = "332147347.132995"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "104"
-         endingLineNumber = "104"
+         startingLineNumber = "106"
+         endingLineNumber = "106"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -611,11 +611,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
-         timestampString = "331817265.862014"
+         timestampString = "332147347.132995"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "161"
-         endingLineNumber = "161"
+         startingLineNumber = "163"
+         endingLineNumber = "163"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -639,11 +639,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
-         timestampString = "331817265.862014"
+         timestampString = "332147347.132995"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "49"
-         endingLineNumber = "49"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
          landmarkName = "-getCampusAndDisplayOnMap"
          landmarkType = "5">
       </FileBreakpoint>
@@ -694,26 +694,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331814110.949165"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "40"
-         endingLineNumber = "40"
-         landmarkName = "-getBatimentWithLocalisationForDomaine:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331472865.278806"
+         timestampString = "332144079.221455"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "162"
-         endingLineNumber = "162"
+         startingLineNumber = "163"
+         endingLineNumber = "163"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -835,11 +821,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331472865.278806"
+         timestampString = "332144079.221455"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "150"
-         endingLineNumber = "150"
+         startingLineNumber = "151"
+         endingLineNumber = "151"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -849,11 +835,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331472865.278806"
+         timestampString = "332144079.221455"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "151"
-         endingLineNumber = "151"
+         startingLineNumber = "152"
+         endingLineNumber = "152"
          landmarkName = "-verifyError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -877,11 +863,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331814110.949165"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "46"
-         endingLineNumber = "46"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -891,11 +877,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331819939.735051"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "84"
-         endingLineNumber = "84"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1843,11 +1829,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331817740.403157"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "50"
-         endingLineNumber = "50"
+         startingLineNumber = "48"
+         endingLineNumber = "48"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1857,16 +1843,16 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331818003.892769"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "80"
-         endingLineNumber = "80"
+         startingLineNumber = "78"
+         endingLineNumber = "78"
          landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
@@ -1913,25 +1899,25 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331818822.074003"
+         timestampString = "332144079.221455"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "175"
-         endingLineNumber = "175"
+         startingLineNumber = "176"
+         endingLineNumber = "176"
          landmarkName = "-parser:foundCharacters:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331818915.878682"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
+         startingLineNumber = "55"
+         endingLineNumber = "55"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1941,25 +1927,25 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331819007.908193"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66"
+         startingLineNumber = "64"
+         endingLineNumber = "64"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/BatimentDAO.m"
-         timestampString = "331819760.895205"
+         timestampString = "332145548.624231"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "65"
-         endingLineNumber = "65"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -1969,26 +1955,264 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331819888.762386"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "148"
-         endingLineNumber = "148"
-         landmarkName = "-verifyError:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
-         timestampString = "331819889.490286"
+         timestampString = "332144079.221455"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "149"
          endingLineNumber = "149"
          landmarkName = "-verifyError:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/GenericDAO.m"
+         timestampString = "332144079.221455"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "150"
+         endingLineNumber = "150"
+         landmarkName = "-verifyError:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332057618.423914"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "11"
+         endingLineNumber = "11"
+         landmarkName = "@implementation ESIB_PAD_SOURCESTests"
+         landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332147347.132995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "52"
+         endingLineNumber = "52"
+         landmarkName = "-getCampusAndDisplayOnMap"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332065480.319829"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
+         landmarkName = "-finishLoadingCampusList"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077738.294124"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "123"
+         endingLineNumber = "123"
+         landmarkName = "-displayListOfCampus:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077738.294124"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "104"
+         endingLineNumber = "104"
+         landmarkName = "-testCarte"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077738.294124"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "124"
+         endingLineNumber = "124"
+         landmarkName = "-displayListOfCampus:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077738.294124"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "122"
+         endingLineNumber = "122"
+         landmarkName = "-displayListOfCampus:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077705.325984"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "81"
+         endingLineNumber = "81"
+         landmarkName = "-displayListOfCampus:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077705.325984"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
+         landmarkName = "-displayListOfCampus:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077734.301633"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "57"
+         endingLineNumber = "57"
+         landmarkName = "-testCarte"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
+         timestampString = "332077772.145834"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "99"
+         endingLineNumber = "99"
+         landmarkName = "-displayListOfCampus:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332147347.132995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "90"
+         endingLineNumber = "90"
+         landmarkName = "-connectionDidFinishLoading:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/ESIB_PAD_SOURCESAppDelegate.h"
+         timestampString = "332079485.235786"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
+         landmarkName = "@interface ESIB_PAD_SOURCESAppDelegate"
+         landmarkType = "2">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332147347.132995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "65"
+         endingLineNumber = "65"
+         landmarkName = "-getCampusAndDisplayOnMap"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332147347.132995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
+         landmarkName = "-connectionDidFinishLoading:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332147347.132995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
+         landmarkName = "-getCampusAndDisplayOnMap"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ESIB_PAD_SOURCES/DAO/CampusDAO.m"
+         timestampString = "332147347.132995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "85"
+         endingLineNumber = "85"
+         landmarkName = "-connectionDidFinishLoading:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -34,6 +34,7 @@
     NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                             set.login,set.pasword,@"listeActualites"]; 
     afterLoading = @selector(finishLoadingNews);
+    self.predicateForReturnValue=@"";
     [self addToCache:postParam];
     return;
 }
@@ -62,7 +63,7 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entity];
-    [request setPredicate:self.predicateForReturnValue];
+    [request setPredicate:[NSPredicate predicateWithFormat:self.predicateForReturnValue]];
     
     NSError *error;
     NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];

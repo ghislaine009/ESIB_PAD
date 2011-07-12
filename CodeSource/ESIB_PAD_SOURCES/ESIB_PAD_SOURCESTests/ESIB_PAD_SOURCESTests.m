@@ -41,50 +41,29 @@
     [setToTest release];
 
 }
-- (void)didPresentAlertView:(UIAlertView *)alertView{
-    [condition lock];
-        [condition wait];
-    [condition unlock];
-}
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    [condition signal];
-}
+
 
 -(void)testCarte{
     NSLog(@"Testing the Campus DAO: You must uninstall or reset cache of the application before testing");
     CampusDAO * cDao = [[CampusDAO alloc ]init];
     cDao.delegate = self;
     NSLog(@"Loading async the campus data from internet");
-    condition =  [[NSCondition alloc]init];
-    [condition lock];
-        [cDao getCampusListAndDisplay];
-        [condition wait];
-    [condition unlock];
+    [cDao getCampusListAndDisplay];
+    NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
+    while(!finishListCampus){
+        [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
+        someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
+    }
+    STAssertTrue([listCampus count]!=0, @"No data geted form the net");
+    STAssertTrue([listCampus2 count]!=0, @"No data in cache");
     
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please disable your internet connection now" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-        [alert show];
-        [alert release];
-       
-/*
-    NSLog(@"Waiting for 30 sec for disabling the internet connection");
-
-    NSArray * firstRunCampus = [[NSArray alloc] initWithArray:listCampus];
-    [condition lock];
-        [cDao getCampusListAndDisplay];
-        NSLog(@"Getting campus data from cache");
-    [condition wait];
-    [condition unlock];
-
-    NSUInteger i=0;
-    NSLog(@"Comparing loacl and distant data");
-
-    STAssertTrue([firstRunCampus count]==[listCampus count], @"The data number of data in cache is not the same that those online");
-    for (Campus * c in firstRunCampus) {
+    STAssertTrue([listCampus count]==[listCampus2 count], @"The data number of data in cache is not the same that those online");
+    int i=0;
+    for (Campus * c in listCampus2) {
         STAssertEqualObjects(c, [ listCampus objectAtIndex:i], @"The campus data in cache are not the same that those online");
         i++;
-    }
-    [firstRunCampus release];
-    [cDao release]; */   
+    }  
+    [cDao release]; 
 }
 -(void) displayPersonList: (NSArray *)personArray{
     
@@ -99,9 +78,26 @@
     
 }
 -(void) displayListOfCampus:(NSArray *)campusArray{
-    NSLog(@"DATA recieved");
-    listCampus = [campusArray retain];
-    [condition signal];
+    if(dataRecieved){
+        listCampus2 = campusArray;     
+        finishListCampus =YES;
+
+    }else{
+        NSLog(@"DATA recieved");
+        listCampus = [campusArray retain];
+        [condition signal];
+        dataRecieved = YES;
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please disable your internet connection now(You have 30 sec to do it!!!)" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+        [alert release];
+        NSLog(@"Waiting for 30 sec for disabling the internet connection");
+
+        NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:30.0];
+        [[NSRunLoop currentRunLoop] runUntilDate:someSecondsFromNow];
+        CampusDAO * cDao = [[CampusDAO alloc ]init];
+        cDao.delegate = self;
+        [cDao getCampusListAndDisplay];
+    }
 }
 -(void) displayAllCampusOnMap:(NSArray *)campusArray{
 }
