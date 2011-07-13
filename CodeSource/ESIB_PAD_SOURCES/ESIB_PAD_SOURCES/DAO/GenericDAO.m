@@ -81,16 +81,14 @@
     
     NetworkStatus netStatus = [hostReach currentReachabilityStatus];
     
-    switch (netStatus)
+    if( netStatus == NotReachable)
     {
-        case NotReachable:
-        {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, please check your connection settings" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-            [alert show];
-            [alert release];
-            return;
-            break;
-        }
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, please check your connection settings" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+        [alert release];
+        alert = nil;
+
+        return;
     }
 
      NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:set.url] 
@@ -121,6 +119,7 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alert show];
     [alert release];
+    alert = nil;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
@@ -171,16 +170,19 @@
        //[self setDelegate:nil];
         [alert show];
         [alert release];
+        alert = nil;
+
         return YES;
         
     }
     if([_crntElementName isEqualToString:@"message"]){
-        NSString * errorMsg = [[[NSString alloc] initWithFormat:@"%@ \n Please change the settings and/or check your connectio to solve this problem .",texte] autorelease];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        NSString * errorMsg = [[NSString alloc] initWithFormat:@"%@ \n Please change the settings and/or check your connectio to solve this problem .",texte] ;
+        UIAlertView *alertNoData = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         //[self setDelegate:nil];
         
-        [alert show];
-        [alert release];
+        [alertNoData show];
+        [alertNoData release];
+        [errorMsg release];
         return YES;
     }
     return NO;
