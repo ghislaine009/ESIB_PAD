@@ -16,7 +16,6 @@
     return self;
 }
 -(void) finishLoadingBatimentWithLocalisationForDomaine{
-    NSLog(@"%@",self.delegate);
     if(_crntListOfObject && self.delegate)
     [self.delegate  displayBatiments:self.crntListOfObject];
 }
@@ -70,7 +69,7 @@
     for (NSManagedObject *managedObject in items) {
         [self.crntListOfObject addObject:managedObject ];
     }
-    if([_crntListOfObject count]!= 0)
+        //if([_crntListOfObject count]!= 0)
     [self performSelector:afterLoading];
     
     

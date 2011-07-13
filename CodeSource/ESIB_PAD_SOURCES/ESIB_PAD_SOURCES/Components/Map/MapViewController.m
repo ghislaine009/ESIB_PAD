@@ -163,10 +163,12 @@
     self.crntCampus =selectedCampusIndex;
     BatimentDAO * bDao = [[BatimentDAO alloc ]init];
     [bDao setDelegate:self];
-
-    Campus * c = [self.listCampus objectAtIndex:[selectedCampusIndex intValue]];
-    [bDao getBatimentWithLocalisationForDomaine:c.code];
-    [bDao release];
+    if([selectedCampusIndex intValue]>0 && [selectedCampusIndex intValue]< ([self.listCampus count] -1) ){
+        Campus * c = [self.listCampus objectAtIndex:[selectedCampusIndex intValue]];
+          
+        [bDao getBatimentWithLocalisationForDomaine:c.code];
+        [bDao release];
+    }
 }
 -(void)back{
     [self dismissModalViewControllerAnimated:YES];
@@ -275,6 +277,8 @@
         coordinate.longitude = [c.longitude doubleValue];            
         NSString * s  = [[[NSString alloc]initWithFormat:@"%@",c.campus]autorelease];
         MapLocations *annotation = [[[MapLocations alloc] initWithName:s description:[[[NSString alloc]initWithFormat:@"Responsable: %@ %@ %@",c.titre_resp,c.prenom_resp,c.nom_resp] autorelease] coordinate:coordinate] autorelease];
+            // UIImage * imgCmps = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:c.img]]]; 
+            
         [_map addAnnotation:annotation];
         
         [self zoomToFitMapAnnotations:_map];
