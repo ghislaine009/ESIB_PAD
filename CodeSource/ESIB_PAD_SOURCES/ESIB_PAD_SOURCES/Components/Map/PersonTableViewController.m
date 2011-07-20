@@ -11,22 +11,25 @@
 
 @implementation PersonTableViewController
 
-@synthesize persons = _persons,delegate;
+@synthesize persons = _persons,delegate,searchBar;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
+
     self.contentSizeForViewInPopover = CGSizeMake(300, 400);
     //Initialize the copy array.
 	copyListOfItems = [[NSMutableArray alloc] init];
     
-    searchBar = [[UISearchBar alloc ] initWithFrame:CGRectMake(0, 0, 4, 40)];
+    searchBar = [[UISearchBar alloc ] initWithFrame:CGRectMake(0,0,4, 40)];
+
 	[searchBar setDelegate:(id)self];
 	//Set the title
 	self.navigationItem.title = @"People";
 	
 	//Add the search bar
 	self.tableView.tableHeaderView = searchBar;
+
 	searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
 	
 	searching = NO;
@@ -48,6 +51,11 @@
 	return 1;
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)theSearchBar
+{
+    [theSearchBar resignFirstResponder];
+    theSearchBar.hidden = YES;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (searching)
@@ -70,9 +78,11 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier] autorelease];
 	}
     if(searching) {
-        Person * p = (Person *)[copyListOfItems objectAtIndex:indexPath.row];
-        NSString  * s =  [NSString stringWithFormat:@" %@ %@",p.nom , p.prenom];
-        cell.textLabel.text = s ;
+        if([copyListOfItems count] > indexPath.row ){
+            Person * p = (Person *)[copyListOfItems objectAtIndex:indexPath.row];
+            NSString  * s =  [NSString stringWithFormat:@" %@ %@",p.nom , p.prenom];
+            cell.textLabel.text = s ;
+        }
 	}else {
         // Set up the cell.
         Person * p = (Person *)[_persons objectAtIndex:indexPath.row];
@@ -91,8 +101,10 @@
  */
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if(searching) {
-        [self.delegate displayPersonOnMap:(Person *)[copyListOfItems objectAtIndex:indexPath.row]];
-        [self.delegate removeListFromTopView];
+        if([copyListOfItems count]!=0){
+            [self.delegate displayPersonOnMap:(Person *)[copyListOfItems objectAtIndex:indexPath.row]];
+            [self.delegate removeListFromTopView];
+        }
 	}else{
         [self.delegate displayPersonOnMap:(Person *)[_persons objectAtIndex:indexPath.row]];
         [self.delegate removeListFromTopView];
@@ -129,7 +141,6 @@
 	
 	searching = YES;
 	letUserSelectRow = NO;
-	self.tableView.scrollEnabled = NO;
 	
 	//Add the done button.
 	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] 
@@ -137,17 +148,17 @@
 											   target:self action:@selector(doneSearching_Clicked:)] autorelease];
 }
 
+
 - (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
     
 	//Remove all objects first.
 	[copyListOfItems removeAllObjects];
-	
+
 	if([searchText length] > 0) {
 		
 		[ovController.view removeFromSuperview];
 		searching = YES;
 		letUserSelectRow = YES;
-		self.tableView.scrollEnabled = YES;
 		[self searchTableView];
 	}
 	else {
@@ -156,7 +167,12 @@
 		
 		searching = NO;
 		letUserSelectRow = NO;
-		self.tableView.scrollEnabled = NO;
+		
+        [theSearchBar resignFirstResponder];
+        letUserSelectRow = YES;
+        self.navigationItem.rightBarButtonItem = nil;
+
+        
 	}
 	
 	[self.tableView reloadData];
@@ -174,15 +190,20 @@
 	
 	for (Person * p in _persons)
 	{
-        NSString  * s =  [NSString stringWithFormat:@" %@ %@",p.nom , p.prenom];
+        NSString  * s =  [NSString stringWithFormat:@" %@ %@ %@",p.nom , p.prenom ,p.carriere];
 		[searchArray addObject:s];
 	}
 	int i=0;
 	for (NSString *sTemp in searchArray)
 	{
-		NSRange titleResultsRange = [sTemp rangeOfString:searchText options:NSCaseInsensitiveSearch];
-		if (titleResultsRange.length > 0)
-			[copyListOfItems addObject:[_persons objectAtIndex:i]];
+        NSArray* separatedWord = [searchText componentsSeparatedByString: @" "];
+        for (NSString *word in separatedWord) {
+            NSRange titleResultsRange = [sTemp rangeOfString:word options:NSCaseInsensitiveSearch];
+            if (titleResultsRange.length > 0){
+                [copyListOfItems addObject:[_persons objectAtIndex:i]];
+                break;
+            }
+        }
         i++;
 	}
 	[searchArray release];
@@ -197,7 +218,6 @@
 	letUserSelectRow = YES;
 	searching = NO;
 	self.navigationItem.rightBarButtonItem = nil;
-	self.tableView.scrollEnabled = YES;
 	
 	[ovController.view removeFromSuperview];
 	[ovController release];

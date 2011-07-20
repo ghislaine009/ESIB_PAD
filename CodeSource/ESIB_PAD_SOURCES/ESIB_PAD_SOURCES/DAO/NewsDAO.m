@@ -11,7 +11,7 @@
 
 @implementation NewsDAO
 
-
+@synthesize delegate;
 -(id) init{
     self = [super initWithEntityName:@"Actualite"];
     return self;
@@ -56,13 +56,13 @@
     }
     
 
-    [set loadValues];
+    [self.set loadValues];
     
-    NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
-                            set.login,set.pasword,@"listeActualites"]; 
-    afterLoading = @selector(finishLoadingNews);
+    self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
+                            self.set.login,self.set.pasword,@"listeActualites"]; 
+    self.afterLoading = @selector(finishLoadingNews);
     self.predicateForReturnValue=@"";
-    [self addToCache:postParam];
+    [self addToCache:self.postParam];
     return;
 }
 
@@ -73,7 +73,7 @@
         // NSString * recivedDataText = [NSString stringWithUTF8String:[receivedData bytes]];
     
         //NSLog(@"DATA: %@",recivedDataText);
-    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:receivedData];
+    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
     [parseur setDelegate: self];
     if([parseur parse] == NO){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
@@ -83,7 +83,7 @@
     }
     
     [parseur release];
-    [receivedData release];
+    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     
@@ -100,7 +100,7 @@
     for (NSManagedObject *managedObject in items) {
         [self.crntListOfObject addObject:managedObject ];
     }
-    [self performSelector:afterLoading];
+    [self performSelector:self.afterLoading];
 }
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if(self.crntCharacters){

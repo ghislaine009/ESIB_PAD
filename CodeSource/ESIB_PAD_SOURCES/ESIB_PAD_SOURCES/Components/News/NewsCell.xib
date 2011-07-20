@@ -48,6 +48,32 @@
 						<int key="NSvFlags">256</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIImageView" id="751178828">
+								<reference key="NSNextResponder" ref="988727521"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrameSize">{21, 71}</string>
+								<reference key="NSSuperview" ref="988727521"/>
+								<reference key="NSWindow"/>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">bgTableItemCoin.png</string>
+								</object>
+							</object>
+							<object class="IBUIImageView" id="547458509">
+								<reference key="NSNextResponder" ref="988727521"/>
+								<int key="NSvFlags">294</int>
+								<string key="NSFrame">{{20, 0}, {268, 22}}</string>
+								<reference key="NSSuperview" ref="988727521"/>
+								<reference key="NSWindow"/>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">bgTableItemR.png</string>
+								</object>
+							</object>
 							<object class="IBUIImageView" id="311445840">
 								<reference key="NSNextResponder" ref="988727521"/>
 								<int key="NSvFlags">292</int>
@@ -207,6 +233,8 @@
 							<reference ref="654313975"/>
 							<reference ref="311445840"/>
 							<reference ref="578724960"/>
+							<reference ref="751178828"/>
+							<reference ref="547458509"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -225,6 +253,16 @@
 						<reference key="object" ref="654313975"/>
 						<reference key="parent" ref="678949753"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">20</int>
+						<reference key="object" ref="751178828"/>
+						<reference key="parent" ref="678949753"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">21</int>
+						<reference key="object" ref="547458509"/>
+						<reference key="parent" ref="678949753"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -235,6 +273,8 @@
 					<string>-2.CustomClassName</string>
 					<string>2.CustomClassName</string>
 					<string>2.IBPluginDependency</string>
+					<string>20.IBPluginDependency</string>
+					<string>21.IBPluginDependency</string>
 					<string>3.IBPluginDependency</string>
 					<string>4.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
@@ -244,6 +284,8 @@
 					<string>NewsViewController</string>
 					<string>UIResponder</string>
 					<string>NewsCellViewController</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -262,7 +304,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">19</int>
+			<int key="maxID">21</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -343,6 +385,19 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>bgTableItemCoin.png</string>
+				<string>bgTableItemR.png</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{25, 80}</string>
+				<string>{381, 24}</string>
+			</object>
+		</object>
 		<string key="IBCocoaTouchPluginVersion">300</string>
 	</data>
 </archive>

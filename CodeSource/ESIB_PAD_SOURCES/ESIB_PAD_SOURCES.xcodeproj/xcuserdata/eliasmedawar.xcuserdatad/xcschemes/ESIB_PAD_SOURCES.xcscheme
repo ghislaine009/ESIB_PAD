@@ -46,7 +46,7 @@
       displayScale = "1.00"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -64,6 +64,16 @@
          </AdditionalOption>
          <AdditionalOption
             key = "NSExceptionLoggingEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "USERBREAK"
+            value = "1"
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "NSDOLoggingEnabled"
             value = "YES"
             isEnabled = "YES">
          </AdditionalOption>

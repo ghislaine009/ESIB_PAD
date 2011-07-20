@@ -9,11 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "ESIB_PAD_SOURCESAppDelegate.h"
 #import "Person.h"
+#import "InstitutionDAO.h"
 #import "GenericDAO.h"
+
+@protocol PersonDAOProtocol
+-(void) consumeListOfPerson:(NSArray *)personArray;
+@end
 
 @interface PersonDAO : GenericDAO {
     
 }
 - (void)getPersonsWithLocalisationForDomaine:(NSString *) domaineName;
-    
+- (void)getPersonsForDomaine:(NSString *)domaineName;
+- (void)getPersonsForInstitution:(NSString *)instCode;
+
+@property (retain)  id<PersonDAOProtocol> delegate;
+
 @end

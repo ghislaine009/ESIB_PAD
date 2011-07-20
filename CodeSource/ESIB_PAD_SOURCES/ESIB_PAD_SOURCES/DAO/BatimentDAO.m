@@ -10,14 +10,14 @@
 
 
 @implementation BatimentDAO
-
+@synthesize delegate;
 -(id) init{
     self = [super initWithEntityName:@"Batiment"];
     return self;
 }
 -(void) finishLoadingBatimentWithLocalisationForDomaine{
-    if(_crntListOfObject && self.delegate)
-    [self.delegate  displayBatiments:self.crntListOfObject];
+    if(self.crntListOfObject && self.delegate)
+    [self.delegate  consumeListOfBatiments:self.crntListOfObject];
 }
 
 - (void)getBatimentWithLocalisationForDomaine:(NSString *) domaineName{
@@ -25,14 +25,14 @@
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
     self.predicateForReturnValue = @"(campus = %@ AND latitude != %@)";  
     self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineName,@"0", nil] autorelease];
-    
-    if(crntCount==0 || ![self areDataUpToDate:set.lastUpBatiment]){
-        [set loadValues];
+    self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
+                 self.set.login,self.set.pasword,@"listeBatiments",domaineName]; 
+
+    if(crntCount==0 || ![self areDataUpToDate:[self.set getLastUpdateTimeForKey:self.postParam]]){
+        [self.set loadValues];
         [self deleteFromCacheWithPredicates: onlyDomaine];
-        NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
-                                set.login,set.pasword,@"listeBatiments",domaineName]; 
-        afterLoading = @selector(finishLoadingBatimentWithLocalisationForDomaine);
-        [self addToCache:postParam];
+        self.afterLoading = @selector(finishLoadingBatimentWithLocalisationForDomaine);
+        [self addToCache:self.postParam];
         return;
     }else{
         [self getDataFromCacheWithPredicates:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]  ];
@@ -42,8 +42,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
-    set.lastUpBatiment = [NSDate date];
-    [set save];
+    [self.set setLastUpdateTimeForKey:self.postParam lastUpdate:[NSDate date]];
     [parseur setDelegate: self];
     if([parseur parse] == NO){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
@@ -53,7 +52,7 @@
     }
     
     [parseur release];
-    [receivedData release];
+    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     
@@ -70,7 +69,7 @@
         [self.crntListOfObject addObject:managedObject ];
     }
         //if([_crntListOfObject count]!= 0)
-    [self performSelector:afterLoading];
+    [self performSelector:self.afterLoading];
     
     
 }

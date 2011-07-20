@@ -74,23 +74,11 @@ class webService {
     // Main method to redeem a code
     function redeem() {  
         //$this->testCommunication();
-        call_user_func("webService::".$this->data['op']);    
+        $op = $this->data['op'];
+        $file = file_get_contents('./'.$op.'.xml', FILE_USE_INCLUDE_PATH);
+        sendResponse(200,$file);   
         return true;
     }
-    function listeEmpCampus(){
-        $file = file_get_contents('./listeEmpCampus.xml', FILE_USE_INCLUDE_PATH);
-        sendResponse(200,$file);
-    }  
-    function getMainBuilding(){
-        $file = file_get_contents('./mapGeneral.xml', FILE_USE_INCLUDE_PATH);
-        sendResponse(200,$file);
-    }
-    
-    function testCommunication(){
-        $file = file_get_contents('./test.xml', FILE_USE_INCLUDE_PATH);
-        sendResponse(200,$file);
-    }
-
 }
 
 // This is the first thing that gets called when this page is loaded

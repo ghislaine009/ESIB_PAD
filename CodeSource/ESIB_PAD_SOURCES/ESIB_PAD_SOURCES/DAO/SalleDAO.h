@@ -10,8 +10,13 @@
 #import "Salle.h"
 #import "GenericDAO.h"
 
+@protocol SalleDAOProtocol
+-(void) displaySallesList: (NSArray *)salleArray;
+@end
+
 @interface SalleDAO : GenericDAO {
 
 }
+@property (retain)  id<SalleDAOProtocol> delegate;
 - (void)getSallesWithLocalisationForDomaine:(NSString *) domaineName;
 @end

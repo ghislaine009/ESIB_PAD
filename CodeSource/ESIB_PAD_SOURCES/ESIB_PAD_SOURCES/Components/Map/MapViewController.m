@@ -7,12 +7,6 @@
 //
 
 #import "MapViewController.h"
-#import "PersonDAO.h"
-#import "SalleDAO.h"
-#import "CampusDAO.h"
-#import "Campus.h"
-#import "BatimentDAO.h"
-#import "Batiment.h"
 #import <MapKit/MapKit.h>
 
 
@@ -54,23 +48,14 @@
     [cDAO getCampusAndDisplayOnMap];
     [cDAO release];    
     
-    [searchBar setBackgroundColor:[UIColor clearColor]];
-     searchBar.barStyle                 = UIBarStyleBlackTranslucent;
-     searchBar.showsCancelButton        = NO;
-     searchBar.autocorrectionType       = UITextAutocorrectionTypeNo;
-     searchBar.autocapitalizationType   = UITextAutocapitalizationTypeNone;
-     for (UIView *subview in searchBar.subviews)
-     {
-         if ([subview isKindOfClass:NSClassFromString(@"UISearchBarBackground") ] ) 
-             subview.alpha = 0.0;  
-     
-         if ([subview isKindOfClass:NSClassFromString(@"UISegmentedControl") ] ){
-             subview.alpha = 0.0;  
-             [subview setOpaque:NO];
-             [subview setHidden:YES];
-         }
-     }
-    [searchBar setDelegate:self];
+    SettingsDAO * s = [[SettingsDAO alloc] init];
+    if([s.mapType isEqualToString:@"sat"]){
+        [self.map setMapType:MKMapTypeSatellite];
+    }else{
+        [self.map setMapType:MKMapTypeStandard];
+
+    }
+   
     [loading stopAnimating];
     [self.crntCampus.intValue:(int)-1];
 } 
@@ -108,7 +93,7 @@
         [pDao getPersonsWithLocalisationForDomaine:c.code];
         [pDao release];
     }else{
-        [self displayPersonList:_persons];
+        [self consumeListOfPerson:_persons];
     }
 }
 -(IBAction) searchSalle:(id)sender{
@@ -140,10 +125,10 @@
     if(!self.listCampus){
         CampusDAO * cDao = [[CampusDAO alloc ]init];
         cDao.delegate = self;
-        [cDao getCampusListAndDisplay];
+        [cDao getCampus:YES];
         [cDao release];
     }else{
-        [self displayListOfCampus:self.listCampus];
+        [self consumeListOfCampus:self.listCampus];
     }
 }
 -(void)campusSelected:(NSNumber *)selectedCampusIndex{
@@ -163,7 +148,7 @@
     self.crntCampus =selectedCampusIndex;
     BatimentDAO * bDao = [[BatimentDAO alloc ]init];
     [bDao setDelegate:self];
-    if([selectedCampusIndex intValue]>0 && [selectedCampusIndex intValue]< ([self.listCampus count] -1) ){
+    if([selectedCampusIndex intValue]>0 && [selectedCampusIndex intValue]< ([self.listCampus count]) ){
         Campus * c = [self.listCampus objectAtIndex:[selectedCampusIndex intValue]];
           
         [bDao getBatimentWithLocalisationForDomaine:c.code];
@@ -225,7 +210,7 @@
     
 }
 
-- (void) displayPersonList: (NSArray *)personArray{
+- (void) consumeListOfPerson: (NSArray *)personArray{
     if(_persons){
         [_persons release];
     }
@@ -263,7 +248,7 @@
     [loading stopAnimating];
     
 }
--(void) displayBatiments:(NSArray *)batimetnsArray{
+-(void) consumeListOfBatiments:(NSArray *)batimetnsArray{
     if(listBatiment){
         [listBatiment release];
     }
@@ -364,7 +349,7 @@
 
 
 
--(void) displayListOfCampus:(NSArray *)campusArray{
+-(void) consumeListOfCampus:(NSArray *)campusArray{
     if(listCampus){
         [listCampus release];
     }

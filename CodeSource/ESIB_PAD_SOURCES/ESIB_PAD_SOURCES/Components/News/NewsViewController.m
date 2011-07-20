@@ -26,6 +26,7 @@
     if(_news)
         [_news release];
     _news = [listOfNews retain];
+    
 
     [[self tableView] reloadData];
 
@@ -39,8 +40,9 @@
     [nDAO getNews];
     [nDAO release];
     self.cellNib = [UINib nibWithNibName:@"NewsCell" bundle:nil];
-    self.tableView.backgroundColor = [UIColor whiteColor ];
-    
+    [self.tableView setBackgroundView:nil];
+    [self.tableView  setBackgroundView:[[[UIView alloc] init] autorelease]];
+    [self.tableView  setBackgroundColor:[UIColor whiteColor]];   
     [super viewDidLoad];
 }
 
@@ -126,7 +128,10 @@
         [self.cellNib instantiateWithOwner:self options:nil];
 		cell = tmpCell;
 		self.tmpCell = nil;
+        cell.backgroundView = [[[UIView alloc] init] autorelease];
+        cell.selectedBackgroundView = [[[UIView alloc] init] autorelease];
 	}
+  
     Actualite * a = [_news objectAtIndex:[indexPath row]];
 
     UIImage * i = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:a.img]]];

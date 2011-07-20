@@ -8,21 +8,38 @@
 
 #import <UIKit/UIKit.h>
 #import "MainFilterTableViewController.h"
+#import "SubMenuFilterTableViewController.h"
 #import "DirectoryDisplayerProtocol.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface DirectoryViewControllerIPad : UIViewController<DirectoryDisplayerProtocol> {
     IBOutlet UITableView * mainMenuFilter;
     IBOutlet UITableView * subMenuFilter;
+    IBOutlet UITableView * contactList;
+    IBOutlet UISearchBar * srchBar;
+    IBOutlet UILabel * mainTitle;
+    IBOutlet UILabel * subTitle;
+
     IBOutlet UIView * backView;
     IBOutlet UILabel * mainChoise;
     CGRect mainBeforeModif;
     CGRect subBeforeModif;
+    CGRect backBeforeModif;
+    SubMenuFilterTableViewController *subCtrl;
+    IBOutlet UIActivityIndicatorView *loading;
 
 }
 @property (nonatomic,retain)  UITableView * mainMenuFilter;
 @property (nonatomic,retain)  UITableView * subMenuFilter;
 @property (nonatomic,retain)  UIView * backView;
+@property (nonatomic,retain) UITableView * contactList;
+@property (nonatomic,retain)  UISearchBar * srchBar;
+@property (nonatomic, retain)  UIActivityIndicatorView *loading;
+
+
+- (IBAction)displayMainMenuFromButton:(id)sender;
+
+
 
 
 @property (nonatomic,retain)  UILabel * mainChoise;

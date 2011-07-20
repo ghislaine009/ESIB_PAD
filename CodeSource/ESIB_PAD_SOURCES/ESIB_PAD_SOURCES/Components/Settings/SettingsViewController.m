@@ -1,10 +1,10 @@
-//
-//  SettingsViewsController.m
-//  ESIB@PAD
-//
-//  Created by Elias Medawar on 20.06.11.
-//  Copyright 2011 HEFR. All rights reserved.
-//
+    //
+    //  SettingsViewsController.m
+    //  ESIB@PAD
+    //
+    //  Created by Elias Medawar on 20.06.11.
+    //  Copyright 2011 HEFR. All rights reserved.
+    //
 
 #import "SettingsViewController.h"
 
@@ -25,7 +25,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+            // Custom initialization
     }
     return self;
 }
@@ -33,36 +33,36 @@
 - (void)dealloc
 {
     /*[mscrollview release];
-    [login release];
-    [pwd release];
-    [url release];
-    [retenir release];
-    [mapDisp release];*/
+     [login release];
+     [pwd release];
+     [url release];
+     [retenir release];
+     [mapDisp release];*/
     [sDao release];
-
+    
     [super dealloc];
 }
 
 
 - (void)didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
+        // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Release any cached data, images, etc that aren't in use.
+        // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView
+ {
+ }
+ */
 
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+    // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     sDao = [[SettingsDAO alloc ]init];
@@ -79,7 +79,7 @@
     [retenir setOn:sDao.retenir];
     if([sDao.mapType isEqual:@"sat"]){
         [mapDisp setSelectedSegmentIndex:0];
-
+        
     }else{
         [mapDisp setSelectedSegmentIndex:1];
     }
@@ -99,7 +99,7 @@
 }
 
 -(void) registerNotifications{
-    [login addTarget:self action:@selector(fieldChanged:) forControlEvents:UIControlEventEditingDidEnd];
+   [login addTarget:self action:@selector(fieldChanged:) forControlEvents:UIControlEventEditingDidEnd];
     [url addTarget:self action:@selector(fieldChanged:) forControlEvents:UIControlEventEditingDidEnd];
     [pwd addTarget:self action:@selector(fieldChanged:) forControlEvents:UIControlEventEditingDidEnd];
     [retenir addTarget:self action:@selector(fieldChanged:) forControlEvents:UIControlEventValueChanged];
@@ -109,11 +109,11 @@
     [url addTarget:self action:@selector(beginEditing:) forControlEvents:UIControlEventEditingDidBegin];
     [pwd addTarget:self action:@selector(beginEditing:) forControlEvents:UIControlEventEditingDidBegin];
     
-    // We set self as delgate so we can overite the textFieldShouldReturn return comportement
+        // We set self as delgate so we can overite the textFieldShouldReturn return comportement
     [login setDelegate:self];  
     [url setDelegate:self];  
     [pwd setDelegate:self];  
-
+    
     [self refreshDisplay];
 }
 - (void) fieldChanged:(id) sender {
@@ -129,8 +129,8 @@
 {
     [super viewDidUnload];
     
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+        // Release any retained subviews of the main view.
+        // e.g. self.myOutlet = nil;
 }
 
 
@@ -141,7 +141,7 @@
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
+        // Return YES for supported orientations
     return YES;
 }
 

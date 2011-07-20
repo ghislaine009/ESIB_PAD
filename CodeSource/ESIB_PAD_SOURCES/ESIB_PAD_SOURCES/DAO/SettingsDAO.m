@@ -15,7 +15,7 @@
 @synthesize pasword;
 @synthesize login;
 @synthesize retenir;
-@synthesize mapType,lastUpPerson,refreshCacheEvery,lastUpSalle,lastUpCampus,lastUpBatiment;
+@synthesize mapType,listOfUpdatedTime,refreshCacheEvery;
 
 - (id)init {
     self = [super init];
@@ -61,13 +61,19 @@
     }
     self.mapType = [plistDict objectForKey:@"mapType"];
     self.url = [plistDict objectForKey:@"url"];
-    self.lastUpPerson = [plistDict objectForKey:@"lastUpPerson"];
-    self.lastUpSalle = [plistDict objectForKey:@"lastUpSalle"];
-    self.lastUpCampus = [plistDict objectForKey:@"lastUpCampus"];
-    self.lastUpBatiment = [plistDict objectForKey:@"lastUpBatiment"];
-
+   
     self.refreshCacheEvery = [plistDict objectForKey:@"refreshCacheEvery"];
+    
+    NSString * pathFoUpdateTable = [docsDir stringByAppendingPathComponent: @"updatedAt.plist"];
 
+    NSArray *array;
+    array = [NSArray arrayWithContentsOfFile:pathFoUpdateTable];
+    if(!array) {
+        array = [[NSMutableArray alloc] init];
+    } else {
+        self.listOfUpdatedTime = [[NSMutableArray alloc] initWithArray:array];
+    };
+    
     [plistDict release];
 
 }
@@ -76,7 +82,7 @@
                                                          NSUserDomainMask, YES); 
     NSString *path =[[paths objectAtIndex: 0] stringByAppendingPathComponent: @"Settings.plist"];
     
-    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    NSMutableDictionary * plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     
     [plistDict setValue:login forKey:@"login"];
     [plistDict setValue:pasword forKey:@"password"];
@@ -88,10 +94,6 @@
     }
     [plistDict setValue:mapType forKey:@"mapType"];
     [plistDict setValue:url forKey:@"url"];
-    [plistDict setValue:lastUpPerson forKey:@"lastUpPerson"];
-    [plistDict setValue:lastUpSalle forKey:@"lastUpSalle"];
-    [plistDict setValue:lastUpCampus forKey:@"lastUpCampus"];
-    [plistDict setValue:lastUpBatiment forKey:@"lastUpBatiment"];
 
 
     [plistDict setValue:refreshCacheEvery forKey:@"refreshCacheEvery"];
@@ -100,6 +102,29 @@
     [plistDict writeToFile:path atomically: YES];
     [plistDict release];
     [self loadValues];
+}
+
+-(void)setLastUpdateTimeForKey:(NSString *) theKey lastUpdate:(NSDate *) uptime {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory,
+                                                         NSUserDomainMask, YES); 
+    NSString *path =[[paths objectAtIndex: 0] stringByAppendingPathComponent: @"UpdateTime.plist"];
+    NSMutableDictionary * plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    if(!plistDict){
+        plistDict = [[NSMutableDictionary alloc] init];
+    }
+    [plistDict setValue:uptime forKey:theKey];
+    [plistDict writeToFile:path atomically: YES];
+    [plistDict release];
+    [self loadValues];
+}
+
+-(NSDate *)getLastUpdateTimeForKey:(NSString *) theKey {
+    NSString *docsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *path = [docsDir stringByAppendingPathComponent: @"UpdateTime.plist"];
+    NSMutableDictionary* plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    NSDate * d = [plistDict valueForKey:theKey];
+    [plistDict autorelease];
+    return  d;
 }
 -(void)reset{
     NSFileManager *defFM = [NSFileManager defaultManager];
@@ -111,8 +136,10 @@
      */
     NSString *docsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0];
     NSString *dest = [docsDir stringByAppendingPathComponent: @"Settings.plist"];
+    NSString *updateTable =[docsDir stringByAppendingPathComponent: @"UpdateTime.plist"];
     [defFM removeItemAtPath:dest error:NULL];
-        
+    [defFM removeItemAtPath:updateTable error:NULL];
+ 
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"plist"];
         
     [defFM copyItemAtPath: path toPath: dest error: NULL];
@@ -127,10 +154,6 @@
     [url release];
     [defaultURL release];
     [mapType release];
-    [lastUpSalle release];
-    [lastUpPerson release];
-    [lastUpCampus release];
-    [lastUpBatiment release];
     [super dealloc];
 }
 @end

@@ -11,14 +11,9 @@
 #import "Salle.h"
 
 @protocol MapDisplayerDelegate
--(void) displayPersonList: (NSArray *)personArray;
--(void) displaySallesList: (NSArray *)salleArray;
--(void) displayPersonOnMap:(Person *)person;
--(void) displaySalleOnMap:(Salle *)salle;
--(void) displayListOfCampus:(NSArray *)campusArray;
--(void) displayAllCampusOnMap:(NSArray *)campusArray;
 
--(void) displayBatiments:(NSArray *)batimetnsArray;
+-(void) displaySalleOnMap:(Salle *)salle;
+-(void) displayPersonOnMap:(Person *)person;
 -(void) campusSelected:(NSNumber *)selectedCampusIndex;
 -(void) removeListFromTopView;
 

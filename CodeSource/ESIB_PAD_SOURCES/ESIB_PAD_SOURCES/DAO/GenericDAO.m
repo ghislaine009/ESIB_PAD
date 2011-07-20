@@ -10,13 +10,15 @@
 #import "Reachability.h"
 
 @implementation GenericDAO
-@synthesize crntElementName=_crntElementName,entityDescription=_entityDescription, managedObjectContext=_managedObjectContext,crntObject =_crntSalle ,set,receivedData,delegate,predicateForReturnValue,crntListOfObject=_crntListOfObject,crntCharacters,arrgumentPredicate;
+@synthesize crntElementName=_crntElementName,entityDescription=_entityDescription, managedObjectContext=_managedObjectContext,crntObject =_crntSalle ,set,receivedData,predicateForReturnValue,crntListOfObject=_crntListOfObject,crntCharacters,arrgumentPredicate,postParam,afterLoading;
+
 -(id) initWithEntityName:(NSString *)EntitiyDescription{
     
     self = [super init];
     self.entityDescription = EntitiyDescription;
     self.managedObjectContext =  [(ESIB_PAD_SOURCESAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     SettingsDAO * s = [[SettingsDAO alloc]init];
+    
     self.set =s;
     [s release];
     return self;
@@ -24,6 +26,7 @@
 - (void)dealloc
 {
     [_crntElementName release];
+    [postParam release];
     [set release];
     [super dealloc];
 }
@@ -33,7 +36,7 @@
 -(NSArray*)getDataFromCacheWithPredicates:(NSPredicate *) predicate{
     NSFetchRequest * crntRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self.managedObjectContext];
-
+    if(predicate)
     [crntRequest setPredicate:predicate];
 
     [crntRequest setEntity:entity];
@@ -55,7 +58,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity: [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext: self.managedObjectContext]];
     NSError *error=nil;
-
+    if(predicate)
     [request setPredicate:predicate];
     
 
@@ -70,6 +73,7 @@
     
 }
 -(bool) areDataUpToDate:(NSDate *)lastUpdateTime{
+    if(!lastUpdateTime)return NO;
     NSDate *now =  [NSDate date];
     NSTimeInterval ti = ([set.refreshCacheEvery intValue]*60*60*24);
     NSDate *upTime = [lastUpdateTime dateByAddingTimeInterval:ti] ;
@@ -108,6 +112,9 @@
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
     self.crntCharacters =nil;
     if([elementName isEqualToString:@"row"]){
+        if(!self.crntObject){
+            _crntObject = [NSManagedObject alloc];
+        }
         self.crntObject = [NSEntityDescription
                           insertNewObjectForEntityForName:self.entityDescription 
                           inManagedObjectContext:self.managedObjectContext];
@@ -145,7 +152,7 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:_managedObjectContext];
     [fetchRequest setEntity:entity];
-
+    if(predicate)
     [fetchRequest setPredicate:predicate];
     
     NSError *error;

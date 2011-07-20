@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MainMenuIPad.h"
 #import "MenuItemDelegate.h"
-#import "SettingsViewController.h"
-#import "MapViewController.h"
+
 
 @interface MainViewControllerIPad : UIViewController<MenuItemDelegate> {
     UIView *_crntView;

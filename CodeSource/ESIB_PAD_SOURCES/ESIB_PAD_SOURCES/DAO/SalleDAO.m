@@ -10,8 +10,9 @@
 
 
 @implementation SalleDAO
-
+@synthesize delegate;
 -(id) init{
+    
     self = [super initWithEntityName:@"Salle"];
     return self;
 }
@@ -27,14 +28,13 @@
     self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineName,@"0", nil] autorelease];
 
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
-
-    if(crntCount==0 || ![self areDataUpToDate:set.lastUpSalle]){
-        [set loadValues];
+    self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
+                            self.set.login,self.set.pasword,@"listeSalles",domaineName]; 
+    if(crntCount==0 ||  ![self areDataUpToDate:[self.set getLastUpdateTimeForKey:self.postParam]]){
+        [self.set loadValues];
         [self deleteFromCacheWithPredicates: onlyDomaine];
-        NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
-                        set.login,set.pasword,@"listeSalles",domaineName]; 
-        afterLoading = @selector(finishLoadingSallesWithLocalisationForDomaine);
-        [self addToCache:postParam];
+               self.afterLoading = @selector(finishLoadingSallesWithLocalisationForDomaine);
+        [self addToCache:self.postParam];
         return;
     }else{
         [self getDataFromCacheWithPredicates:withLocalisation];
@@ -43,9 +43,8 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:receivedData];
-    set.lastUpSalle = [NSDate date];
-    [set save];
+    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
+    [self.set setLastUpdateTimeForKey:self.postParam lastUpdate:[NSDate date]];
     [parseur setDelegate: self];
     if([parseur parse] == NO){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
@@ -54,7 +53,7 @@
     }
     
     [parseur release];
-    [receivedData release];
+    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     
@@ -72,7 +71,7 @@
         Salle *p =(Salle *)managedObject;
         [self.crntListOfObject addObject:p ];
     }
-    [self performSelector:afterLoading];
+    [self performSelector:self.afterLoading];
  
 
 }

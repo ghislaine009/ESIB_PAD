@@ -23,10 +23,11 @@
     NSArray * arrgumentPredicate;
     NSMutableArray * _crntListOfObject;
     NSString *crntCharacters;
+    NSString *postParam;
+
     SEL afterLoading;
 }
 
-@property (retain)  id delegate;
 
 @property (nonatomic, retain) NSString * crntElementName;
 @property (nonatomic, retain) NSString * entityDescription;
@@ -39,8 +40,11 @@
 @property (nonatomic, retain) NSManagedObject * crntObject;
 @property (nonatomic, retain) SettingsDAO * set;
 @property (nonatomic, retain) NSString * predicateForReturnValue;
+@property (nonatomic, retain) NSString * postParam;
+
 @property (nonatomic, retain) NSArray * arrgumentPredicate;
 
+@property (nonatomic, assign) SEL afterLoading;
 
 
 - (id) initWithEntityName:(NSString *)EntitiyDescription;

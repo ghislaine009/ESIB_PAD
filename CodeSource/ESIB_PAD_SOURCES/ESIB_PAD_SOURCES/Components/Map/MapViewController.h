@@ -14,9 +14,14 @@
 #import "PersonTableViewController.h"
 #import "SalleTableViewController.h"
 #import "SelectionListViewController.h"
+#import "PersonDAO.h"
+#import "BatimentDAO.h"
+#import "CampusDAO.h"
+#import "SalleDAO.h"
+
 #define METERS_PER_MILE 1609.344
 
-@interface MapViewController : UIViewController<UISearchBarDelegate,MapDisplayerDelegate> {
+@interface MapViewController : UIViewController<UISearchBarDelegate,MapDisplayerDelegate,CampusDAOProtocol,PersonDAOProtocol,BatimentDAOProtocol,SalleDAOProtocol> {
     
     MKMapView *_map;
     UISearchBar * searchBar;
@@ -72,6 +77,7 @@
 
 - (IBAction)goHome:(id)sender;
 - (void)zoomToFitMapAnnotations:(MKMapView *) map;
+
 @property (nonatomic, assign) id <MenuItemDelegate> delegate;
 
 

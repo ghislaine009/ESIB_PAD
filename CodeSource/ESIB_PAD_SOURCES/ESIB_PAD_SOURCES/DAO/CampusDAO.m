@@ -10,7 +10,7 @@
 
 
 @implementation CampusDAO
-
+@synthesize delegate;
 -(id) init{
     self = [super initWithEntityName:@"Campus"];
     return self;
@@ -18,42 +18,48 @@
 -(void) returnForDisplay{
     [self.delegate displayAllCampusOnMap:self.crntListOfObject]; 
 }
--(void) finishLoadingCampusList{
-    [self.delegate displayListOfCampus:self.crntListOfObject];
+
+-(void)finishLoadingCousume{
+    [self.delegate consumeListOfCampus:self.crntListOfObject];
     
 }
 
-- (void)getCampusListAndDisplay{
-    [set loadValues];
-    self.predicateForReturnValue = @"(latitude != %@)";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
-   int crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
-    if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
-        [set loadValues];
+- (void)getCampus:(BOOL)onlyCampusWithGPS{
+    [self.set loadValues]; 
+    int crntCount =0;
+    if(onlyCampusWithGPS){
+        self.predicateForReturnValue = @"(latitude != %@)";  
+        self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
+        crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
+    }else{
+       crntCount = [self numberEntityInCacheWithPredicates:nil];     
+    }
+    self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
+                 self.set.login,self.set.pasword,@"listeCampus"];                      
+    if(crntCount==0 || ![self areDataUpToDate:[self.set getLastUpdateTimeForKey:self.postParam]]){
+        [self.set loadValues];
         [self deleteFromCacheWithPredicates:nil];
-        NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
-                                set.login,set.pasword,@"listeCampus"]; 
-        afterLoading = @selector(finishLoadingCampusList);
-        [self addToCache:postParam];
+        self.afterLoading = @selector(finishLoadingCousume);
+               [self addToCache:self.postParam];
     }else{
         [self getDataFromCacheWithPredicates:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate] ];
-        [self finishLoadingCampusList];
+        [self finishLoadingCousume];
     }
  }
 
 - (void)getCampusAndDisplayOnMap{
 
-    [set loadValues];
+    [self.set loadValues];
     self.predicateForReturnValue = @"(latitude != %d)";  
     self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
     int crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
-    if(crntCount==0 || ![self areDataUpToDate:set.lastUpCampus]){
-        [set loadValues];
+    self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
+                 self.set.login,self.set.pasword,@"listeCampus"]; 
+    if(crntCount==0 || ![self areDataUpToDate:[self.set getLastUpdateTimeForKey:self.postParam]]){
+        [self.set loadValues];
         [self deleteFromCacheWithPredicates:nil];
-        NSString * postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
-                                set.login,set.pasword,@"listeCampus"]; 
-        afterLoading = @selector(returnForDisplay);
-        [self addToCache:postParam];
+        self.afterLoading = @selector(returnForDisplay);
+        [self addToCache:self.postParam];
     }else{        
         [self getDataFromCacheWithPredicates:[NSPredicate predicateWithFormat:self.predicateForReturnValue argumentArray:self.arrgumentPredicate]];
         [self returnForDisplay];
@@ -64,9 +70,8 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
         //NSString * recivedDataText = [NSString stringWithUTF8String:[receivedData bytes]];
         // NSLog(@"DATA: %@",recivedDataText);
-    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:receivedData];
-    set.lastUpCampus = [NSDate date];
-    [set save];
+    NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
+    [self.set setLastUpdateTimeForKey:self.postParam lastUpdate:[NSDate date]];
     [parseur setDelegate: self];
     if([parseur parse] == NO){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
@@ -76,7 +81,7 @@
     }
     
     [parseur release];
-    [receivedData release];
+    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     [self.managedObjectContext updatedObjects];    
@@ -94,7 +99,7 @@
     for (NSManagedObject *managedObject in items) {
         [self.crntListOfObject addObject:managedObject ];
     }
-    [self performSelector:afterLoading];
+    [self performSelector:self.afterLoading];
     
     
 }

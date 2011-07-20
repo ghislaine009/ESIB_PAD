@@ -8,6 +8,9 @@
 
 #import "MainViewControllerIPad.h"
 #import "NewsViewController.h"
+#import "DirectoryViewControllerIPad.h"
+#import "SettingsViewController.h"
+#import "MapViewController.h"
 
 @implementation MainViewControllerIPad
 
@@ -124,214 +127,86 @@
     // Return YES for supported orientations
 	return YES;
 }
-- (void) menuClicked:(NSObject *)name{
-    // TODO 
-   if ([((MenuItem *)name).texte isEqualToString:@"Settings"]) {
-        [_menuView setUserInteractionEnabled:NO];
+- (void) loadViewControler: (UIViewController *) controller withTheName:(NSObject *)name{
+    [_menuView setUserInteractionEnabled:NO];
 
-        SettingsViewController *controller = [[SettingsViewController alloc] initWithNibName:@"SettingsViewControllerIPad" bundle:nil];
-        //controller.delegate = self;
-        CGRect r = [controller.view frame];
-        r.origin.x = 0;
-        r.origin.y = [[UIScreen mainScreen] bounds].size.height;
-        r.size.width = _centerView.frame.size.width;
-        r.size.height = _centerView.frame.size.height;
-        [controller.view setFrame:r];
-        [_centerView addSubview:controller.view];
-        
-        CGRect newViewFrame = controller.view.frame;
-        newViewFrame.origin.y = 0;
-        if(_crntView){
-            [UIView animateWithDuration:0.5
-                            delay:0
+    CGRect r = [controller.view frame];
+    r.origin.x = 0;
+    r.origin.y = [[UIScreen mainScreen] bounds].size.height;
+    r.size.width = _centerView.frame.size.width;
+    r.size.height = _centerView.frame.size.height;
+    controller.view.autoresizesSubviews = YES;
+    [controller.view setFrame:r];
+    [_centerView addSubview:controller.view];
+    
+    CGRect newViewFrame = controller.view.frame;
+    newViewFrame.origin.y = 0;
+    if(_crntView){
+        [UIView animateWithDuration:0.5
+                              delay:0
                             options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                 _crntView.alpha = 0;
-                                CGRect rect = [_lgView frame];
-                                rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
-                                _lgView.frame = rect;
-
-                            } 
-                            completion:^(BOOL finished){
-                            }];
-            [UIView animateWithDuration:0.5
-                                  delay:0.9
-                                options: UIViewAnimationCurveEaseOut
-                             animations:^{
-                                 controller.view.frame= newViewFrame;
-
-                             } 
-                             completion:^(BOOL finished){
-                                 [_crntView removeFromSuperview];
-                                 _crntView = controller.view;
-                                 [_menuView setUserInteractionEnabled:TRUE];
-
-                             }];
-            
-        }else{
-                    [UIView animateWithDuration:0.5
-                                      delay:0
-                                    options: UIViewAnimationCurveEaseOut
-                                 animations:^{
-                                     controller.view.frame= newViewFrame;
-                                     CGRect rect = [_lgView frame];
-                                     rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
-                                     _lgView.frame = rect;
-                                 } 
-                                 completion:^(BOOL finished){
-                                     _crntView = controller.view;
-                                     [_menuView setUserInteractionEnabled:TRUE];
-                                    
-
-                        }];
-                
-                
-                
-        }
-                [UIView commitAnimations];
-
+                         animations:^{
+                             _crntView.alpha = 0;
+                             CGRect rect = [_lgView frame];
+                             rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
+                             _lgView.frame = rect;
+                             
+                         } 
+                         completion:^(BOOL finished){
+                         }];
+        [UIView animateWithDuration:0.5
+                              delay:0.9
+                            options: UIViewAnimationCurveEaseOut
+                         animations:^{
+                             controller.view.frame= newViewFrame;
+                             
+                         } 
+                         completion:^(BOOL finished){
+                             [_crntView removeFromSuperview];
+                             _crntView = controller.view;
+                             [_menuView setUserInteractionEnabled:TRUE];
+                             
+                         }];
         
+    }else{
+        [UIView animateWithDuration:0.5
+                              delay:0
+                            options: UIViewAnimationCurveEaseOut
+                         animations:^{
+                             controller.view.frame= newViewFrame;
+                             CGRect rect = [_lgView frame];
+                             rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
+                             _lgView.frame = rect;
+                         } 
+                         completion:^(BOOL finished){
+                             _crntView = controller.view;
+                             [_menuView setUserInteractionEnabled:TRUE];
+                             
+                             
+                         }];
+        
+        
+        
+    }
+    [UIView commitAnimations];
+    
+
+}
+- (void) menuClicked:(NSObject *)name{
+   if ([((MenuItem *)name).texte isEqualToString:@"Settings"]) {
+        SettingsViewController *controller = [[SettingsViewController alloc] initWithNibName:@"SettingsViewControllerIPad" bundle:nil];
+       [self loadViewControler:controller withTheName:name];
+                
    }else if ([((MenuItem *)name).texte isEqualToString:@"Map"]) {
-       [_menuView setUserInteractionEnabled:NO];
        
        MapViewController *controller = [[MapViewController alloc] initWithNibName:@"MapViewIPad" bundle:nil];
-       //controller.delegate = self;
-       CGRect r = [controller.view frame];
-       r.origin.x = 0;
-       r.origin.y = [[UIScreen mainScreen] bounds].size.height;
-       r.size.width = _centerView.bounds.size.width;
-       r.size.height = _centerView.bounds.size.height;
-       controller.view.frame =r;
-       [_centerView addSubview:controller.view];
-       
-        if(_crntView){
-           [UIView animateWithDuration:0.5
-                                 delay:0
-                               options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                _crntView.alpha = 0;
-                                CGRect rect = [_lgView frame];
-                                rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
-                                _lgView.frame = rect;
-                                
-                            } 
-                            completion:^(BOOL finished){
-                            }];
-           [UIView animateWithDuration:0.5
-                                 delay:0.9
-                               options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                CGRect r = [controller.view frame];
-                                r.origin.x = 0;
-                                r.origin.y = 0;
-                                controller.view.frame= r;
-                                [controller.view sizeThatFits:_centerView.bounds.size];                                
-                            } 
-                            completion:^(BOOL finished){
-                                [_crntView removeFromSuperview];
-                                _crntView = controller.view;
-                                [_menuView setUserInteractionEnabled:TRUE];
-                                
-                            }];
-           
-       }else{
-           [UIView animateWithDuration:0.5
-                                 delay:0
-                               options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                CGRect r = [controller.view frame];
-                                r.origin.x = 0;
-                                r.origin.y = 0;
-                                controller.view.frame= r;
-                                [controller.view sizeThatFits:_centerView.bounds.size];
-                                CGRect rect = [_lgView frame];
-                                rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
-                                _lgView.frame = rect;
-                                
-                            } 
-                            completion:^(BOOL finished){
-                                _crntView = controller.view;
-                                [_menuView setUserInteractionEnabled:TRUE];
-                                
-                                
-                            }];
-           
-           
-           
-       }
-       [UIView commitAnimations];
-       
-       
+       [self loadViewControler:controller withTheName:name];
    }else if ([((MenuItem *)name).texte isEqualToString:@"News"]) {
-       [_menuView setUserInteractionEnabled:NO];
-       
        NewsViewController *controller = [[NewsViewController alloc] initWithStyle:UITableViewStyleGrouped];
-       CGRect r = [controller.view frame];
-       r.origin.x = 0;
-       r.origin.y = [[UIScreen mainScreen] bounds].size.height;
-       r.size.width = _centerView.bounds.size.width;
-       r.size.height = _centerView.bounds.size.height;
-       controller.view.frame =r;
-       [_centerView addSubview:controller.view];
-       
-       if(_crntView){
-           [UIView animateWithDuration:0.5
-                                 delay:0
-                               options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                _crntView.alpha = 0;
-                                CGRect rect = [_lgView frame];
-                                rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
-                                _lgView.frame = rect;
-                                
-                            } 
-                            completion:^(BOOL finished){
-                            }];
-           [UIView animateWithDuration:0.5
-                                 delay:0.9
-                               options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                CGRect r = [controller.view frame];
-                                r.origin.x = 0;
-                                r.origin.y = 0;
-                                controller.view.frame= r;
-                                [controller.view sizeThatFits:_centerView.bounds.size];                                
-                            } 
-                            completion:^(BOOL finished){
-                                [_crntView removeFromSuperview];
-                                _crntView = controller.view;
-                                [_menuView setUserInteractionEnabled:TRUE];
-                                
-                            }];
-           
-       }else{
-           [UIView animateWithDuration:0.5
-                                 delay:0
-                               options: UIViewAnimationCurveEaseOut
-                            animations:^{
-                                CGRect r = [controller.view frame];
-                                r.origin.x = 0;
-                                r.origin.y = 0;
-                                controller.view.frame= r;
-                                [controller.view sizeThatFits:_centerView.bounds.size];
-                                CGRect rect = [_lgView frame];
-                                rect.origin.y = ((MenuItem *)name).frame.origin.y+_menuView.frame.origin.y-43;
-                                _lgView.frame = rect;
-                                
-                            } 
-                            completion:^(BOOL finished){
-                                _crntView = controller.view;
-                                [_menuView setUserInteractionEnabled:TRUE];
-                                
-                                
-                            }];
-           
-           
-           
-       }
-       [UIView commitAnimations];
-       
-       
+       [self loadViewControler:controller withTheName:name];
+   }else if ([((MenuItem *)name).texte isEqualToString:@"Directory"]) {
+       DirectoryViewControllerIPad *controller = [[DirectoryViewControllerIPad alloc] initWithNibName:@"DirectoryViewControllerIPad" bundle:nil];
+       [self loadViewControler:controller withTheName:name];
    }
 
 }

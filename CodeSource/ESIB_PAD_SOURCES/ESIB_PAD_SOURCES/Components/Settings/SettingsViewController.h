@@ -1,10 +1,10 @@
-//
-//  SettingsViewsController.h
-//  ESIB@PAD
-//
-//  Created by Elias Medawar on 20.06.11.
-//  Copyright 2011 HEFR. All rights reserved.
-//
+    //
+    //  SettingsViewsController.h
+    //  ESIB@PAD
+    //
+    //  Created by Elias Medawar on 20.06.11.
+    //  Copyright 2011 HEFR. All rights reserved.
+    //
 
 #import <UIKit/UIKit.h>
 #import "SettingsDAO.h"
@@ -30,7 +30,7 @@
      */
     UISwitch *retenir;
     /**
-        The url of the webservices textfield
+     The url of the webservices textfield
      */
     UITextField *url;
     /**
@@ -42,7 +42,7 @@
      */
     UITextField *crntText;
     /**
-        The data access object for get and saving the settings
+     The data access object for get and saving the settings
      */
     SettingsDAO *sDao;
 }

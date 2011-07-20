@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "GenericDAO.h"
-#import "NewsDisplayerProtocol.h"
+
+@protocol NewsDADProtocol 
+-(void) displayNews: (NSArray *)listOfNews;
+@end
 
 @interface NewsDAO : GenericDAO {
     
 }
+@property (retain)  id<NewsDADProtocol> delegate;
 
 - (void)getNews;
 

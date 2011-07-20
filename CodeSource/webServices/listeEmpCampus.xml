@@ -1630,8 +1630,8 @@
 		<bureau></bureau>
 		<longitude></longitude>
 		<latitude></latitude>
-	</row>
 
+	</row>
 	<row>
 		<campus>CST</campus>
 		<code>ESIB</code>
@@ -15460,3 +15460,368 @@
 		<campus>CST</campus>
 		<code>IGE</code>
 		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>Mme</titre>
+		<nom>WAZEN GERGY</nom>
+		<prenom>Wadad</prenom>
+		<extension>5923</extension>
+		<email>wadad.wazen@usj.edu.lb</email>
+		<carriere>Chargé de Cours</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>Mme</titre>
+		<nom>WEHBE KARATI</nom>
+		<prenom>Maryam</prenom>
+		<extension>3395</extension>
+		<email>maryam.karati@usj.edu.lb</email>
+		<carriere>PSG</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>M.</titre>
+		<nom>YACOUB</nom>
+		<prenom>Ali</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>M.</titre>
+		<nom>YAGHI</nom>
+		<prenom>Joseph</prenom>
+		<extension>3383</extension>
+		<email>joseph.yaghi@usj.edu.lb</email>
+		<carriere>Chargé de Cours,Enseignant Cadré,PSG</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>M.</titre>
+		<nom>YAMMINE</nom>
+		<prenom>Joseph</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>M.</titre>
+		<nom>YAZBECK</nom>
+		<prenom>Georges</prenom>
+		<extension></extension>
+		<email>georges.yazbeck@usj.edu.lb</email>
+		<carriere>Services Rendus</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>M.</titre>
+		<nom>YAZBECK</nom>
+		<prenom>Georges</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>M.</titre>
+		<nom>YAZIGI</nom>
+		<prenom>Antoine</prenom>
+		<extension>5717</extension>
+		<email>antoine.yazigi@usj.edu.lb</email>
+		<carriere>Chargé de Cours</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>M.</titre>
+		<nom>YAZIGI</nom>
+		<prenom>Antoine</prenom>
+		<extension>5717</extension>
+		<email>antoine.yazigi@usj.edu.lb</email>
+		<carriere>Chargé de Cours</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>M.</titre>
+		<nom>YOUNES</nom>
+		<prenom>Georges</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>M.</titre>
+		<nom>YOUSSEF</nom>
+		<prenom>Sami</prenom>
+		<extension></extension>
+		<email>sami.youssef@usj.edu.lb</email>
+		<carriere>Chargé de Cours</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>Mlle</titre>
+		<nom>ZAAROUR</nom>
+		<prenom>Rita</prenom>
+		<extension>5126</extension>
+		<email>rita.zaarour@usj.edu.lb</email>
+		<carriere>Chargé de Cours</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>M.</titre>
+		<nom>ZAATAR</nom>
+		<prenom>Youssef</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>INCI</code>
+		<institution>Institut national de la communication et de l'information</institution>
+
+		<titre>M.</titre>
+		<nom>ZAATAR</nom>
+		<prenom>Youssef</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>M.</titre>
+		<nom>ZAITER</nom>
+		<prenom>Ali</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>Mlle</titre>
+		<nom>ZEYDAN</nom>
+		<prenom>Rola</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>Mme</titre>
+		<nom>ZIADE BOUSTANY</nom>
+		<prenom>Marie</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Surveillant</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>M.</titre>
+		<nom>ZIADE KARAM</nom>
+		<prenom>Georges</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>M.</titre>
+		<nom>ZOAETER</nom>
+		<prenom>Mohamed</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chercheur UL,Services Rendus</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>Dr</titre>
+		<nom>ZOGHBI</nom>
+		<prenom>Antoine</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>FS</code>
+		<institution>Faculté des sciences</institution>
+
+		<titre>Mlle</titre>
+		<nom>ZOGHBI</nom>
+		<prenom>Nathalie</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>ESIB</code>
+		<institution>École supérieure d'ingénieurs de Beyrouth</institution>
+
+		<titre>Pr</titre>
+		<nom>ZOGHBI (EL)</nom>
+		<prenom>Marwan</prenom>
+		<extension>2200</extension>
+		<email>marwan.zoghby@usj.edu.lb</email>
+		<carriere>Chargé de Cours</carriere>
+
+		<bureau></bureau>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<code>IGE</code>
+		<institution>Institut de gestion des entreprises</institution>
+
+		<titre>M.</titre>
+		<nom>ZOVIGHIAN</nom>
+		<prenom>Jean</prenom>
+		<extension></extension>
+		<email></email>
+		<carriere>Chargé de Cours</carriere>
+		<bureau></bureau>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+</data>

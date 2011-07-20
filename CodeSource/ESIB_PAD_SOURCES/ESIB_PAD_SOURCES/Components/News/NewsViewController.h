@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NewsDisplayerProtocol.h"
 #import "MenuItemDelegate.h"
+#import "NewsDAO.h"
 #import "NewsCellViewController.h"
-@interface NewsViewController : UITableViewController<NewsDisplayerProtocol> {
+@interface NewsViewController : UITableViewController<NewsDADProtocol> {
 	IBOutlet NewsCellViewController *tmpCell;
     NSMutableArray *_news;
     UINib *cellNib;

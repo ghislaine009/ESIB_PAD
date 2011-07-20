@@ -37,21 +37,9 @@
      */
     NSString * mapType;
     /**
-     The last time of loading personne cache information
+     The last time of loading a data from the server
      */
-    NSDate * lastUpPerson;
-    /**
-     The last time of loading salle cache information
-     */
-    NSDate * lastUpSalle;
-    /**
-     The last time of loading campus cache information
-    */
-    NSDate * lastUpCampus;
-    /**
-     The last time of loading batiment cache information
-     */
-    NSDate * lastUpBatiment;
+    NSMutableDictionary * listOfUpdatedTime;
     /**
      The number of days before refresh cach information
      */
@@ -63,10 +51,7 @@
 @property(nonatomic ,retain) NSString * login;
 @property(nonatomic ,assign) BOOL retenir;
 @property(nonatomic ,retain) NSString * mapType;
-@property(nonatomic ,retain) NSDate * lastUpPerson;
-@property(nonatomic ,retain) NSDate * lastUpCampus;
-@property(nonatomic ,retain) NSDate * lastUpSalle;
-@property(nonatomic ,retain) NSDate * lastUpBatiment;
+@property(nonatomic ,retain) NSMutableDictionary * listOfUpdatedTime;
 
 
 @property(nonatomic ,retain) NSNumber * refreshCacheEvery;
@@ -80,6 +65,8 @@
  */
 -(void) loadValues;
 -(void) reset;
+-(void)setLastUpdateTimeForKey:(NSString *) theKey lastUpdate:(NSDate *) uptime;
+-(NSDate *)getLastUpdateTimeForKey:(NSString *) theKey;
 
 
 

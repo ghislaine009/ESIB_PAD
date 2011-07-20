@@ -11,7 +11,7 @@
 #import "MapDisplayerDelegate.h"
 #import "OverlayViewController.h"
 
-@interface PersonTableViewController : UITableViewController {
+@interface PersonTableViewController : UITableViewController<UISearchBarDelegate> {
     NSArray * _persons;
     NSMutableArray *copyListOfItems;
 	UISearchBar *searchBar;
@@ -26,5 +26,6 @@
 
 @property(nonatomic ,retain) NSArray *persons;
 @property (retain)  id <MapDisplayerDelegate>  delegate;
+@property(nonatomic, retain) UISearchBar *searchBar;
 
 @end
