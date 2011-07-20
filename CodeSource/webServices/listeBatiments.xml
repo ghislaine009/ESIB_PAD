@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+	<row>
+		<campus>CST</campus>
+		<batiment>Berytech</batiment>
+		<longitude>33.865186</longitude>
+		<latitude>35.562066</latitude>
+	</row>
+
+	<row>
+		<campus>CST</campus>
+		<batiment>Département d'éléctronique</batiment>
+		<longitude>33.865618</longitude>
+		<latitude>35.5636</latitude>
+	</row>
+	<row>
+
+		<campus>CST</campus>
+		<batiment>Direction</batiment>
+		<longitude>33.865315</longitude>
+		<latitude>35.564375</latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+
+		<batiment>Entrée principale</batiment>
+		<longitude>33.864901</longitude>
+		<latitude>35.564488</latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<batiment>Faculté des sciences</batiment>
+
+		<longitude>33.865993</longitude>
+		<latitude>35.563484</latitude>
+	</row>
+	<row>
+		<campus>CST</campus>
+		<batiment>Parking visiteur</batiment>
+		<longitude>33.865968</longitude>
+
+		<latitude>35.564423</latitude>
+	</row>
+</data>

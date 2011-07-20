@@ -1,0 +1,1236 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>Administration</batiment>
+		<etage>1</etage>
+		<num_salle>ADF 05</num_salle>
+		<extension></extension>
+
+		<longitude>35.564391</longitude>
+		<latitude>33.865391</latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>Amphithéâtre</batiment>
+		<etage>RC</etage>
+
+		<num_salle>AMP09</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>Berytech</batiment>
+
+		<etage>0</etage>
+		<num_salle>Atelier Ex</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>Centre de Chimie</batiment>
+		<etage>-1</etage>
+		<num_salle>1</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>Dep Elec</batiment>
+		<etage>1</etage>
+		<num_salle>AD E12</num_salle>
+		<extension></extension>
+		<longitude>35.5636</longitude>
+
+		<latitude>33.865618</latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>CIC07</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>CIC13</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>CIC15</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>EL0A</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>EL0B</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>LAC01</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>LAP01</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>LM0</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>LR1</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>LS0</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>LT0A</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>LT0B</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>LT-1A</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>LT-1B</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCC01</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCC02</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>SCC03</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>SCC04</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI01</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI02</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI03</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>SCI04</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>SCI05</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI06</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI07</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI08</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>SCI09</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>SCI10</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI11</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI12</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI13</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>SCI14</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>SCI15</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI17</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI18</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCI19</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>SCI20</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>SCP01</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCP02</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCP04</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCP05</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+
+		<num_salle>SCP06</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+
+		<etage>0</etage>
+		<num_salle>SCP07</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCP08</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FI</batiment>
+		<etage>0</etage>
+		<num_salle>SCP09</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle></num_salle>
+		<extension></extension>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>202</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+
+		<num_salle>203</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage></etage>
+		<num_salle>204</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>205</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>207</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>208</num_salle>
+		<extension></extension>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>209</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+
+		<num_salle>307</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage></etage>
+		<num_salle>308</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>309</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>312</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>406</num_salle>
+		<extension></extension>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>407</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+
+		<num_salle>408</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage></etage>
+		<num_salle>409</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>514</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>602</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>604</num_salle>
+		<extension></extension>
+
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage></etage>
+		<num_salle>Labo bio</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>1</etage>
+
+		<num_salle>LAP</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage>2</etage>
+		<num_salle>202</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage>2</etage>
+		<num_salle>203</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>2</etage>
+		<num_salle>204</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>2</etage>
+		<num_salle>205</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>2</etage>
+
+		<num_salle>207</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage>2</etage>
+		<num_salle>208</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage>2</etage>
+		<num_salle>209</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>3</etage>
+		<num_salle>307</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>3</etage>
+		<num_salle>308</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>3</etage>
+
+		<num_salle>309</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage>3</etage>
+		<num_salle>312</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage>4</etage>
+		<num_salle>406</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>4</etage>
+		<num_salle>407</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>4</etage>
+		<num_salle>408</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>4</etage>
+
+		<num_salle>409</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage>4</etage>
+		<num_salle>410</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage>4</etage>
+		<num_salle>413</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>4</etage>
+		<num_salle>414</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>5</etage>
+		<num_salle>504</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>5</etage>
+
+		<num_salle>508</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage>5</etage>
+		<num_salle>514</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage>6</etage>
+		<num_salle>602</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>6</etage>
+		<num_salle>603</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>6</etage>
+		<num_salle>604</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+		<etage>6</etage>
+
+		<num_salle>605</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>FS</batiment>
+
+		<etage>6</etage>
+		<num_salle>607</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>FS</batiment>
+		<etage>6</etage>
+		<num_salle>608</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage></etage>
+		<num_salle>Cuisine</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>0</etage>
+		<num_salle>01</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>0</etage>
+
+		<num_salle>02</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+
+		<etage>0</etage>
+		<num_salle>03</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>IGE</batiment>
+		<etage>1</etage>
+		<num_salle>08</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>1</etage>
+		<num_salle>15</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>1</etage>
+		<num_salle>16</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>1</etage>
+
+		<num_salle>17</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+
+		<etage>1</etage>
+		<num_salle>2-1</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>IGE</batiment>
+		<etage>1</etage>
+		<num_salle>S Inf SI</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+		<num_salle>09</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+		<num_salle>10</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+
+		<num_salle>11</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+
+		<etage>2</etage>
+		<num_salle>12</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+		<num_salle>13</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+		<num_salle>14</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+		<num_salle>Lecture</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+		<etage>2</etage>
+
+		<num_salle>S inf Ml</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>IGE</batiment>
+
+		<etage>2</etage>
+		<num_salle>S inf TP</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+
+		<batiment>Labo de chimie</batiment>
+		<etage>1</etage>
+		<num_salle>1</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>Labo de chimie</batiment>
+		<etage>1</etage>
+		<num_salle>2</num_salle>
+		<extension></extension>
+		<longitude></longitude>
+
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment>Mont la Salle</batiment>
+		<etage>1</etage>
+		<num_salle>1</num_salle>
+
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+	<row>
+		<campus_id>CST</campus_id>
+		<batiment></batiment>
+		<etage></etage>
+
+		<num_salle></num_salle>
+		<extension></extension>
+		<longitude></longitude>
+		<latitude></latitude>
+	</row>
+</data>
