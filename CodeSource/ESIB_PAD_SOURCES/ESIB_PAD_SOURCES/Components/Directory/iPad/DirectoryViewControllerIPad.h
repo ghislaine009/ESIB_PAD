@@ -10,6 +10,7 @@
 #import "MainFilterTableViewController.h"
 #import "SubMenuFilterTableViewController.h"
 #import "DirectoryDisplayerProtocol.h"
+#import "RectoServTableViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface DirectoryViewControllerIPad : UIViewController<DirectoryDisplayerProtocol> {

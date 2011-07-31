@@ -64,7 +64,7 @@
 
     NSUInteger count = [[self.managedObjectContext executeFetchRequest:request error:&error] count]; 
     [request autorelease];
-
+    NSLog(@"%d",count);
     if (!error){
         return count;
     }

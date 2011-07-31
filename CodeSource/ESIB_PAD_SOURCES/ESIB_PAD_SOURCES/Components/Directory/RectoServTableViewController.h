@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RectServViewController.h"
+#import "ServRecDAO.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-
-@interface RectoServTableViewController : UITableViewController {
-    
+@interface RectoServTableViewController : UITableViewController<ServRecDAOProtocol,MFMailComposeViewControllerDelegate> {
+    IBOutlet RectServViewController *tmpCell;
+    NSMutableArray *_servRec;
+    UINib *cellNib;
 }
+@property (nonatomic, retain) IBOutlet RectServViewController *tmpCell;
+
+@property (nonatomic, retain) UINib *cellNib;
 
 @end

@@ -10,7 +10,7 @@
 
 
 @implementation RectoServTableViewController
-
+@synthesize tmpCell,cellNib;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -19,7 +19,25 @@
     }
     return self;
 }
-
+-(id)init{
+    self = [super initWithStyle:UITableViewStyleGrouped];
+    if (self) {
+        
+        ServRecDAO * nDAO = [[ServRecDAO alloc] init];
+        [nDAO setDelegate:self];
+        [nDAO getServRec];
+        [nDAO release];
+    }
+    return self;
+    
+}
+-(void) consumeListOfRectorat:(NSArray *)servRecList{
+    if(_servRec)
+        [_servRec release];
+    _servRec = [servRecList retain];
+    [self.tableView reloadData];
+    
+}
 - (void)dealloc
 {
     [super dealloc];
@@ -37,13 +55,12 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.cellNib = [UINib nibWithNibName:@"RectServCell" bundle:nil];
+    [self.tableView setBackgroundView:nil];
+    [self.tableView  setBackgroundView:[[[UIView alloc] init] autorelease]];
+    [self.tableView  setBackgroundColor:[UIColor whiteColor]];   
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
@@ -83,28 +100,32 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [_servRec count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+    RectServViewController *cell = (RectServViewController *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil) {
+        [self.cellNib instantiateWithOwner:self options:nil];
+		cell = tmpCell;
+		self.tmpCell = nil;
+        cell.backgroundView = [[[UIView alloc] init] autorelease];
+        cell.selectedBackgroundView = [[[UIView alloc] init] autorelease];
+	}
     
-    // Configure the cell...
+    ServRectora * a = [_servRec objectAtIndex:[indexPath row]];
+    cell.titre = a.nom;
+    NSString * desc = [[NSString alloc] initWithFormat:@"%@ : %@ %@ %@, Tel: %@",a.responsable,a.titre_resp, a.nom_resp,a.prenom_resp, a.extension];
+    cell.ss_titre = desc;
     
     return cell;
 }
@@ -131,6 +152,9 @@
     }   
 }
 */
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80.0;
+}
 
 /*
 // Override to support rearranging the table view.
@@ -150,16 +174,37 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+   
+    ServRectora * a = [_servRec objectAtIndex:[indexPath row]];
+    NSString* to = a.email;
+    
+    if ([MFMailComposeViewController canSendMail]) {
+                
+        MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+        [[mailComposer navigationBar] setTintColor:[UIColor colorWithRed:0.03f green:0.03f blue:0.03f alpha:1.0f]];
+        mailComposer.mailComposeDelegate = self;
+        
+        [mailComposer setSubject:@"Information rectorat service"];
+        [mailComposer setMessageBody:@"Sent from ESIB@PAD" isHTML:NO];
+        
+        [mailComposer setToRecipients:[NSArray arrayWithObject:to]];
+        [self presentModalViewController:mailComposer animated:YES];
+        [mailComposer release];
+    }
+    else
+        {
+        UIApplication *app = [UIApplication sharedApplication];
+        [app openURL:[NSURL URLWithString:
+                      [NSString stringWithFormat:@"mailto:%@?subject=%@&body=%@",to,@"Information rectorat service",@"Sent from ESIB@PAD"]]];
+        }
+    
+}
+    // Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error 
+{	
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 @end

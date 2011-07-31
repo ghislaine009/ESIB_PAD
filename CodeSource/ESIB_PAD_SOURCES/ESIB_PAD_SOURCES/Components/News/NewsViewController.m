@@ -9,7 +9,7 @@
 #import "NewsViewController.h"
 #import "NewsDAO.h"
 #import "Actualite.h"
-#import "NewsDetail.h"
+#import "RotableUINavController.h"
 #import "NewsCellViewController.h"
 @implementation NewsViewController
 
@@ -29,8 +29,6 @@
     
 
     [[self tableView] reloadData];
-
-
 
 }
 
@@ -92,7 +90,7 @@
     
     [c.view addSubview:webView];
     Actualite * a = [_news objectAtIndex:[indexPath row]];
-    NewsDetail *navController = [[NewsDetail alloc] initWithRootViewController:c];
+    RotableUINavController *navController = [[RotableUINavController alloc] initWithRootViewController:c];
     NSString * url = [[NSString alloc] initWithFormat:@"http://www.usj.edu.lb/actualites/news.php?id=%@",a.idDB];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
     [url release];

@@ -11,7 +11,7 @@
 #import "DirectoryViewControllerIPad.h"
 #import "SettingsViewController.h"
 #import "MapViewController.h"
-
+#import "CalendarViewController.h"
 @implementation MainViewControllerIPad
 
 @synthesize menuView=_menuView;
@@ -55,10 +55,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(didRotate:)
                                                  name:@"UIDeviceOrientationDidChangeNotification" object:nil];
-    
+    [self resizeCenterSubviews];
 }
-- (void) didRotate:(NSNotification *)notification
-{	
+-(void) resizeCenterSubviews{
     UIInterfaceOrientation currentOrientation = [[UIDevice currentDevice] orientation];
     
     if (currentOrientation == UIDeviceOrientationUnknown ||
@@ -66,49 +65,49 @@
 		currentOrientation == UIDeviceOrientationFaceDown){
 		return;
     }
+    
     if( UIDeviceOrientationIsLandscape(currentOrientation)){
-        if([[_centerView subviews] count] > 0){
-            UIView * toResize = [[_centerView subviews]objectAtIndex:0];
-            [UIView animateWithDuration:0.5
-                                  delay:0
-                                options: UIViewAnimationCurveEaseOut
-                             animations:^{
-                                 CGRect r = [_centerView frame];
-                                 r.origin.x = 0;
-                                 r.origin.y = 0;
-                                 r.size.width = 798;
-                                 r.size.height = 602;
-
-                                 toResize.frame= r;
-                             } 
-                             completion:^(BOOL finished){                             
-                                 
-                             }];
-            
+        CGRect r = [_centerView frame];
+       
+        r.size.width = widthLand;
+        r.size.height = heightLand;
+        r.origin.x = 0;
+        r.origin.y = 0;
+        for (UIView * toResize in [_centerView subviews]) {
+            toResize.frame= r;
+            [toResize setNeedsDisplay];
+            [toResize setNeedsLayout];
         }
+        r.origin.x = xCenter;
+        r.origin.y = yCenter;
+        _centerView.frame= r;
+        [_centerView setNeedsDisplay];
+        [_centerView setNeedsLayout];
     }else{
-        if([[_centerView subviews] count] > 0){
-            UIView * toResize = [[_centerView subviews]objectAtIndex:0];
-            [UIView animateWithDuration:0.5
-                                  delay:0
-                                options: UIViewAnimationCurveEaseOut
-                             animations:^{
-                                 CGRect r = [_centerView frame];
-                                 r.origin.x = 0;
-                                 r.origin.y = 0;
-                                 r.size.width = 542;
-                                 r.size.height = 858;
-                                 
-                                 toResize.frame= r;
-                             } 
-                             completion:^(BOOL finished){                             
-                                 
-                             }];
+        CGRect r = [_centerView frame];
+               r.size.width = widthPort;
+        r.size.height = heightPort;
+        r.origin.x = 0;
+        r.origin.y = 0;
+        for (UIView * toResize in [_centerView subviews]) {
+            toResize.frame= r;
+            [toResize setNeedsDisplay];
+            [toResize setNeedsLayout];
             
         }
+        r.origin.x = xCenter;
+        r.origin.y = yCenter;
 
+        _centerView.frame= r;
+        [_centerView setNeedsDisplay];
+        [_centerView setNeedsLayout];
+        
     }
-    //    [[[self view]superview] setNeedsDisplay];
+
+}
+- (void) didRotate:(NSNotification *)notification
+{	
+    [self resizeCenterSubviews];
 }
 
 - (void)unloadModalView{
@@ -189,6 +188,8 @@
         
     }
     [UIView commitAnimations];
+    [self resizeCenterSubviews];
+
     
 
 }
@@ -206,6 +207,10 @@
        [self loadViewControler:controller withTheName:name];
    }else if ([((MenuItem *)name).texte isEqualToString:@"Directory"]) {
        DirectoryViewControllerIPad *controller = [[DirectoryViewControllerIPad alloc] initWithNibName:@"DirectoryViewControllerIPad" bundle:nil];
+       [self loadViewControler:controller withTheName:name];
+   }else if ([((MenuItem *)name).texte isEqualToString:@"Calendar"]) {
+       CalendarViewController *controller = [[CalendarViewController alloc] init];
+       [controller.view sizeToFit];
        [self loadViewControler:controller withTheName:name];
    }
 

@@ -7,7 +7,7 @@
 //
 
 #import "DirectoryViewControllerIPad.h"
-#import "PersonTableViewController.h"
+#import "PersonListViewController.h"
 @implementation DirectoryViewControllerIPad
 
 @synthesize mainMenuFilter,mainChoise,subMenuFilter,backView,contactList,srchBar,loading;
@@ -133,20 +133,35 @@
     [UIView commitAnimations];
         //[subCtrl release];
 }
--(void) displayListOfRectoratServ:(NSArray *)rectoratServ{
+-(void) displayRectoratServ{
     self.srchBar.hidden = YES;
+    RectoServTableViewController * rc = [[RectoServTableViewController alloc] init];
+    rc.tableView = self.contactList;
+    [self.contactList setDelegate:rc];
+    [self.contactList setDataSource:rc];
+    [self.contactList reloadData];
+    [UIView animateWithDuration:0.5
+                          delay:0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         self.contactList.alpha=1;
+                     } 
+                     completion:^(BOOL finished){
+                     }];
+
 }
 -(void) displayListOfPerson:(NSArray *)listOfPerson{
     self.srchBar.text =@"";
     self.srchBar.alpha =1;
     self.contactList.alpha =1;
-    PersonTableViewController * personList = [[PersonTableViewController alloc]init];
+    PersonListViewController * personList = [[PersonListViewController alloc]init];
     personList.persons = [listOfPerson retain];
     personList.tableView = self.contactList;
     personList.searchBar = self.srchBar;
     [self.srchBar setDelegate:personList];
     
-   
+    self.srchBar.hidden = NO;
+
     [personList.view setNeedsDisplay];
     [self.contactList setDelegate:personList];
     [self.contactList setDataSource:personList];

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NewsDetail : UINavigationController {
+@interface RotableUINavController : UINavigationController {
     
 }
 

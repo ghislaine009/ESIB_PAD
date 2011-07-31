@@ -6,10 +6,10 @@
 //  Copyright 2011 HEFR. All rights reserved.
 //
 
-#import "NewsDetail.h"
+#import "RotableUINavController.h"
 
 
-@implementation NewsDetail
+@implementation RotableUINavController
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
         // Return YES for supported orientations

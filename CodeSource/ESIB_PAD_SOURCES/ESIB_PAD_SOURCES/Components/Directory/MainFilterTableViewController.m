@@ -13,7 +13,9 @@
 
 @synthesize listMainMenu,delegate;
 
+
 -(id)init{
+    self = [super initWithStyle:UITableViewStyleGrouped];
     self.listMainMenu = [[NSArray alloc] initWithObjects:@"Rectorship",@"Campus",@"Institution",@"All the direcectory", nil];
     return  self;
 }
@@ -82,7 +84,7 @@
             else
                 [self.delegate displaySubMenu:@"Institution"];
     }else if (indexPath.section == 0){
-          [self.delegate displayListOfRectoratServ:nil];    
+          [self.delegate displayRectoratServ];    
     }
         
 

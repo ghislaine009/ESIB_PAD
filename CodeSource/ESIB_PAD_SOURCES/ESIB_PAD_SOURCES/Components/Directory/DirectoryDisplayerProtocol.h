@@ -13,7 +13,7 @@
 -(void) displayMainMenu;
 -(void) displaySubMenu:(NSString *)SubMenuOption;
 -(void) displayListOfPerson:(NSArray *)listOfPerson;
--(void) displayListOfRectoratServ:(NSArray *)rectoratServ;
+-(void) displayRectoratServ;
 -(void) displayDetailOfPerson:(Person *)Person;
 -(void) displayIsLoadingData:(BOOL) loadingInprogress;
 -(void) displayInformation:(NSString *) title andSubtitle:(NSString *) texte;

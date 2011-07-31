@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainFilterTableViewController.h"
+#import "SubMenuFilterTableViewController.h"
+#import "DirectoryDisplayerProtocol.h"
+#import "RectoServTableViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "PersonListViewController.h"
+@interface DirectoryViewControllerIPhone : UINavigationController<DirectoryDisplayerProtocol> {
+    SubMenuFilterTableViewController *subCtrl;
 
-
-@interface DirectoryViewControllerIPhone : UIViewController {
-    
 }
 
 @end

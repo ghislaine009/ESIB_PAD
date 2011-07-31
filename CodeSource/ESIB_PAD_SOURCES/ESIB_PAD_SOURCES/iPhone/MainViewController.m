@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-
 @implementation MainViewController
 
 @synthesize menuView = _menuView;
@@ -105,6 +104,23 @@
         controller.title=@"News";
         controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         [self presentModalViewController:navController animated:YES];
+        
+        [controller autorelease];
+    } if ([((MenuItem *)src).texte isEqualToString:@"Directory"]) {
+        DirectoryViewControllerIPhone *controller = [[DirectoryViewControllerIPhone alloc]init ];
+            //controller.delegate = self;
+        
+        controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        [self presentModalViewController:controller animated:YES];
+        
+        [controller autorelease];
+    }
+    if ([((MenuItem *)src).texte isEqualToString:@"Calendar"]) {
+        CalendarViewController *controller = [[CalendarViewController alloc]init ];
+            //controller.delegate = self;
+        
+        controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        [self presentModalViewController:controller animated:YES];
         
         [controller autorelease];
     }

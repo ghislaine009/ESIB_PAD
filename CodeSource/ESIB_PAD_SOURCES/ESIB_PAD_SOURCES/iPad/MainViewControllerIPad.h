@@ -10,6 +10,13 @@
 #import "MainMenuIPad.h"
 #import "MenuItemDelegate.h"
 
+#define widthLand 798
+#define xCenter 206
+#define yCenter 121
+
+#define heightLand 602
+#define widthPort 542
+#define heightPort 858
 
 @interface MainViewControllerIPad : UIViewController<MenuItemDelegate> {
     UIView *_crntView;
@@ -27,4 +34,6 @@
  Is responsible to load the corresponding controller of the clicked menu item.
  */
 - (void) menuClicked:(NSObject *)src;
+
+-(void) resizeCenterSubviews;
 @end

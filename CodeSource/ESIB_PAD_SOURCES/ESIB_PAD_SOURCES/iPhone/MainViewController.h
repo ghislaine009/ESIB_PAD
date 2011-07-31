@@ -14,7 +14,8 @@
 #import "MenuItemDelegate.h"
 #import "MapViewController.h"
 #import "NewsViewController.h"
-
+#import "DirectoryViewControllerIPhone.h"
+#import "CalendarViewController.h"
 
 /*!
  @class MainViewController

@@ -73,7 +73,7 @@
 					<object class="IBUIView" id="1048788497">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">308</int>
-						<string key="NSFrame">{{8, 164}, {190, 466}}</string>
+						<string key="NSFrame">{{8, 164}, {190, 465}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="78658645"/>
@@ -103,10 +103,11 @@
 					</object>
 					<object class="IBUIView" id="263392317">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">274</int>
+						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{206, 121}, {798, 602}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
