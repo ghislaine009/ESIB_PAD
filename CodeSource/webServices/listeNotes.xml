@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+	<row>
+		<title>Examen de francçais</title>
+		<anne>1ère</anne>
+		<note>10/20</note>
+		<moyeneClasse>12.4</moyeneClasse>
+		<reussi>1ère</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+	<row>
+		<title>Examen de géo</title>
+		<anne>1ère</anne>
+		<note>9/20</note>
+		<moyeneClasse>12.4</moyeneClasse>
+		<reussi>0</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+	<row>
+		<title>Analysis 1</title>
+		<anne>1ère</anne>
+		<note>10</note>
+		<moyeneClasse>12.4</moyeneClasse>
+		<reussi>1</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+	<row>
+		<title>Analysis 2</title>
+		<anne>1ère</anne>
+		<note>10</note>
+		<moyeneClasse>12.4</moyeneClasse>
+		<reussi>1</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+	<row>
+		<title>Algo génétique 2</title>
+		<note>30/60</note>
+		<anne>2ème</anne>
+		<moyeneClasse>49</moyeneClasse>
+		<reussi>1</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+	<row>
+		<title>Examen de francçais</title>
+		<note>30/60</note>
+		<anne>2ème</anne>
+		<moyeneClasse>49</moyeneClasse>
+		<reussi>1</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+	<row>
+		<title>Examen d'anglais</title>
+		<note>30/60</note>
+		<anne>3ème</anne>
+		<moyeneClasse>49</moyeneClasse>
+		<reussi>1</reussi><!-- 0 = non  ; 1= oui -->
+	</row>
+</data>
