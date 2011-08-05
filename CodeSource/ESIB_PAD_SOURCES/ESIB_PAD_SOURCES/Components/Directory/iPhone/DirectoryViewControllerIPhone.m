@@ -59,9 +59,25 @@
     MainFilterTableViewController * mainMenu = [[MainFilterTableViewController alloc] init];
     
     mainMenu.delegate = self;
+    mainMenu.title =@"Directory";
+    UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom]; 
+        // Set its background image for some states...
+    UIImage *img  = [UIImage imageNamed: @"Home.png"];
+    
+    [button setBackgroundImage:img forState:UIControlStateNormal];  
+        // Add target to receive Action
+    [button addTarget: self action:@selector(unloadModalView) forControlEvents:UIControlEventTouchUpInside]; 
+        // Set frame width, height
+    button.frame = CGRectMake(0, 0, 25, 23); 
+    
+    
+    mainMenu.navigationItem.rightBarButtonItem =[[[UIBarButtonItem alloc] initWithCustomView: button] autorelease];  
+
     [self pushViewController:mainMenu animated:YES];
 }
-
+-(void)unloadModalView{
+    [self dismissModalViewControllerAnimated:YES];
+}
 -(void) displaySubMenu:(NSString *)subMenuOption{
     if(!subCtrl || ![subMenuOption isEqualToString:subCtrl.filterName]){
         if(subCtrl)
@@ -142,6 +158,8 @@
     [loading stopAnimating];
     
 }*/
-
+-(void) displayDetailOfPerson:(Person *)Person{
+    
+}
 
 @end

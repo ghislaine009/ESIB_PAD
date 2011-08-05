@@ -14,5 +14,9 @@
 	<string>YES</string>
 	<key>url</key>
 	<string>http://www.usj.edu.lb/web-services/web-service.php</string>
+	<key>urlLocal</key>
+	<string>http://192.168.1.67/Bachelor/ESIB_PAD/CodeSource/webServices/webServices.php</string>
+	<key>urlOnline</key>
+	<string>http://www.usj.edu.lb/web-services/web-service.php</string>
 </dict>
 </plist>

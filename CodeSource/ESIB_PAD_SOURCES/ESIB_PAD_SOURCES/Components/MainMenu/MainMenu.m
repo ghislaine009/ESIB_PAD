@@ -116,10 +116,10 @@
     [UIView commitAnimations];
 }
 - (void)dealloc
-{   [_menuItems release];
-    _menuItems = nil;
-    [dicMenuItems release];
-    dicMenuItems = nil;
+{   //[_menuItems release];
+    //s_menuItems = nil;
+        //[dicMenuItems release];
+        //dicMenuItems = nil;
     [super dealloc];
 }
 

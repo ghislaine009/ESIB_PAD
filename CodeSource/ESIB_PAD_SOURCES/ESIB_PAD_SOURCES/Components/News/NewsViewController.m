@@ -86,6 +86,7 @@
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
     UIViewController * c = [[UIViewController alloc]init];  
     UIWebView *webView = [[UIWebView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     c.view.autoresizesSubviews = YES;
     
     [c.view addSubview:webView];
@@ -122,18 +123,22 @@
 	
 	static NSString *cellIdentifier = @"News Cell Identifier";
     NewsCellViewController *cell = (NewsCellViewController *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    Actualite * a = [_news objectAtIndex:[indexPath row]];
+
 	if (cell == nil) {
+
         [self.cellNib instantiateWithOwner:self options:nil];
 		cell = tmpCell;
 		self.tmpCell = nil;
         cell.backgroundView = [[[UIView alloc] init] autorelease];
         cell.selectedBackgroundView = [[[UIView alloc] init] autorelease];
+        UIImage * i = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:a.img]]];
+        cell.images = [i autorelease];
+
+
 	}
   
-    Actualite * a = [_news objectAtIndex:[indexPath row]];
 
-    UIImage * i = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:a.img]]];
-    cell.images = [i autorelease];
 	cell.titre = a.titre;
     cell.ss_titre = a.ss_titre;
 

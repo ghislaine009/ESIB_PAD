@@ -222,7 +222,7 @@
             UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:s delegate:self cancelButtonTitle:@"NO" otherButtonTitles:@"YES",nil];
             [s release];
             [alert show];
-            [alert release];
+            [alert autorelease];
         }
              
     }

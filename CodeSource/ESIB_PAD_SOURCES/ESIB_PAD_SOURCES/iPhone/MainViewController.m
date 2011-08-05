@@ -108,8 +108,9 @@
         [controller autorelease];
     } if ([((MenuItem *)src).texte isEqualToString:@"Directory"]) {
         DirectoryViewControllerIPhone *controller = [[DirectoryViewControllerIPhone alloc]init ];
-            //controller.delegate = self;
+
         
+                    //  controller.navigationController.navigationItem.title =@"News";
         controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         [self presentModalViewController:controller animated:YES];
         
@@ -118,12 +119,50 @@
     if ([((MenuItem *)src).texte isEqualToString:@"Calendar"]) {
         CalendarViewController *controller = [[CalendarViewController alloc]init ];
             //controller.delegate = self;
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
         
+        UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom]; 
+            // Set its background image for some states...
+        UIImage *img  = [UIImage imageNamed: @"Home.png"];
+        
+        [button setBackgroundImage:img forState:UIControlStateNormal];  
+            // Add target to receive Action
+        [button addTarget: self action:@selector(unloadModalView) forControlEvents:UIControlEventTouchUpInside]; 
+            // Set frame width, height
+        button.frame = CGRectMake(0, 0, 25, 23); 
+        
+        
+        controller.navigationItem.rightBarButtonItem =[[[UIBarButtonItem alloc] initWithCustomView: button] autorelease];  
+            //  controller.navigationController.navigationItem.title =@"News";
+        controller.title=@"Calendar";
+
         controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        [self presentModalViewController:controller animated:YES];
+        [self presentModalViewController:navController animated:YES];
         
         [controller autorelease];
-    }
+    } if ([((MenuItem *)src).texte isEqualToString:@"Examination"]) {
+        ExamResultTableViewController *controller = [[ExamResultTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        controller.delegate = self;
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+        
+        UIButton *button = [UIButton buttonWithType: UIButtonTypeCustom]; 
+            // Set its background image for some states...
+        UIImage *img  = [UIImage imageNamed: @"Home.png"];
+        
+        [button setBackgroundImage:img forState:UIControlStateNormal];  
+            // Add target to receive Action
+        [button addTarget: self action:@selector(unloadModalView) forControlEvents:UIControlEventTouchUpInside]; 
+            // Set frame width, height
+        button.frame = CGRectMake(0, 0, 25, 23); 
+        
+        
+        controller.navigationItem.rightBarButtonItem =[[[UIBarButtonItem alloc] initWithCustomView: button] autorelease];  
+        controller.title=@"Examination result";
+        controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        [self presentModalViewController:navController animated:YES];
+        
+        [controller autorelease];
+    } 
 }
 
 @end

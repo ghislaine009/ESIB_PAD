@@ -10,16 +10,36 @@
 
 
 @implementation EventOnMapDisplayer
+@synthesize horraire;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+-(void)setHorraire:(Horraires *)newHorraire{
+    horraire = [newHorraire retain];
+    MKMapView * map = [[MKMapView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview: map];
+    map.showsUserLocation=YES;  
+    SettingsDAO * s = [[SettingsDAO alloc] init];
+    
+    if([s.mapType isEqualToString:@"sat"]){
+        [map setMapType:MKMapTypeSatellite];
+    }else{
+        [map setMapType:MKMapTypeStandard];
     }
-    return self;
-}
+    CLLocationCoordinate2D coordinate;
+    coordinate.latitude = [newHorraire.latitude doubleValue];
+    
+    coordinate.longitude = [newHorraire.longitude doubleValue];
+    
+    MapLocations *annotation = [[[MapLocations alloc] initWithName:newHorraire.title description:newHorraire.professeur coordinate:coordinate] autorelease];
+    [map addAnnotation:annotation];
+    [s release];
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(coordinate, 0.5*METERS_PER_MILE_DET, 0.5*METERS_PER_MILE_DET);
+        // 3
+    MKCoordinateRegion adjustedRegion = [map regionThatFits:viewRegion];                
+        // 4
+    [map setRegion:adjustedRegion animated:YES]; 
+    [map release];
 
+}
 - (void)dealloc
 {
     [super dealloc];
@@ -35,10 +55,12 @@
 
 #pragma mark - View lifecycle
 
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
 }
 
 - (void)viewDidUnload

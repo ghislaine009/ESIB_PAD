@@ -60,6 +60,14 @@
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    SettingsDAO * sDao = [[SettingsDAO alloc] init];
+    [sDao loadValues];
+    if(![sDao retenir]){
+        [sDao reset];
+        [sDao save];
+    }
+    [sDao release];
+        
 }
 
 - (void)dealloc

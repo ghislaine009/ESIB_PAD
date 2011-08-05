@@ -44,10 +44,21 @@
 												 selector:@selector(calendarShouldReload:)
 													 name:GCCalendarShouldReloadNotification
 												   object:nil];
-	}
+       	}
 	
 	return self;
 }
+
+
+-(void)swipe:(UISwipeGestureRecognizer *)swipe{
+    
+    if(swipe.direction == UISwipeGestureRecognizerDirectionLeft){
+        [self tomorow];
+    }else if(swipe.direction == UISwipeGestureRecognizerDirectionRight){
+        [self yesterday];   
+    }
+}
+
 - (void)dealloc {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	
@@ -91,6 +102,29 @@
 	
 	[self reloadDayAnimated:NO context:NULL];
 }
+- (void)tomorow {
+ 
+    NSTimeInterval secondsPerDay = 24 * 60 * 60;
+	dayPicker.date = [[[NSDate alloc] initWithTimeInterval:secondsPerDay sinceDate:self.date] autorelease];
+	
+	self.date = dayPicker.date;
+	
+	[[NSUserDefaults standardUserDefaults] setObject:date forKey:@"GCCalendarDate"];
+	
+	[self reloadDayAnimated:YES context:[NSNumber numberWithInt:-secondsPerDay]];
+   
+}
+- (void)yesterday {
+    NSTimeInterval secondsPerDay = 24 * 60 * 60;
+	dayPicker.date = [[[NSDate alloc] initWithTimeInterval:(-1 *secondsPerDay) sinceDate:self.date] autorelease];
+	
+	self.date = dayPicker.date;
+	
+	[[NSUserDefaults standardUserDefaults] setObject:date forKey:@"GCCalendarDate"];
+
+	[self reloadDayAnimated:YES context:[NSNumber numberWithInt:secondsPerDay]];
+}
+
 - (void)add {
 	if (delegate != nil) {
 		[delegate calendarViewAddButtonPressed:self];
@@ -163,6 +197,15 @@
 -(void) viewDidLoad{
     [super viewDidLoad];
     [self today];
+    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    [dayView addGestureRecognizer:swipeGesture];
+    
+    [swipeGesture release];
+    
+    UISwipeGestureRecognizer *swipeGestureLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeGestureLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [dayView addGestureRecognizer:swipeGestureLeft];
 
     /* NSTimeInterval secondsPerDay = 24 * 60 * 60;
     NSDate *tomorrow = [[NSDate alloc]
@@ -176,6 +219,7 @@
 	[self reloadDayAnimated:YES context:[NSNumber numberWithInt:secondsPerDay]];
     [tomorrow release];
     [dayView reloadData];*/
+    [swipeGestureLeft release];
 
     
 }
@@ -236,6 +280,7 @@
 		}
 		nextDayView.frame = dayView.frame;
 		dayView.frame = finalFrame;
+    
 		[UIView commitAnimations];
 	}
 	else {
@@ -245,6 +290,7 @@
 		dayView.contentOffset = contentOffset;
               
 	}
+
 }
 - (void)animationDidStop:(NSString *)animationID 
 				finished:(NSNumber *)finished 
@@ -258,9 +304,19 @@
 	// reassign variables
 	self.dayView = nextDayView;
 	
+    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    [dayView addGestureRecognizer:swipeGesture];
+    
+    
+    UISwipeGestureRecognizer *swipeGestureLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeGestureLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [dayView addGestureRecognizer:swipeGestureLeft];
 	// release pointers
 	[nextDayView release];
-	
+    [swipeGesture release];
+    [swipeGestureLeft release];
+
 	// reset pickers
 	dayPicker.userInteractionEnabled = YES;
 }

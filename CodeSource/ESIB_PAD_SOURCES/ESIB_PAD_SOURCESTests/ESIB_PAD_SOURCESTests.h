@@ -9,13 +9,11 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "SettingsDAO.h"
 #import "CampusDAO.h"
-#import "NewsDAO.h"
 #import "Actualite.h"
 #import "Campus.h"
-#import "MapDisplayerDelegate.h"
-#import "NewsDisplayerProtocol.h"
+#import "NewsDAO.h"
 
-@interface ESIB_PAD_SOURCESTests : SenTestCase <MapDisplayerDelegate,UIAlertViewDelegate,NewsDisplayerProtocol>{
+@interface ESIB_PAD_SOURCESTests : SenTestCase <CampusDAOProtocol,UIAlertViewDelegate,NewsDADProtocol>{
 @private
     NSArray * persons ;
     NSArray * salles ;
@@ -28,8 +26,6 @@
     BOOL finishAsyncOperation;
 
 }
--(void)aMethod:(id)param;
--(void)viewAlert:(id)param;
 
 -(void) waitForEnableConnection;
 

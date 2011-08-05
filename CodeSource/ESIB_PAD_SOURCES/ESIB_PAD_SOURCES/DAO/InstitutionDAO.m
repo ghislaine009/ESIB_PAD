@@ -25,7 +25,7 @@
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus = %@)", domaineCode]; 
     self.crntListOfObject = nil;
     self.predicateForReturnValue = @"(campus = %@)";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineCode, nil] autorelease];
+    self.arrgumentPredicate = [NSArray arrayWithObjects:domaineCode, nil];
     
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
@@ -73,7 +73,6 @@
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     

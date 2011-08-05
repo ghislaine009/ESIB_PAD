@@ -7,10 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GenericDAO.h"
+#import "ExamResult.h"
 
+@protocol ExamResultDAOProtocol 
+-(void) displayExamResult: (NSArray *)listOfExam;
+@end
 
 @interface ExamResultDAO : GenericDAO {
     
 }
+@property (retain)  id<ExamResultDAOProtocol> delegate;
 
+- (void)getExamResult;
 @end
+
+
+
+
+
+

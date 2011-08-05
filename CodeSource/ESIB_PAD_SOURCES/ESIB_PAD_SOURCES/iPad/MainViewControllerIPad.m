@@ -12,6 +12,7 @@
 #import "SettingsViewController.h"
 #import "MapViewController.h"
 #import "CalendarViewController.h"
+#import "ExamResultTableViewController.h"
 @implementation MainViewControllerIPad
 
 @synthesize menuView=_menuView;
@@ -71,6 +72,12 @@
        
         r.size.width = widthLand;
         r.size.height = heightLand;
+      
+        r.origin.x = xCenter;
+        r.origin.y = yCenter;
+        _centerView.frame= r;
+        [_centerView setNeedsDisplay];
+        [_centerView setNeedsLayout];
         r.origin.x = 0;
         r.origin.y = 0;
         for (UIView * toResize in [_centerView subviews]) {
@@ -78,15 +85,16 @@
             [toResize setNeedsDisplay];
             [toResize setNeedsLayout];
         }
-        r.origin.x = xCenter;
-        r.origin.y = yCenter;
-        _centerView.frame= r;
-        [_centerView setNeedsDisplay];
-        [_centerView setNeedsLayout];
     }else{
         CGRect r = [_centerView frame];
                r.size.width = widthPort;
         r.size.height = heightPort;
+              r.origin.x = xCenter;
+        r.origin.y = yCenter;
+
+        _centerView.frame= r;
+        [_centerView setNeedsDisplay];
+        [_centerView setNeedsLayout];
         r.origin.x = 0;
         r.origin.y = 0;
         for (UIView * toResize in [_centerView subviews]) {
@@ -95,13 +103,7 @@
             [toResize setNeedsLayout];
             
         }
-        r.origin.x = xCenter;
-        r.origin.y = yCenter;
 
-        _centerView.frame= r;
-        [_centerView setNeedsDisplay];
-        [_centerView setNeedsLayout];
-        
     }
 
 }
@@ -212,6 +214,10 @@
        CalendarViewController *controller = [[CalendarViewController alloc] init];
        [controller.view sizeToFit];
        [self loadViewControler:controller withTheName:name];
+   }else if ([((MenuItem *)name).texte isEqualToString:@"Examination"]) {
+       ExamResultTableViewController *controller = [[ExamResultTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+       [self loadViewControler:controller withTheName:name];
+       controller.view.autoresizingMask = UIViewAutoresizingNone;
    }
 
 }

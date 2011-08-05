@@ -50,4 +50,7 @@
 @property (nonatomic, assign) BOOL hasAddButton;
 - (void)reloadDayAnimated:(BOOL)animated context:(void *)context;
 - (void)resize;
+-(void) tomorow;
+-(void)yesterday;
+
 @end

@@ -52,6 +52,7 @@
          [self finishLoadingNews];
         [alert show];
         [alert release];
+         [hostReach release];
         return;
     }
     
@@ -63,12 +64,13 @@
     self.afterLoading = @selector(finishLoadingNews);
     self.predicateForReturnValue=@"";
     [self addToCache:self.postParam];
+    [hostReach release];
+
     return;
 }
 
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    [self deleteFromCacheWithPredicates:nil];
 
         // NSString * recivedDataText = [NSString stringWithUTF8String:[receivedData bytes]];
     
@@ -76,14 +78,16 @@
     NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
     [parseur setDelegate: self];
     if([parseur parse] == NO){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings. The displaed data are those in cache." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
         [alert release];
         
+    }else{
+        [self deleteFromCacheWithPredicates:nil];
+        [parseur parse] ;
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     

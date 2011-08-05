@@ -9,11 +9,15 @@
 #import "CalendarViewController.h"
 #define xCenter 0
 #define yCenter 0
-
 #define widthLand 798
 #define heightLand 602
 #define widthPort 542
 #define heightPort 858
+
+#define widthLandiPHone 480
+#define heightLandiPHone 252
+#define widthPortiPHone 320
+#define heightPortiPHone 402
 
 
 @implementation CalendarViewController
@@ -37,32 +41,35 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
+-(void) dataLoadedFromInternet{
+    calendar= [[GCCalendarPortraitView alloc] init] ;
+    
+	calendar.dataSource = self;
+    calendar.delegate = self;
+    
+    self.view = calendar.view;
+    calendar.view.frame = self.view.frame;
+    self.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(didRotate:)
+                                                     name:@"UIDeviceOrientationDidChangeNotification" object:nil];
+        [self resizeCenterSubviews];
+    
+    
+    
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    calendar= [[GCCalendarPortraitView alloc] init] ;
-
-	calendar.dataSource = self;
-    calendar.delegate = self;
-
-    self.view = calendar.view;
-    calendar.view.frame = self.view.frame;
-    self.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(didRotate:)
-                                                 name:@"UIDeviceOrientationDidChangeNotification" object:nil];
-       
-    [self resizeCenterSubviews];
-
+    if(!hDao)
+        hDao = [[HorraireDAO alloc] init];
+    hDao.delegate = self;
+    [hDao loadHorraire];
+ 
+    
 }
 -(void) resizeCenterSubviews{
     UIInterfaceOrientation currentOrientation = [[UIDevice currentDevice] orientation];
@@ -75,10 +82,15 @@
     UIView *_centerView = calendar.view;
     if( UIDeviceOrientationIsLandscape(currentOrientation)){
         CGRect r = [_centerView frame];
+        if(![[[UIDevice currentDevice] model]isEqualToString:@"iPhone"] && ! [[[UIDevice currentDevice] model]isEqualToString:@"iPhone Simulator" ]){
         r.origin.x = xCenter;
         r.origin.y = yCenter;
         r.size.width = widthLand;
-        r.size.height = heightLand;
+                r.size.height = heightLand;
+        }else{
+            r.size.width = widthLandiPHone;
+            r.size.height= heightLandiPHone;
+        }
         [_centerView setFrame:r];
         [_centerView setNeedsDisplay];
         [_centerView setNeedsLayout];
@@ -86,10 +98,15 @@
     }else{
         
         CGRect r = [_centerView frame];
-        r.origin.x = xCenter;
-        r.origin.y = yCenter;
-        r.size.width = widthPort;
-        r.size.height = heightPort;
+        if(![[[UIDevice currentDevice] model]isEqualToString:@"iPhone"] && ! [[[UIDevice currentDevice] model]isEqualToString:@"iPhone Simulator" ]){
+            r.origin.x = xCenter;
+            r.origin.y = yCenter;
+            r.size.width = widthPort;
+            r.size.height = heightPort;
+        }else{
+            r.size.width = widthPortiPHone;
+            r.size.height= heightPortiPHone;
+        }
         [_centerView setFrame:r];
         [_centerView setNeedsDisplay];
         [_centerView setNeedsLayout];    
@@ -114,76 +131,82 @@
 
 #pragma mark GCCalendarDataSource
 - (NSArray *)calendarEventsForDate:(NSDate *)date {
+
 	NSMutableArray *events = [NSMutableArray array];
 	
-	NSDateComponents *components = [[NSCalendar currentCalendar] components:
-									(NSWeekdayCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSYearCalendarUnit)
-																   fromDate:date];
-	[components setSecond:0];
-    
-        // create 5 calendar events that aren't all day events
-	for (NSInteger i = 0; i < 5; i++) {
-		GCCalendarEvent *event = [[GCCalendarEvent alloc] init];
-		event.color = [[GCCalendar colors] objectAtIndex:i];
+    NSDateComponents *dayComponent = [[NSCalendar currentCalendar] components:
+                                      (NSWeekdayCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSYearCalendarUnit)
+                                                                     fromDate:date];
+	[dayComponent setSecond:0];
+
+    NSArray* result = [[hDao getHorraireForDate:date] retain];
+
+    for (Horraires * h in result) {
+        GCCalendarEvent *event = [[GCCalendarEvent alloc] init];
 		event.allDayEvent = NO;
-		event.eventName = [event.color capitalizedString];
-		event.eventDescription = event.eventName;
-		
-		[components setHour:12 + i];
-		[components setMinute:0];
-		
-		event.startDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-		
-		[components setMinute:50];
-		
-		event.endDate = [[NSCalendar currentCalendar] dateFromComponents:components];
+		event.eventName = [h.title capitalizedString];
+        event.userInfo = h;
+		event.eventDescription = [NSString stringWithFormat:@"%@ %@",h.professeur,h.extension];
+		NSCalendar *calendarBegin = [NSCalendar currentCalendar];
+        NSLog(@"Debut event :%@", [h.begin description]);
+        NSDateComponents *components = [calendarBegin components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:h.begin];
+        
+        int weekday = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:date] weekday];    
+        weekday = (weekday-2);
+        if (weekday ==-1){
+            weekday =6;
+        } 
+
+        
+        event.color = [[GCCalendar colors] objectAtIndex:weekday];
+        NSInteger hour = [components hour];
+        NSInteger minute = [components minute];
+        [dayComponent setHour:hour];
+		[dayComponent setMinute:minute];
+        
+		event.startDate = [[NSCalendar currentCalendar] dateFromComponents:dayComponent];
+		components = [calendarBegin components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:h.end];
+		[dayComponent setHour:[components hour]];
+		[dayComponent setMinute:[components minute]];		
+        
+		event.endDate = [[NSCalendar currentCalendar] dateFromComponents:dayComponent];
 		
 		[events addObject:event];
-        event = [[GCCalendarEvent alloc] init];
-		event.color = [[GCCalendar colors] objectAtIndex:i+1];
-		event.allDayEvent = NO;
-		event.eventName = [event.color capitalizedString];
-		event.eventDescription = event.eventName;
-		
-		[components setHour:12 + i];
-		[components setMinute:0];
-		
-		event.startDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-		
-		[components setMinute:20];
-		
-		event.endDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-
-        [events addObject:event];
-
-		[event release];
-	}
-    
-    
-	GCCalendarEvent *evt = [[GCCalendarEvent alloc] init];
-	evt.color = [[GCCalendar colors] objectAtIndex:1];
-	evt.allDayEvent = NO;
-	evt.eventName = @"Test event";
-	evt.eventDescription = @"Description for test event. This is intentionnaly too long to stay on a single line.";
-	[components setHour:18];
-	[components setMinute:0];
-	evt.startDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-	[components setHour:20];
-	evt.endDate = [[NSCalendar currentCalendar] dateFromComponents:components];
-	[events addObject:evt];
-	[evt release];
-	
-   
-	
+        [event release];
+    }
+	[result release];
 	return events;
 }
 
 #pragma mark GCCalendarDelegate
 - (void)calendarTileTouchedInView:(GCCalendarView *)view withEvent:(GCCalendarEvent *)event {
-	NSLog(@"Touch event %@", event.eventName);
+    EventOnMapDisplayer * eDisp = [[EventOnMapDisplayer alloc] init];
+    eDisp.view.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+    
+    RotableUINavController *navController = [[RotableUINavController alloc] initWithRootViewController:eDisp];
+    [eDisp setHorraire:event.userInfo];
+
+
+    navController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    if(![[[UIDevice currentDevice] model]isEqualToString:@"iPhone"] && ! [[[UIDevice currentDevice] model]isEqualToString:@"iPhone Simulator" ]){
+        navController.modalPresentationStyle = UIModalPresentationPageSheet;
+    }
+    [self presentModalViewController:navController animated:YES];
+    navController.navigationBar.tintColor = [UIColor colorWithRed:26/255.0 green:99/255.0 blue:140/255.0 alpha:1.0];
+    eDisp.title =@"Calendar evnet localisation.";
+    UIBarButtonItem *b = [[UIBarButtonItem alloc ]initWithTitle:@"Calendrier" style:UIBarButtonSystemItemPlay target:self action:@selector(back)];
+    eDisp.navigationItem.leftBarButtonItem = b;
+    [navController.view sizeToFit];
+    [eDisp release];
+
+
+    [navController release];
 }
-- (void)calendarViewAddButtonPressed:(GCCalendarView *)view {
-	NSLog(@"%s", __PRETTY_FUNCTION__);
+-(void)calendarViewAddButtonPressed:(GCCalendarView *)view{
+    
+}
+-(void) back{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 

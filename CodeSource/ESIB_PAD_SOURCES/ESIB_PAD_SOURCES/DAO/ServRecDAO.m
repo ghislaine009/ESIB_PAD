@@ -54,7 +54,6 @@
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     

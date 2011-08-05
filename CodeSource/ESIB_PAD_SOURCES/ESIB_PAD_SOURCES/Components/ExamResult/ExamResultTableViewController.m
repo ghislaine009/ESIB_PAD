@@ -10,6 +10,7 @@
 
 
 @implementation ExamResultTableViewController
+@synthesize delegate,cellNib,tmpCell;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -19,7 +20,30 @@
     }
     return self;
 }
+-(void) displayExamResult: (NSArray *)listOfExam{
 
+    if(!sections)
+        sections = [[NSMutableArray alloc] init];
+    NSArray * sectitionTitle =  [listOfExam valueForKeyPath:@"@distinctUnionOfObjects.anne"];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"self" ascending:YES];
+    
+    NSArray * descriptors = [NSArray arrayWithObject:sort];
+    NSArray * sectitionTitleSorted =  [sectitionTitle sortedArrayUsingDescriptors:descriptors];
+    for (NSString * s in sectitionTitleSorted) {
+        NSPredicate *childPred = [NSPredicate predicateWithFormat:@"anne isEqualToString: %@",s];
+        NSArray *child = [listOfExam filteredArrayUsingPredicate:childPred];
+        [sections addObject:child];
+    }
+   
+    if(_ExamResult)
+        [_ExamResult release];
+    _ExamResult = listOfExam;
+
+    [[self tableView] reloadData];
+    [sort release];
+    
+}
 - (void)dealloc
 {
     [super dealloc];
@@ -37,14 +61,17 @@
 
 - (void)viewDidLoad
 {
+    ExamResultDAO * nDAO = [[ExamResultDAO alloc] init];
+    [nDAO setDelegate:self];
+    [nDAO getExamResult];
+    [nDAO release];
+    self.cellNib = [UINib nibWithNibName:@"ExameCell" bundle:nil];
+    [self.tableView setBackgroundView:nil];
+    [self.tableView  setBackgroundView:[[[UIView alloc] init] autorelease]];
+    [self.tableView  setBackgroundColor:[UIColor whiteColor]];   
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 
 - (void)viewDidUnload
 {
@@ -76,90 +103,54 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
-#pragma mark - Table view data source
+#pragma mark Table View methods
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [[[sections objectAtIndex:section] objectAtIndex:0] valueForKey:@"anne"];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return [sections count];
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger) section {
+	return [[sections objectAtIndex:section ] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+        // UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    return  71;
+}
+
+-(void) back{
+    [self dismissModalViewControllerAnimated:YES];
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *cellIdentifier = @"News Cell Identifier";
+    ExamResultCellController *cell = (ExamResultCellController *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    ExamResult * a = [[sections objectAtIndex:indexPath.section ] objectAtIndex:[indexPath row]];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+	if (cell == nil) {
+        
+        [self.cellNib instantiateWithOwner:self options:nil];
+		cell = tmpCell;
+		self.tmpCell = nil;
+       
+	}
     
-    // Configure the cell...
+    
+	cell.titre = a.title;
+    cell.ss_titre = a.note;
+    cell.reussi = a.reussi;
+    cell.moyene = a.moyeneClassee;
     
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
-}
 
 @end
+

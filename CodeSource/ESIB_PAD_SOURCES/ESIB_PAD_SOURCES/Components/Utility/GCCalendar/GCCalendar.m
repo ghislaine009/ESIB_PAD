@@ -65,7 +65,7 @@ static NSDateFormatter *timeFormatter = nil;
 #pragma mark color list
 + (NSArray *)colors {
 	if (colors == nil) {
-		colors = [[NSArray arrayWithObjects:@"BLUE", @"GREEN", @"ORANGE", @"MAGENTA", @"PURPLE", @"RED", @"YELLOW", nil] retain];
+		colors = [[NSArray arrayWithObjects:@"BLUE", @"GREEN", @"ORANGE", @"MAGENTA", @"PURPLE", @"RED", @"GREEN", nil] retain];
 	}
 	
 	return colors;

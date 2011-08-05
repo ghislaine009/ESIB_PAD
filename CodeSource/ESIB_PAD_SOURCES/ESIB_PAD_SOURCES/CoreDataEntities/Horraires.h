@@ -19,7 +19,7 @@
 @property (nonatomic, retain) NSNumber * dayOfTheWeek;
 @property (nonatomic, retain) NSDate * begin;
 @property (nonatomic, retain) NSDate * end;
-@property (nonatomic, retain) NSString * pofesseur;
+@property (nonatomic, retain) NSString * professeur;
 @property (nonatomic, retain) NSString * extension;
 @property (nonatomic, retain) NSNumber * longitude;
 @property (nonatomic, retain) NSString * lieu;

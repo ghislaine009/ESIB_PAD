@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SettingsDAO.h"
 
 @interface ESIB_PAD_SOURCESAppDelegate : NSObject <UIApplicationDelegate> {
 

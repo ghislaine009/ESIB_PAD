@@ -25,7 +25,7 @@
     self.crntListOfObject = nil;
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus = %@)", domaineName]; 
     self.predicateForReturnValue = @"(campus = %@)";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineName, nil] autorelease];
+    self.arrgumentPredicate = [NSArray arrayWithObjects:domaineName, nil] ;
     InstitutionDAO * institutionAcces = [[InstitutionDAO alloc] init];
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
     if([institutionAcces numberEntityInCacheWithPredicates:onlyDomaine]!=0){
@@ -48,11 +48,11 @@
         [self deleteFromCacheWithPredicates: onlyDomaine];
         self.afterLoading = @selector(finishLoadingPersonWithLocalisationForDomaine);
         [self addToCache:self.postParam];
-        return;
     }else{
         [self getDataFromCacheWithPredicates:onlyDomaine];
         [self finishLoadingPersonWithLocalisationForDomaine];
     }
+    [institutionAcces release];
 
 }
 - (void)getPersonsWithLocalisationForDomaine:(NSString*)domaineName{
@@ -61,7 +61,7 @@
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus = %@)", domaineName]; 
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(campus = %@ AND latitude != %d)",domaineName,0];  
     self.predicateForReturnValue = @"(campus = %@ AND latitude != %@)";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineName,@"0", nil] autorelease];
+    self.arrgumentPredicate = [NSArray arrayWithObjects:domaineName,@"0", nil]  ;
   
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
@@ -86,7 +86,7 @@
     NSPredicate * onlyInst =  [NSPredicate predicateWithFormat:@"(Institution = %@)", instCode]; 
   
     self.predicateForReturnValue = @"Institution = %@ ";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:instCode, nil] autorelease];
+    self.arrgumentPredicate = [NSArray arrayWithObjects:instCode, nil] ;
     
     int crntCount = [self numberEntityInCacheWithPredicates:onlyInst];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
@@ -116,7 +116,6 @@
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     

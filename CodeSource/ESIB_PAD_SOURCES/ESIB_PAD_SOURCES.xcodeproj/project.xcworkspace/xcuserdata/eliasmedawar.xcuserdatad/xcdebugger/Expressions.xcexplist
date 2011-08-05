@@ -10,5 +10,25 @@
             </expression>
          </expressions>
       </StackState>
+      <StackState
+         stackFrameDescription = "-[HorraireDAO parser:didEndElement:namespaceURI:qualifiedName:]:HorraireDAO.m">
+         <expressions>
+         </expressions>
+      </StackState>
+      <StackState
+         stackFrameDescription = "-[GCCalendarPortraitView viewDidLoad]:GCCalendarPortraitView.m">
+         <expressions>
+         </expressions>
+      </StackState>
+      <StackState
+         stackFrameDescription = "-[CalendarViewController calendarEventsForDate:]:CalendarViewController.m">
+         <expressions>
+         </expressions>
+      </StackState>
+      <StackState
+         stackFrameDescription = "-[ExamResultTableViewController displayExamResult:]:ExamResultTableViewController.m">
+         <expressions>
+         </expressions>
+      </StackState>
    </StackStates>
 </VariablesStackState>

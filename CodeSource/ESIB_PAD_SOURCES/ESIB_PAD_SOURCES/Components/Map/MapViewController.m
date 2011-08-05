@@ -55,9 +55,10 @@
         [self.map setMapType:MKMapTypeStandard];
 
     }
-   
+    [s release];
     [loading stopAnimating];
-    [self.crntCampus.intValue:(int)-1];
+
+    self.crntCampus = [NSNumber numberWithInt: -1];
 } 
 - (void)viewDidUnload
 {
@@ -441,6 +442,8 @@
     /* et voilà ! on retourne la toute nouvelle MKAnnotationView à notre map */
     return annotationView;
 }
-
+-(void)openSearchDialog:(id)sender{
+    
+}
 
 @end

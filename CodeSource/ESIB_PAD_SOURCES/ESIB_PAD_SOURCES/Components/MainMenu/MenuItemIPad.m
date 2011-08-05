@@ -15,7 +15,7 @@
     if (self) {
         CGRect frameBt = CGRectMake(7, 0, 64, 64);
         [_btn setFrame:frameBt]; 
-        frameBt = CGRectMake(79,25,79, 20);
+        frameBt = CGRectMake(79,25,99, 20);
         [_label setFrame:frameBt]; 
         _label.textAlignment = UITextAlignmentLeft;
         [self layoutSubviews];

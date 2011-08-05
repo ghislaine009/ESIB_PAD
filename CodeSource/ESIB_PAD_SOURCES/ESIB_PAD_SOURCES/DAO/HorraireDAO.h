@@ -8,17 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "GenericDAO.h"
-
+#import "Horraires.h"
 @protocol HorraireDAOProtocol 
--(void) dataLoadedFromInternt;
+-(void) dataLoadedFromInternet;
 @end
 
 @interface HorraireDAO : GenericDAO {
-    
 }
 @property (retain)  id<HorraireDAOProtocol> delegate;
 
--(void)loadHorraireForDate;
+-(void)loadHorraire;
 
 -(NSArray *) getHorraireForDate:(NSDate *) date;
 @end

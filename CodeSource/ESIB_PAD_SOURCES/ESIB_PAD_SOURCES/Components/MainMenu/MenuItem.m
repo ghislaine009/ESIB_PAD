@@ -22,7 +22,7 @@
         _btn.frame = CGRectMake(15, 0, 64, 64);
         [_btn addTarget:self action:@selector(btnCliked:) forControlEvents:(UIControlEvents)UIControlEventTouchDown];
         _label = [[UILabel alloc]init];
-        _label.frame = CGRectMake(8,68,79, 20);
+        _label.frame = CGRectMake(0,68,99, 20);
         _label.textAlignment = UITextAlignmentCenter;
         _label.textColor =[UIColor whiteColor];
         _label.backgroundColor = [UIColor clearColor];

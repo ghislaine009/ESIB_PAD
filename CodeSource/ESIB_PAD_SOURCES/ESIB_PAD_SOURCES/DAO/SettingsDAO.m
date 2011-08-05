@@ -68,12 +68,9 @@
 
     NSArray *array;
     array = [NSArray arrayWithContentsOfFile:pathFoUpdateTable];
-    if(!array) {
-        array = [[NSMutableArray alloc] init];
-    } else {
+    if(array) {
         self.listOfUpdatedTime = [[NSMutableArray alloc] initWithArray:array];
-    };
-    
+    }
     [plistDict release];
 
 }

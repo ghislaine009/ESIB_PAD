@@ -7,10 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuItemDelegate.h"
+#import "ExamResultDAO.h"
+#import "ExamResultCellController.h"
 
+@interface ExamResultTableViewController : UITableViewController<ExamResultDAOProtocol> {
+    IBOutlet ExamResultCellController *tmpCell;
+    NSArray *_ExamResult;
+    NSMutableArray * sections;
 
-@interface ExamResultTableViewController : UITableViewController {
-    
+    UINib *cellNib;
+
 }
 
+@property (nonatomic, retain) ExamResultCellController *tmpCell;
+@property (nonatomic, assign) id <MenuItemDelegate> delegate;
+@property (nonatomic, retain) UINib *cellNib;
+
 @end
+
+
+
+
+

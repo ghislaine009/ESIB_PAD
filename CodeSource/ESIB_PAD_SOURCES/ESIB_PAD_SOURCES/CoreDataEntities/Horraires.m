@@ -16,7 +16,7 @@
 @dynamic dayOfTheWeek;
 @dynamic begin;
 @dynamic end;
-@dynamic pofesseur;
+@dynamic professeur;
 @dynamic extension;
 @dynamic longitude;
 @dynamic lieu;

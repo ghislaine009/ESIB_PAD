@@ -11,9 +11,9 @@
 @class SearchOnMapTableViewController;
 @interface OverlayViewController : UIViewController {
 
-	SearchOnMapTableViewController * rvController;
+	UIViewController * rvController;
 }
 
-@property (nonatomic, retain) SearchOnMapTableViewController * rvController;
+@property (nonatomic, retain) UIViewController * rvController;
 
 @end

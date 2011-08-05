@@ -14,7 +14,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	
-	[rvController doneSearching_Clicked:nil];
+        //[rvController doneSearching_Clicked:nil];
 }
 
 - (void)didReceiveMemoryWarning {

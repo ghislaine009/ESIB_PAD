@@ -29,7 +29,7 @@
     int crntCount =0;
     if(onlyCampusWithGPS){
         self.predicateForReturnValue = @"(latitude != %@)";  
-        self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
+        [self setArrgumentPredicate:[[NSArray arrayWithObjects:@"0", nil] autorelease]];
         crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
     }else{
        crntCount = [self numberEntityInCacheWithPredicates:nil];     
@@ -51,7 +51,10 @@
 
     [self.set loadValues];
     self.predicateForReturnValue = @"(latitude != %d)";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:@"0", nil] autorelease];
+    NSArray * r = [NSArray arrayWithObjects:@"0", nil];
+    self.arrgumentPredicate =  r ;
+   
+    
     int crntCount = [self numberEntityInCacheWithPredicates:[NSPredicate predicateWithFormat:@"(latitude != %d)", 0]];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                  self.set.login,self.set.pasword,@"listeCampus"]; 
@@ -81,7 +84,6 @@
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     [self.managedObjectContext updatedObjects];    

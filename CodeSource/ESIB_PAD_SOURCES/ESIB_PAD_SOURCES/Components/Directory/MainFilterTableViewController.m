@@ -44,7 +44,7 @@
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 3;
+	return 2;
 }
 
 /*

@@ -10,7 +10,22 @@
 
 
 @interface ExamResultCellController : UITableViewCell {
-    
+    IBOutlet UILabel * titreLbl;
+    NSString * titre;
+    NSString * moyene;
+
+    NSString * ss_titre;
+    NSNumber * reussi;
+    IBOutlet UILabel * ss_titreLbl;
+    IBOutlet UILabel * moyenLbl;
+
 }
+
+@property(nonatomic,retain)  NSNumber * reussi;
+@property(nonatomic,retain)  NSString * titre;
+@property(nonatomic,retain)  NSString * ss_titre;
+@property(nonatomic,retain)  NSString * moyene;
+
+
 
 @end

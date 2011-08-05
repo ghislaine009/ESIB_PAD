@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import <MapKit/MapKit.h>
+#import "SettingsDAO.h"
+#import "Horraires.h"
+#import "MapLocations.h"
+
+#define METERS_PER_MILE_DET 2000
 
 @interface EventOnMapDisplayer : UIViewController {
-    
+    MKMapView *_map;
+    Horraires * horraire;
 }
+@property (nonatomic, retain)  Horraires *horraire;
 
 @end

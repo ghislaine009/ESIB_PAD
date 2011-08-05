@@ -147,6 +147,7 @@
                          self.contactList.alpha=1;
                      } 
                      completion:^(BOOL finished){
+                         [rc release];
                      }];
 
 }
@@ -168,7 +169,7 @@
     [self.contactList beginUpdates];
     [self.contactList deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
     [self.contactList insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
-    [self.contactList endUpdates];   
+    [self.contactList endUpdates];
 }
 -(void) displayIsLoadingData:(BOOL) loadingInprogress{
     if(loadingInprogress)
@@ -229,6 +230,8 @@
 {
     // Return YES for supported orientations
 	return YES;
+}
+-(void)displayDetailOfPerson:(Person *)Person{
 }
 
 @end

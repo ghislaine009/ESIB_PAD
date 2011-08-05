@@ -26,6 +26,14 @@
 - (void)dealloc
 {
     [_crntElementName release];
+    [arrgumentPredicate release];
+    
+    [_entityDescription release];
+    [_managedObjectContext release];
+    [_crntSalle release];
+    [receivedData release];
+    [_crntListOfObject release];
+    [crntCharacters release];
     [postParam release];
     [set release];
     [super dealloc];
@@ -91,7 +99,7 @@
         [alert show];
         [alert release];
         alert = nil;
-
+        [hostReach release];
         return;
     }
 
@@ -107,6 +115,7 @@
     if (connection) { 
         receivedData = [[NSMutableData data] retain];
     } 
+    [hostReach release];
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{

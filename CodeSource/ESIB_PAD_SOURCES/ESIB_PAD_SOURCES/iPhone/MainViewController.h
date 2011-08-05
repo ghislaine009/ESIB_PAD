@@ -16,7 +16,7 @@
 #import "NewsViewController.h"
 #import "DirectoryViewControllerIPhone.h"
 #import "CalendarViewController.h"
-
+#import "ExamResultTableViewController.h"
 /*!
  @class MainViewController
  @abstract The main view controller of the IPhone view.

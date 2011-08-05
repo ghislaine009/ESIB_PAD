@@ -51,7 +51,7 @@
     NSLog(@"Loading async the campus data from internet");
     finishAsyncOperation = NO;
     dataRecieved = NO;
-    [cDao getCampusListAndDisplay];
+    [cDao getCampusAndDisplayOnMap];
 
     NSDate *someSecondsFromNow = [NSDate dateWithTimeIntervalSinceNow:2.0];
     while(!finishAsyncOperation){
@@ -141,7 +141,7 @@
 -(void) displaySalleOnMap:(Salle *)salle{
     
 }
--(void) displayListOfCampus:(NSArray *)campusArray{
+-(void) displayAllCampusOnMap:(NSArray *)campusArray{
     if(dataRecieved){
         listSeconCall = campusArray;     
         finishAsyncOperation =YES;
@@ -156,12 +156,13 @@
 
         CampusDAO * cDao = [[CampusDAO alloc ]init];
         cDao.delegate = self;
-        [cDao getCampusListAndDisplay];
+        [cDao getCampusAndDisplayOnMap];
     }
 }
--(void) displayAllCampusOnMap:(NSArray *)campusArray{
-}
 
+-(void)consumeListOfCampus:(NSArray *)arrayOfCampus{
+    
+}
 -(void) displayBatiments:(NSArray *)batimetnsArray{
     
 }
@@ -171,5 +172,6 @@
 -(void) removeListFromTopView{
     
 }
+
 
 @end

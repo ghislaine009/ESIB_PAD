@@ -38,7 +38,8 @@
 
 
 -(void)dealloc{
-    [self.persons release];
+    [_persons release];
+    [searchBar release];
     [super dealloc];
 }
 - (void) setPersons:(NSArray *)persons{

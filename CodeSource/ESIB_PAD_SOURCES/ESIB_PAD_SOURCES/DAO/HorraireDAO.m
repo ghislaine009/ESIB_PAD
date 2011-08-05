@@ -20,11 +20,12 @@
 -(void) returnForDisplay{
     [self.delegate dataLoadedFromInternet]; 
 }
--(void)loadHorraireForDate{
+-(void)loadHorraire{
     self.crntListOfObject = nil;
     int crntCount = [self numberEntityInCacheWithPredicates:nil];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                       self.set.login,self.set.pasword,@"listeHorraires"]; 
+    NSLog(@"%d",crntCount);
     if(crntCount==0 ||![self areDataUpToDate:[self.set getLastUpdateTimeForKey:self.postParam]]){
         [self.set loadValues];
         [self deleteFromCacheWithPredicates: nil];
@@ -36,29 +37,31 @@
     }
 }
 -(NSArray *)getHorraireForDate:(NSDate *)date{
-    /*NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:entity];
-    [request setPredicate:[NSPredicate predicateWithFormat:@"" argumentArray:self.arrgumentPredicate]];
     
-    NSError *error;
-    NSArray *items = [self.managedObjectContext executeFetchRequest:request error:&error];
-    [request release];
-    if(!self.crntListOfObject)
-        self.crntListOfObject = [[NSMutableArray  alloc]init];
-    for (NSManagedObject *managedObject in items) {
-        [self.crntListOfObject addObject:managedObject ];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
+    NSFetchRequest *request = [[[NSFetchRequest alloc] init]autorelease];
+    [request setEntity:entity];
+    int weekday = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:date] weekday];    
+    weekday = (weekday-2);
+    if (weekday ==-1){
+        weekday =6;
     }
-    [self finishLoadingNews];
-    [alert show];
-    [alert release];
-    return;*/
-    return nil;
+    [request setPredicate:[NSPredicate predicateWithFormat:@"fromDate<= %@ AND toDate >= %@ AND dayOfTheWeek =%d",date,date,weekday]];
+    NSError *error =nil;
+    NSArray *items = [[self.managedObjectContext executeFetchRequest:request error:&error] retain];
+    
+    
+    for (Horraires * h in items) {
+        NSLog(@"Horraire : %@",h.title);
+    }
+    return [items autorelease];
+    
 
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     [self deleteFromCacheWithPredicates:nil];
-    
+    [self.set setLastUpdateTimeForKey:self.postParam lastUpdate:[NSDate date]];
+
         // NSString * recivedDataText = [NSString stringWithUTF8String:[receivedData bytes]];
     
         //NSLog(@"DATA: %@",recivedDataText);
@@ -69,10 +72,14 @@
         [alert show];
         [alert release];
         
+    }else{
+        [self deleteFromCacheWithPredicates:nil];
+        [self.set setLastUpdateTimeForKey:self.postParam lastUpdate:[NSDate date]];
+        [parseur parse];
+
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     
@@ -100,21 +107,20 @@
         }
         if([elementName isEqualToString:@"fromDate"]){
             NSDateFormatter *df = [[NSDateFormatter alloc] init];
-            [df setDateFormat:@"MM-dd-yyyy"];
-            NSDate *myDate = [df dateFromString: self.crntCharacters]; 
+            [df setDateFormat:@"dd.MM.yyyy HH:mm:ss"];
+            NSDate *myDate = [df dateFromString: [NSString stringWithFormat:@"%@ %@",self.crntCharacters,@"00:00:00"]];
             [self.crntObject setValue:myDate forKey:@"fromDate"];
             [df release];
-            [myDate release];
+
             return;
             
         }
         if([elementName isEqualToString:@"toDate"]){
             NSDateFormatter *df = [[NSDateFormatter alloc] init];
-            [df setDateFormat:@"MM-dd-yyyy"];
-            NSDate *myDate = [df dateFromString: self.crntCharacters]; 
+            [df setDateFormat:@"dd.MM.yyyy HH:mm:ss"];
+            NSDate *myDate = [df dateFromString: [NSString stringWithFormat:@"%@ %@",self.crntCharacters,@"23:59:59"]];
             [self.crntObject setValue:myDate forKey:@"toDate"];
             [df release];
-            [myDate release];
             return;
             
         }
@@ -126,26 +132,22 @@
         }
         if([elementName isEqualToString:@"begin"] ){
             NSDateFormatter *df = [[NSDateFormatter alloc] init];
-            [df setDateFormat:@"hh:mm"];
+            [df setDateFormat:@"HH:mm"];
             NSDate *myDate = [df dateFromString: self.crntCharacters]; 
-            [self.crntObject setValue:myDate forKey:@"toDate"];
+            [self.crntObject setValue:myDate forKey:@"begin"];
             [df release];
-            [myDate release];
-            [self.crntObject setValue:self.crntCharacters forKey:@"begin"];
             return;
         }
         if([elementName isEqualToString:@"end"] ){
             NSDateFormatter *df = [[NSDateFormatter alloc] init];
-            [df setDateFormat:@"hh:mm"];
+            [df setDateFormat:@"HH:mm"];
             NSDate *myDate = [df dateFromString: self.crntCharacters]; 
             [self.crntObject setValue:myDate forKey:@"end"];
             [df release];
-            [myDate release];
-            [self.crntObject setValue:self.crntCharacters forKey:@"begin"];
             return;
         }
-        if([elementName isEqualToString:@"pofesseur"] ){
-            [self.crntObject setValue:self.crntCharacters forKey:@"pofesseur"];
+        if([elementName isEqualToString:@"professeur"] ){
+            [self.crntObject setValue:self.crntCharacters forKey:@"professeur"];
             return;
             
         }
@@ -154,11 +156,7 @@
             return;
             
         }
-        if([elementName isEqualToString:@"extension"] ){
-            [self.crntObject setValue:self.crntCharacters forKey:@"extension"];
-            return;
-            
-        }
+        
         if([elementName isEqualToString:@"lieu"] ){
             [self.crntObject setValue:self.crntCharacters forKey:@"lieu"];
             return;

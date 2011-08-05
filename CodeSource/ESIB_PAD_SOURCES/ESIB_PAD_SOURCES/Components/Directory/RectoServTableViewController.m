@@ -106,6 +106,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    if(!_servRec) return  0;
     return [_servRec count];
 }
 
@@ -115,6 +116,10 @@
     
     RectServViewController *cell = (RectServViewController *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
+        if(!self.cellNib){
+            self.cellNib = [UINib nibWithNibName:@"RectServCell" bundle:nil];
+
+        }
         [self.cellNib instantiateWithOwner:self options:nil];
 		cell = tmpCell;
 		self.tmpCell = nil;

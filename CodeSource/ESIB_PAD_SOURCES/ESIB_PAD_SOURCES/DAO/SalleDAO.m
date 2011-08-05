@@ -25,7 +25,7 @@
     NSPredicate * onlyDomaine =  [NSPredicate predicateWithFormat:@"(campus_id = %@)", domaineName]; 
     NSPredicate * withLocalisation =  [NSPredicate predicateWithFormat:@"(campus_id = %@ AND latitude != %d)",domaineName, 0];  
     self.predicateForReturnValue = @"(campus_id = %@ AND latitude != %@)";  
-    self.arrgumentPredicate = [[[NSArray alloc] initWithObjects:domaineName,@"0", nil] autorelease];
+    self.arrgumentPredicate = [NSArray arrayWithObjects:domaineName,@"0", nil] ;
 
     int crntCount = [self numberEntityInCacheWithPredicates:onlyDomaine];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@&param0=%@", 
@@ -53,7 +53,6 @@
     }
     
     [parseur release];
-    [self.receivedData release];
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO]; 
     
