@@ -66,7 +66,6 @@
 - (void)viewDidLoad
 {
     sDao = [[SettingsDAO alloc ]init];
-    NSLog(@"%@",sDao.url);
     [self registerNotifications];
     [self refreshDisplay];
     

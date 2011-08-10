@@ -29,12 +29,13 @@
 }
 
 -(void)getNews{
-    Reachability * hostReach = [[Reachability reachabilityWithHostName:@"www.usj.edu.lb"] retain];
-    
+    NSURL * r = [[NSURL alloc] initWithString:self.set.url];
+    Reachability * hostReach = [[Reachability reachabilityWithHostName:[r host]] retain];
+    [r release];
     NetworkStatus netStatus = [hostReach currentReachabilityStatus];
     
      if( netStatus == NotReachable)    {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, the data are those in the cache." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, the data are those in the cache." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
          
          NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self. managedObjectContext];
          NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -77,8 +78,8 @@
         //NSLog(@"DATA: %@",recivedDataText);
     NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
     [parseur setDelegate: self];
-    if([parseur parse] == NO){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings. The displaed data are those in cache." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    if([parseur parse] == NO && !self.doesAlertViewExist){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings. The displaed data are those in cache." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
         [alert release];
         
@@ -108,7 +109,11 @@
 }
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if(self.crntCharacters){
-        [self verifyError:self.crntCharacters];
+        if( [self verifyError:self.crntCharacters]){
+            [parser abortParsing];
+            return;
+        }        
+        
         if([elementName isEqualToString:@"id"]){
             [self.crntObject setValue:[NSNumber numberWithInt:[self.crntCharacters intValue]] forKey:@"idDB"];
             return;

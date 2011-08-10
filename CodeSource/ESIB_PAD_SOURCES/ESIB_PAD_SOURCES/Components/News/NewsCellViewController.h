@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AsyncImageView.h"
 
 @interface NewsCellViewController : UITableViewCell {
     
-    IBOutlet UIImageView * img;
+    IBOutlet AsyncImageView * img;
     IBOutlet UILabel * titreLbl;
     NSString * titre;
     NSString * ss_titre;
@@ -19,7 +19,7 @@
     IBOutlet UILabel * ss_titreLbl;
 }
 
-@property(nonatomic,retain)  UIImage * images;
+@property(nonatomic,retain)  AsyncImageView * img;
 @property(nonatomic,retain)  NSString * titre;
 @property(nonatomic,retain)  NSString * ss_titre;
 

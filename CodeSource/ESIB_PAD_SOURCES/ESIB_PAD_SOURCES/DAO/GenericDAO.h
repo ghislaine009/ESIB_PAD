@@ -55,4 +55,5 @@
 - (void) deleteFromCacheWithPredicates:(NSPredicate *) listOfPredicate;
 - (bool) areDataUpToDate:(NSDate *)lastUpdateTime;
 - (bool)verifyError:(NSString *)errorTexte;
+- (BOOL) doesAlertViewExist ;
 @end

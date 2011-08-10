@@ -44,8 +44,9 @@
     NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
     [self.set setLastUpdateTimeForKey:self.postParam lastUpdate:[NSDate date]];
     [parseur setDelegate: self];
-    if([parseur parse] == NO){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    if([parseur parse] == NO && !self.doesAlertViewExist){
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
         [alert release];
         
@@ -75,6 +76,7 @@
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if(self.crntCharacters){
         if( [self verifyError:self.crntCharacters]){
+            [parser abortParsing];
             [parser setDelegate:nil];
             return;
         }

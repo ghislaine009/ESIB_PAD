@@ -211,10 +211,35 @@
        DirectoryViewControllerIPad *controller = [[DirectoryViewControllerIPad alloc] initWithNibName:@"DirectoryViewControllerIPad" bundle:nil];
        [self loadViewControler:controller withTheName:name];
    }else if ([((MenuItem *)name).texte isEqualToString:@"Calendar"]) {
+       SettingsDAO * s = [[SettingsDAO alloc] init];
+       [s loadValues];
+       if([s.login isEqualToString:@"guest"]){
+           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"The functionalities is available only to users of the USJ. Please change the login information." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+           [alert show];
+           [alert release];
+           SettingsViewController *controller = [[SettingsViewController alloc] initWithNibName:@"SettingsViewControllerIPad" bundle:nil];
+           [self loadViewControler:controller withTheName:name];
+           [s release];
+           return;
+       }
+       [s release];
        CalendarViewController *controller = [[CalendarViewController alloc] init];
        [controller.view sizeToFit];
        [self loadViewControler:controller withTheName:name];
    }else if ([((MenuItem *)name).texte isEqualToString:@"Examination"]) {
+       SettingsDAO * s = [[SettingsDAO alloc] init];
+       [s loadValues];
+       if([s.login isEqualToString:@"guest"]){
+           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"The functionalities is available only to users of the USJ. Please change the login information." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+           [alert show];
+           [alert release];
+           SettingsViewController *controller = [[SettingsViewController alloc] initWithNibName:@"SettingsViewControllerIPad" bundle:nil];
+           [self loadViewControler:controller withTheName:name];
+           [s release];
+           return;
+       }
+       [s release];
+
        ExamResultTableViewController *controller = [[ExamResultTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
        [self loadViewControler:controller withTheName:name];
        controller.view.autoresizingMask = UIViewAutoresizingNone;

@@ -18,14 +18,13 @@
     return self;
 }
 -(void) returnForDisplay{
-    [self.delegate dataLoadedFromInternet]; 
+    [self.delegate planningDataLoadedFromInternet]; 
 }
 -(void)loadHorraire{
     self.crntListOfObject = nil;
     int crntCount = [self numberEntityInCacheWithPredicates:nil];
     self.postParam = [NSString stringWithFormat:@"usr=%@&pwd=%@&op=%@", 
                       self.set.login,self.set.pasword,@"listeHorraires"]; 
-    NSLog(@"%d",crntCount);
     if(crntCount==0 ||![self areDataUpToDate:[self.set getLastUpdateTimeForKey:self.postParam]]){
         [self.set loadValues];
         [self deleteFromCacheWithPredicates: nil];
@@ -49,11 +48,7 @@
     [request setPredicate:[NSPredicate predicateWithFormat:@"fromDate<= %@ AND toDate >= %@ AND dayOfTheWeek =%d",date,date,weekday]];
     NSError *error =nil;
     NSArray *items = [[self.managedObjectContext executeFetchRequest:request error:&error] retain];
-    
-    
-    for (Horraires * h in items) {
-        NSLog(@"Horraire : %@",h.title);
-    }
+
     return [items autorelease];
     
 
@@ -67,8 +62,8 @@
         //NSLog(@"DATA: %@",recivedDataText);
     NSXMLParser *parseur=[[NSXMLParser alloc] initWithData:self.receivedData];
     [parseur setDelegate: self];
-    if([parseur parse] == NO){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    if([parseur parse] == NO && !self.doesAlertViewExist){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"Please connect to internet to solve this problem or chek your webservice url settings." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
         [alert release];
         
@@ -100,7 +95,12 @@
 }
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if(self.crntCharacters){
-        [self verifyError:self.crntCharacters];
+        if( [self verifyError:self.crntCharacters]){
+            [parser abortParsing];
+            [parser setDelegate:nil];
+            return;
+        }
+        
         if([elementName isEqualToString:@"title"]){
             [self.crntObject setValue:self.crntCharacters forKey:@"title"];
             return;

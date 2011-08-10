@@ -72,13 +72,23 @@
 
     NSUInteger count = [[self.managedObjectContext executeFetchRequest:request error:&error] count]; 
     [request autorelease];
-    NSLog(@"%d",count);
     if (!error){
         return count;
     }
     else
         return 0;
     
+}
+- (BOOL) doesAlertViewExist {
+    for (UIWindow* window in [UIApplication sharedApplication].windows) {
+        for (UIView* view in window.subviews) {
+            BOOL alert = [view isKindOfClass:[UIAlertView class]];
+            BOOL action = [view isKindOfClass:[UIActionSheet class]];
+            if (alert || action)
+                return YES;
+        }
+    }
+    return NO;
 }
 -(bool) areDataUpToDate:(NSDate *)lastUpdateTime{
     if(!lastUpdateTime)return NO;
@@ -89,13 +99,15 @@
 }
 
 -(void)addToCache:(NSString *) webServicePostHeader{
-    Reachability * hostReach = [[Reachability reachabilityWithHostName:@"www.usj.edu.lb"] retain];
+    NSURL * r = [[NSURL alloc] initWithString:self.set.url];
+    Reachability * hostReach = [[Reachability reachabilityWithHostName:[r host]] retain];
+    [r release];
     
     NetworkStatus netStatus = [hostReach currentReachabilityStatus];
     
     if( netStatus == NotReachable)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, please check your connection settings" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to access the webServices, please check your connection settings" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
         [alert release];
         alert = nil;
@@ -132,7 +144,7 @@
 }
 -(void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
     NSString * errorMsg = [[[NSString alloc] initWithFormat:@"%@ \n Please connect to internet to solve this problem or chek your webservice url settings.",error.accessibilityHint] autorelease];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alert show];
     [alert release];
     alert = nil;
@@ -182,7 +194,7 @@
     
     if([self.crntElementName isEqualToString:@"TITLE"]){
         NSString * errorMsg = [[[NSString alloc] initWithFormat:@"%@ \n Please connect to internet to solve this problem."] autorelease];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
        //[self setDelegate:nil];
         [alert show];
         [alert release];
@@ -193,7 +205,7 @@
     }
     if([_crntElementName isEqualToString:@"message"]){
         NSString * errorMsg = [[NSString alloc] initWithFormat:@"%@ \n Please change the settings and/or check your connectio to solve this problem .",texte] ;
-        UIAlertView *alertNoData = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        UIAlertView *alertNoData = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         //[self setDelegate:nil];
         
         [alertNoData show];

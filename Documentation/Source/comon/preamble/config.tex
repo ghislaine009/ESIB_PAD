@@ -32,8 +32,10 @@
 \usepackage{array}
 \usepackage{hyperref,wasysym}
 \usepackage{subfigure}
-
+\usepackage{amssymb}
 \usepackage{ulem}
+\usepackage{color}
+\usepackage{listings}
 %\sout{Texte à barrer}
 %\xout{Texte à hachurer}
 %\uwave{Texte à souligner par une vaguelette}
@@ -159,6 +161,45 @@ escapeinside={(*@}{@*)}}
   keywordstyle=\color{cyan},
   morekeywords={xmlns,version,type}% list your attributes here
 }
+
+\definecolor{pink}{rgb}{0.67, 0.05, 0.57} % keywords
+\definecolor{red}{rgb}{0.87, 0.20, 0.00} % strings
+\definecolor{green}{rgb}{0.00, 0.47, 0.00} % comments
+\definecolor{violet}{rgb}{0.41, 0.12, 0.61} % classes
+\definecolor{blue}{rgb}{0.21, 0.00, 0.44} % functions
+\definecolor{brown}{rgb}{0.39, 0.22, 0.13} % brown
+
+\lstdefinelanguage{Objective-C 2.0}[Objective]{C} {
+    morekeywords={id, Class, SEL, IMP, BOOL, nil, Nil, NO, YES,
+                  oneway, in, out, inout, bycopy, byref,
+                  self, super, _cmd,
+                  @required, @optional,
+                  @try, @throw, @catch, @finally,
+                  @synchronized, @property, @snythesize, @dynamic},
+    moredelim=[s][color{red}]{@"}{"},
+    moredelim=[s][color{red}]{<}{>}
+}
+
+\lstdefinestyle{Xcode} {
+    language        = Objective-C 2.0,
+    basicstyle=\footnotesize,
+    identifierstyle =\color{black},
+    commentstyle    = \color{green},
+    keywordstyle    = \color{pink},
+    stringstyle     = \color{red},
+    directivestyle  = \color{brown},
+    extendedchars   = true,
+    tabsize         = 4,
+    showspaces      = false,
+    showstringspaces = false,
+    breakautoindent = true,
+    flexiblecolumns = true,
+    keepspaces      = true,
+    stepnumber      = 0,
+    xleftmargin     = 0pt
+ }
+
+
 % Try to avoid single lines at the beginning or end of a page
 \widowpenalty=300
 \clubpenalty=300

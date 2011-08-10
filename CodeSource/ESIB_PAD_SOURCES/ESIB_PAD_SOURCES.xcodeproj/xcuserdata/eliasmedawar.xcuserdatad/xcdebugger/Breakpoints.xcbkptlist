@@ -50,20 +50,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/DAO/PersonDAO.m"
-         timestampString = "334136515.567309"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "84"
-         endingLineNumber = "84"
-         landmarkName = "-getPersonsForInstitution:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
          filePath = "ESIB_PAD_SOURCES/DAO/NewsDAO.m"
          timestampString = "334227240.359483"
          startingColumnNumber = "9223372036854775807"
@@ -71,20 +57,6 @@
          startingLineNumber = "20"
          endingLineNumber = "20"
          landmarkName = "-returnForDisplay"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCESTests/ESIB_PAD_SOURCESTests.m"
-         timestampString = "334227486.728345"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "145"
-         endingLineNumber = "145"
-         landmarkName = "-displayAllCampusOnMap:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -134,13 +106,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "ESIB_PAD_SOURCES/ESIB_PAD_SOURCESAppDelegate.m"
-         timestampString = "334251417.563862"
+         filePath = "ESIB_PAD_SOURCES/Components/Navigation/MainMenu.m"
+         timestampString = "334650729.098249"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
-         landmarkName = "-applicationWillTerminate:"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
+         landmarkName = "-unloadModalView"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

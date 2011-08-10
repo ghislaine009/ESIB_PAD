@@ -33,6 +33,7 @@
 }
 
 - (void)viewDidLoad {
+    _newsImage = [[NSMutableArray alloc ] initWithCapacity:5];
     NewsDAO * nDAO = [[NewsDAO alloc] init];
     [nDAO setDelegate:self];
     [nDAO getNews];
@@ -45,7 +46,8 @@
 }
 
 - (void)dealloc {
-    
+    [_newsImage release];
+    _newsImage =nil;
 	[_news release];
 	_news = nil;
 	[super dealloc];
@@ -132,8 +134,24 @@
 		self.tmpCell = nil;
         cell.backgroundView = [[[UIView alloc] init] autorelease];
         cell.selectedBackgroundView = [[[UIView alloc] init] autorelease];
-        UIImage * i = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:a.img]]];
-        cell.images = [i autorelease];
+        CGRect frame;
+        frame.size.width=48;
+        frame.size.height=48;
+        frame.origin.x=0; 
+        frame.origin.y=0;
+        if([_newsImage count] > indexPath.row){
+            [cell.img addSubview:[_newsImage objectAtIndex:indexPath.row]];
+
+        }else{
+            AsyncImageView* asyncImage = [[[AsyncImageView alloc]
+                                           initWithFrame:frame] autorelease];
+            NSURL* url = [NSURL URLWithString:a.img];
+            [asyncImage loadImageFromURL:url];
+            asyncImage.tag = 999;
+            [cell.img addSubview:asyncImage];
+            [_newsImage addObject:asyncImage];
+        
+        }
 
 
 	}

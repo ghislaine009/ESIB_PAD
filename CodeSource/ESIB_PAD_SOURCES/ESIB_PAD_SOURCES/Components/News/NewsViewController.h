@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "MenuItemDelegate.h"
 #import "NewsDAO.h"
+#import "AsyncImageView.h"
 #import "NewsCellViewController.h"
 @interface NewsViewController : UITableViewController<NewsDADProtocol> {
 	IBOutlet NewsCellViewController *tmpCell;
     NSMutableArray *_news;
+    NSMutableArray *_newsImage;
     UINib *cellNib;
 
 }

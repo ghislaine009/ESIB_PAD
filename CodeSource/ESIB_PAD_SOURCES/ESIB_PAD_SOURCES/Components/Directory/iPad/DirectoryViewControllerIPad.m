@@ -23,7 +23,7 @@
 
 - (void)dealloc
 {   if(subCtrl)
-        [subCtrl release];
+        [subCtrl release];  
     [super dealloc];
 }
 

@@ -12,8 +12,11 @@
 #import "Actualite.h"
 #import "Campus.h"
 #import "NewsDAO.h"
+#import "PersonDAO.h"
+#import "HorraireDAO.h"
+#import "ExamResultDAO.h"
 
-@interface ESIB_PAD_SOURCESTests : SenTestCase <CampusDAOProtocol,UIAlertViewDelegate,NewsDADProtocol>{
+@interface ESIB_PAD_SOURCESTests : SenTestCase <CampusDAOProtocol,UIAlertViewDelegate,NewsDADProtocol,PersonDAOProtocol,HorraireDAOProtocol,ExamResultDAOProtocol>{
 @private
     NSArray * persons ;
     NSArray * salles ;
@@ -22,6 +25,7 @@
 
     NSArray * listBatiment;
     NSCondition * condition;
+    NSString * tmpHost;
     BOOL dataRecieved;
     BOOL finishAsyncOperation;
 

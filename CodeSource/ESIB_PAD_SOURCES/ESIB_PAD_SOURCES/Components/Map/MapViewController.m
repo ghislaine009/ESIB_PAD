@@ -46,7 +46,7 @@
     CampusDAO * cDAO = [[CampusDAO alloc] init];
     [cDAO setDelegate:self];
     [cDAO getCampusAndDisplayOnMap];
-    [cDAO release];    
+    [cDAO autorelease];    
     
     SettingsDAO * s = [[SettingsDAO alloc] init];
     if([s.mapType isEqualToString:@"sat"]){

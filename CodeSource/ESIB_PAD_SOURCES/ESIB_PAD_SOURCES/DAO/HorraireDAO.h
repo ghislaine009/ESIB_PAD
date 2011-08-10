@@ -10,7 +10,7 @@
 #import "GenericDAO.h"
 #import "Horraires.h"
 @protocol HorraireDAOProtocol 
--(void) dataLoadedFromInternet;
+-(void) planningDataLoadedFromInternet;
 @end
 
 @interface HorraireDAO : GenericDAO {

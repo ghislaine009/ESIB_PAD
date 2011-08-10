@@ -41,7 +41,7 @@
 
 #pragma mark - View lifecycle
 
--(void) dataLoadedFromInternet{
+-(void) planningDataLoadedFromInternet{
     calendar= [[GCCalendarPortraitView alloc] init] ;
     
 	calendar.dataSource = self;
@@ -54,6 +54,7 @@
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(didRotate:)
                                                      name:@"UIDeviceOrientationDidChangeNotification" object:nil];
+    
         [self resizeCenterSubviews];
     
     
@@ -73,10 +74,11 @@
 }
 -(void) resizeCenterSubviews{
     UIInterfaceOrientation currentOrientation = [[UIDevice currentDevice] orientation];
-    
-    if (currentOrientation == UIDeviceOrientationUnknown ||
-		currentOrientation == UIDeviceOrientationFaceUp ||
-		currentOrientation == UIDeviceOrientationFaceDown){
+    if(currentOrientation == UIDeviceOrientationFaceUp ||
+       currentOrientation == UIDeviceOrientationFaceDown){
+        return;
+    }
+    if (currentOrientation == UIDeviceOrientationUnknown){
 		currentOrientation = self.interfaceOrientation;
     }
     UIView *_centerView = calendar.view;
@@ -148,7 +150,6 @@
         event.userInfo = h;
 		event.eventDescription = [NSString stringWithFormat:@"%@ %@",h.professeur,h.extension];
 		NSCalendar *calendarBegin = [NSCalendar currentCalendar];
-        NSLog(@"Debut event :%@", [h.begin description]);
         NSDateComponents *components = [calendarBegin components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:h.begin];
         
         int weekday = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:date] weekday];    

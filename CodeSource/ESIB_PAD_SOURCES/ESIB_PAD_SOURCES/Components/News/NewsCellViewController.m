@@ -10,7 +10,7 @@
 
 
 @implementation NewsCellViewController
-@synthesize images,titre,ss_titre;
+@synthesize img,titre,ss_titre;
 
 -(void) setTitre:(NSString *)newTitre{
     [titreLbl setText:newTitre];
@@ -18,7 +18,9 @@
 -(void) setSs_titre:(NSString *)newSs_titre{
     [ss_titreLbl setText:newSs_titre];
 }
+/*
 -(void) setImages:(UIImage *)newImages{
      [img setImage:newImages ];
 }
+ */
 @end

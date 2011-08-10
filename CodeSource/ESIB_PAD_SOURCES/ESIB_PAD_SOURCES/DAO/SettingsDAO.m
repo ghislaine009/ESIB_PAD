@@ -45,6 +45,7 @@
 }
 
 -(void) loadValues{
+    // Lecture des valeurs
     NSString *docsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0];
     
     NSString *path = [docsDir stringByAppendingPathComponent: @"Settings.plist"];
@@ -75,6 +76,7 @@
 
 }
 -(void) save{
+    // Ecriture du fichier plist
     NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory,
                                                          NSUserDomainMask, YES); 
     NSString *path =[[paths objectAtIndex: 0] stringByAppendingPathComponent: @"Settings.plist"];
@@ -141,7 +143,6 @@
         
     [defFM copyItemAtPath: path toPath: dest error: NULL];
     [self loadValues];
-    NSLog(@"%d",[self.refreshCacheEvery intValue]);
 
 }
 - (void)dealloc

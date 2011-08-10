@@ -97,7 +97,6 @@
         if (personInformation.email && ![personInformation.email isEqualToString:@" "]) {
             i++;
         }
-        NSLog(@"%d , %d",i,section);
         return i;
     }
 }
@@ -232,8 +231,7 @@
     if(buttonIndex==1)
         {
         NSString *s  = [[NSString alloc] initWithFormat:@"tel://0142%@?",personInformation.extension];
-        [[UIApplication sharedApplication] 
-         openURL:[NSURL URLWithString:s]];   
+        [[UIApplication sharedApplication]openURL:[NSURL URLWithString:s]];   
         [s release];
 
         }

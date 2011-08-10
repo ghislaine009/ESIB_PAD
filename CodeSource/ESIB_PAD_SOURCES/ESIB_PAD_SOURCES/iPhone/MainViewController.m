@@ -117,6 +117,24 @@
         [controller autorelease];
     }
     if ([((MenuItem *)src).texte isEqualToString:@"Calendar"]) {
+        SettingsDAO * s = [[SettingsDAO alloc] init];
+        [s loadValues];
+        if([s.login isEqualToString:@"guest"]){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"The functionalities is available only to users of the USJ. Please change the login information." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            [alert show];
+            [alert release];
+            SettingsViewControllerIPhone *controller = [[SettingsViewControllerIPhone alloc] initWithNibName:@"SettingsViewControllerIPhone" bundle:nil];
+            controller.delegate = self;
+            
+            controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            [self presentModalViewController:controller animated:YES];
+            
+            [controller autorelease];
+            [s release];
+            return;
+        }
+        [s release];
+
         CalendarViewController *controller = [[CalendarViewController alloc]init ];
             //controller.delegate = self;
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
@@ -141,6 +159,24 @@
         
         [controller autorelease];
     } if ([((MenuItem *)src).texte isEqualToString:@"Examination"]) {
+        SettingsDAO * s = [[SettingsDAO alloc] init];
+        [s loadValues];
+        if([s.login isEqualToString:@"guest"]){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error" message:@"The functionalities is available only to users of the USJ. Please change the login information." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            [alert show];
+            [alert release];
+            SettingsViewControllerIPhone *controller = [[SettingsViewControllerIPhone alloc] initWithNibName:@"SettingsViewControllerIPhone" bundle:nil];
+            controller.delegate = self;
+            
+            controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            [self presentModalViewController:controller animated:YES];
+            
+            [controller autorelease];
+            [s release];
+            return;
+        }
+        [s release];
+
         ExamResultTableViewController *controller = [[ExamResultTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
         controller.delegate = self;
         UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];

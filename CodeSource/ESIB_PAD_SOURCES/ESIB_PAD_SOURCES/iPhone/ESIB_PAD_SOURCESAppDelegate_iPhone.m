@@ -23,8 +23,7 @@
     // Override point for customization after application launch.
     
     self.window.rootViewController = self.mainViewController;
-    NSManagedObjectContext *context = [self managedObjectContext];
-    NSLog(@"%@",context);
+        //NSManagedObjectContext *context = [self managedObjectContext];
     //[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     
     [self.window makeKeyAndVisible];
