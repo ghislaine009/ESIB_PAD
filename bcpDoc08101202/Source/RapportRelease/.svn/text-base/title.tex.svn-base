@@ -1,0 +1,37 @@
+\begin{titlepage}
+\setlength\topmargin{0in}
+\setlength\headheight{-0.3in}
+\begin{center}
+
+\includegraphics[width=1\textwidth]{../comon/logos/EIA_couleur.eps}  \\
+
+\includegraphics[width=1\textwidth]{../comon/logos/esib_nom.jpg}  \\[0.5cm] 
+\end{center}
+
+\begin{tabular}{p{9cm} r}
+\hline \\[1cm]
+{ \huge {Thèse de Bachelor : } } &  \\
+&  \huge \bfseries  ESIB@Pad  \\[1cm]
+\hline \\[0.3cm]
+ & \Large \bfseries Rapport de la  release 0.1\\
+ & \Large \bfseries  \\[1cm]
+\end{tabular}
+
+\begin{tabular}{l l l l l l}
+Auteur & Elias Medawar & \\[0.1cm]
+& elias.medawar@edu.hefr.ch & \\[0.5cm]
+Responsables Internes  & Omar Abou Khaled & Elena Mugellini  \\[0.1cm]
+&omar.aboukhaled@hefr.ch  & elena.mugellini@hefr.ch \\[0.5cm]	
+Responsable externe & Dany Mezher & \\[0.1cm]
+&dany.mezher@fi.usj.edu.lb   & \\[0.5cm]
+Experts & Marc Wuergler  & Roland Marro   \\[.1cm]
+&marc.wuergler@gmail.ch & marror@fr.ch \\[1.5cm]	
+\end{tabular}
+\\
+\begin{center}
+\begin{tabular}{c}
+Version  2 \\[0.5cm]
+ {\today} \\[0.5cm]
+\end{tabular}
+ \end{center}
+\end{titlepage}

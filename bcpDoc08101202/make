@@ -1,0 +1,87 @@
+date "+../bcpDoc%m%d%H%M" | xargs cp -rf .
+#CDS
+#st=$(svn status Source/CDC/CDS.tex 2>/dev/null)
+#echo $st;
+#if [[ "$st" =~ " " ]]; then
+    cd Source/CDC/
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    makeglossaries Main
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    mv Main.pdf ../../001_CDC.pdf
+    cd ../../
+#fi
+#SPMP
+#st=$(svn status Source/SPMP/SPMP.tex 2>/dev/null)
+#echo $st;
+#if [[ "$st" =~ " " ]]; then
+    cd Source/SPMP/
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    makeglossaries Main
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    mv Main.pdf ../../002_SPMP.pdf
+    cd ../../
+#fi
+#SRS
+
+#st=$(svn status Source/SRS/SRS.tex 2>/dev/null)
+#echo $st;
+#if [[ "$st" =~ " " ]]; then
+    cd Source/SRS/
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    makeglossaries Main
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    mv Main.pdf ../../003_SRS.pdf
+    cd ../../
+#fi
+
+#STD
+#st=$(svn status Source/STD/STD.tex 2>/dev/null)
+#echo $st;
+#if [[ "$st" =~ " " ]]; then
+    cd Source/STD/
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    makeglossaries Main
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    mv Main.pdf ../../004_STD.pdf
+    cd ../../
+#fi
+
+#Release report
+#st=$(svn status Source/RapportRelease/release0_1.tex 2>/dev/null)
+#echo $st;
+#if [[ "$st" =~ " " ]]; then
+    cd Source/RapportRelease/
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    makeglossaries Main
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    mv Main.pdf ../../005_RapportRelease.pdf
+    cd ../../
+#fi
+
+#SDD
+#st=$(svn status Source/STD/STD.tex 2>/dev/null)
+#echo $st;
+#if [[ "$st" =~ " " ]]; then
+    cd Source/SDD/
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    makeglossaries Main
+    pdflatex -interaction=nonstopmode Main.tex --output-format dvi
+    mv Main.pdf ../../006_SDD.pdf
+    cd ../../
+#fi
+
+find . -name "*.log" | xargs rm -Rf
+find . -name "*.aux" | xargs rm -Rf
+find . -name "*.xdy" | xargs rm -Rf
+find . -name "*.dvi" | xargs rm -Rf
+find . -name "*.lof" | xargs rm -Rf
+find . -name "*.lot" | xargs rm -Rf
+find . -name "*.bit" | xargs rm -Rf
+find . -name "*.idx" | xargs rm -Rf
+find . -name "*.glo" | xargs rm -Rf
+find . -name "*.gls" | xargs rm -Rf
+find . -name "*.glg" | xargs rm -Rf
+find . -name "*.bbl" | xargs rm -Rf
+find . -name "*.ilg" | xargs rm -Rf
+find . -name "*.toc" | xargs rm -Rf
+find . -name "*.ind" | xargs rm -Rf

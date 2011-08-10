@@ -1,0 +1,51 @@
+;; This logfile was generated automatically by `xindy'
+;; at 10.08.2011  22:18:17
+;; Indexstyle: "/var/folders/YR/YRowQ3vgHcGf7R-sQwFjEk+++TI/-Tmp-/ZUnn0NOfTT", Rawindex: "/var/folders/YR/YRowQ3vgHcGf7R-sQwFjEk+++TI/-Tmp-/B3ndLdmH5f", Output: "index.gls"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "Ð®íÈ—" -> "S"
+Letter-group: "ÐÈ»È" -> "S"
+Letter-group: "ÈÐ" -> "G"
+Letter-group: "—Ð¨„" -> "E"
+Letter-group: "Ã„¬—†Ú¨å—†" -> "O"
+Letter-group: "—¨€œË" -> "E"
+Letter-group: "àÐ¬" -> "U"
+Letter-group: "Ðå¼" -> "S"
+Letter-group: "ÐËÐ" -> "S"
+Letter-group: "Ð" -> "S"
+Letter-group: "ÐÚ" -> "S"
+Letter-group: "¨ÃÐ" -> "I"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "—¨€œË" -> "E"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ÈÐ" -> "G"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¨ÃÐ" -> "I"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ã„¬—†Ú¨å—†" -> "O"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ð" -> "S"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "àÐ¬" -> "U"
+
+makeglossaries messages:
+
+Cannot locate xindy module for language french in codepage utf8x.
+Retrying using default codepage.

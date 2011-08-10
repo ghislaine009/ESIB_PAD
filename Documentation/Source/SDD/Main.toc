@@ -1,0 +1,34 @@
+\select@language {frenchb}
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}But du document}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Aper\IeC {\c c}u du document}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Architecture du syst\IeC {\`e}me }{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Architecture choisie}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Discussion des alternatives d'architectures}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Alternative 1: Sans base de donn\IeC {\'e}es }{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Alternative 2: Objet pour la communication en C++ }{3}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Composants du syst\IeC {\`e}me}{4}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Description des composants}{4}{subsubsection.2.3.1}
+\contentsline {section}{\numberline {3}Conception et Impl\IeC {\'e}mentation des composants}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Syst\IeC {\`e}me de cache }{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Base de donn\IeC {\'e}e}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Base technique du d\IeC {\'e}veloppement iOS}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Navigation}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Settings}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Map}{11}{subsection.3.6}
+\contentsline {paragraph}{Le framework MapKit }{14}{section*.28}
+\contentsline {paragraph}{L'appel asynchrone}{14}{section*.29}
+\contentsline {subsection}{\numberline {3.7}News}{15}{subsection.3.7}
+\contentsline {paragraph}{Personnalisation des cellules d'un tableau:}{17}{section*.36}
+\contentsline {paragraph}{T\IeC {\'e}l\IeC {\'e}chargement d'image \IeC {\`a} partir d'Internet}{17}{section*.38}
+\contentsline {subsection}{\numberline {3.8}Directory}{18}{subsection.3.8}
+\contentsline {paragraph}{Interface graphique sur iPad:}{19}{section*.44}
+\contentsline {paragraph}{Recherche :}{20}{section*.45}
+\contentsline {paragraph}{Lancer un appel t\IeC {\'e}l\IeC {\'e}phonique:}{21}{section*.46}
+\contentsline {paragraph}{\IeC {\'E}crire un e-mail:}{21}{section*.47}
+\contentsline {subsection}{\numberline {3.9}Calendrier}{23}{subsection.3.9}
+\contentsline {paragraph}{GCCalendarPortraitView}{24}{section*.53}
+\contentsline {paragraph}{Affichage de l'\IeC {\'e}v\IeC {\'e}nement sur la carte}{25}{section*.54}
+\contentsline {subsection}{\numberline {3.10}ExamResult}{26}{subsection.3.10}
+\contentsline {paragraph}{Tout comme les news}{27}{section*.60}

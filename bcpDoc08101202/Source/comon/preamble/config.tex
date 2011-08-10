@@ -1,0 +1,205 @@
+%packages
+%\usepackage[dvipdf]{graphicx}
+\usepackage[pdftex]{graphicx}
+\usepackage[a4paper,top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[frenchb]{babel}
+\usepackage{amsmath}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{wrapfig}
+\usepackage{ccaption}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{courier}
+\usepackage{caption}
+\usepackage[toc,page]{appendix}
+\usepackage{hyperref}
+\usepackage{breakurl}
+\usepackage{bookmark}
+\usepackage{tabularx}
+\usepackage{subfigure}
+\usepackage[xindy,toc]{glossaries}
+\usepackage{setspace}
+ \usepackage{enumerate}
+\usepackage{pdflscape}
+\usepackage{array}
+\usepackage{hyperref,wasysym}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{color}
+\usepackage{listings}
+%\sout{Texte à barrer}
+%\xout{Texte à hachurer}
+%\uwave{Texte à souligner par une vaguelette}
+
+
+
+\usepackage{fancyvrb}
+
+%do margins on even pages like in a book
+\evensidemargin=-0.7cm
+
+%generate glossary
+\makeglossaries
+
+%language selection
+\selectlanguage{frenchb}
+
+%color of links
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+
+
+
+%improve figure placement
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+
+
+%define pagestyle
+\pagestyle{fancy}
+\fancyheadoffset[LE,RO]{\marginparsep}
+
+\renewcommand{\sectionmark}[1]{\markright{#1}{}} % Lowercase sectionmark
+\fancyhf{}
+\fancyhead[LE,RO]{ \footnotesize \thepage}
+\fancyhead[RE]{ \footnotesize Chapitre \thechapter: \leftmark}
+\fancyhead[LO]{ \footnotesize \rightmark}
+%\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\fancypagestyle{plain}{
+\fancyhead{} % get rid of headers on first pages
+\fancyfoot{} % get rid of footers on first pages
+\renewcommand{\headrulewidth}{0pt} % and the line
+\renewcommand{\footrulewidth}{0pt} % and the line
+}
+\fancyhfoffset[ER,OR,LO,LR]{0cm}
+
+
+% No headers on empty pages before new chapter
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+    \hbox{}
+    \thispagestyle{plain}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
+
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+%code listing
+\lstset{language=Java, 
+basicstyle=\ttfamily\fontsize{8}{8}\selectfont, 
+showspaces=false, 
+showtabs=false, 
+tab= , 
+keywordstyle=\bfseries, 
+showstringspaces=false, 
+framexleftmargin=5mm, 
+frame=single, 
+numbers=left,
+numberstyle=\tiny, 
+stepnumber=2, 
+numbersep=5pt, 
+breaklines=true,
+xleftmargin=17pt,
+captionpos=b,
+escapeinside={(*@}{@*)}}
+
+
+%Javascript language definition
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  identifierstyle=\color{black},
+  sensitive=false,
+  commentstyle=\color{darkgray}\ttfamily,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+}
+\lstdefinelanguage{XSD}{
+    sensitive=true,
+    keywords={version, encoding, targetNamespace, elementFormDefault, attributeFormDefault, xmlns:xsd, xmlns:tns, xmlns:xsi, schemaLocation, xsi:noNamespaceSchemaLocation, xsi:schemaLocation, name, type, base, value, minOccurs, maxOccurs, ref, use, default, required, mixed, fixed, itemType, memberTypes, namespace, xpath, refer},
+    %otherkeywords={=},
+    alsoletter={<,>,/,?,:},
+    morestring=[b]{"},
+    morecomment=[s]{<!--}{-->},
+    morecomment=[s]{<![CDATA[}{]]>},
+    keywordstyle=\color{violet},
+    identifierstyle=\color{teal},
+    stringstyle=\color{blue},
+    commentstyle=\color{darkgray}
+}
+\lstdefinelanguage{XML}
+{
+  morestring=[b],
+  morestring=[s]{>}{<},
+  morecomment=[s]{!--}{--},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+\definecolor{pink}{rgb}{0.67, 0.05, 0.57} % keywords
+\definecolor{red}{rgb}{0.87, 0.20, 0.00} % strings
+\definecolor{green}{rgb}{0.00, 0.47, 0.00} % comments
+\definecolor{violet}{rgb}{0.41, 0.12, 0.61} % classes
+\definecolor{blue}{rgb}{0.21, 0.00, 0.44} % functions
+\definecolor{brown}{rgb}{0.39, 0.22, 0.13} % brown
+
+\lstdefinelanguage{Objective-C 2.0}[Objective]{C} {
+    morekeywords={id, Class, SEL, IMP, BOOL, nil, Nil, NO, YES,
+                  oneway, in, out, inout, bycopy, byref,
+                  self, super, _cmd,
+                  @required, @optional,
+                  @try, @throw, @catch, @finally,
+                  @synchronized, @property, @snythesize, @dynamic},
+    moredelim=[s][color{red}]{@"}{"},
+    moredelim=[s][color{red}]{<}{>}
+}
+
+\lstdefinestyle{Xcode} {
+    language        = Objective-C 2.0,
+    basicstyle=\footnotesize,
+    identifierstyle =\color{black},
+    commentstyle    = \color{green},
+    keywordstyle    = \color{pink},
+    stringstyle     = \color{red},
+    directivestyle  = \color{brown},
+    extendedchars   = true,
+    tabsize         = 4,
+    showspaces      = false,
+    showstringspaces = false,
+    breakautoindent = true,
+    flexiblecolumns = true,
+    keepspaces      = true,
+    stepnumber      = 0,
+    xleftmargin     = 0pt
+ }
+
+
+% Try to avoid single lines at the beginning or end of a page
+\widowpenalty=300
+\clubpenalty=300
