@@ -2,52 +2,59 @@
 \select@language {french}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Vue global du planning du projet avec les milestones\relax }}{6}{figure.caption.4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Vue globale du planning du projet avec les milestones\relax }}{9}{figure.caption.5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Illustration du mod\IeC {\`e}le de d\IeC {\'e}veloppement en V qui est appliqu\IeC {\'e} \IeC {\`a} chaque it\IeC {\'e}ration. \relax }}{10}{figure.caption.6}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Compatibilit\IeC {\'e} entre composant et version du logiciel. Les traits repre\IeC {\'e}sente une compatibilit\IeC {\'e} \IeC {\`a} 100 \%, les traits traitill\IeC {\'e}s repr\IeC {\'e}sente un compatibilit\IeC {\'e} partielle .\relax }}{13}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Vue globale des fonctionnalit\IeC {\'e}s du produit\relax }}{16}{figure.caption.10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagramme des cas d'utilisation de l'application\relax }}{17}{figure.caption.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Navigation sur IPhone}}}{21}{subfigure.3.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Navigation sur IPad}}}{21}{subfigure.3.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Wireframe illustrant les modifications des param\IeC {\`e}tres sur l'iPhone\relax }}{23}{figure.caption.17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Wireframe illustrant les modifications des param\IeC {\`e}tres sur l'iPad\relax }}{23}{figure.caption.18}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de Login sur l'iPhone et iPad\relax }}{25}{figure.caption.21}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des cartes sur l'iPone\relax }}{26}{figure.caption.24}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des cartes sur l'iPad\relax }}{26}{figure.caption.25}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des news sur l'iPone\relax }}{27}{figure.caption.28}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des news sur l'iPad\relax }}{28}{figure.caption.29}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage de l'annuaire sur l'iPone\relax }}{29}{figure.caption.32}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage de l'annuaire sur l'iPad\relax }}{30}{figure.caption.33}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'horaire sur l'iPone\relax }}{31}{figure.caption.36}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'horaire sur l'iPad\relax }}{31}{figure.caption.37}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres des r\IeC {\'e}sultats d'examen sur l'iPone\relax }}{32}{figure.caption.40}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres des r\IeC {\'e}sultats d'examen sur l'iPad\relax }}{33}{figure.caption.41}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Vue d\IeC {\'e}taill\IeC {\'e}e du planning du projet\relax }}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Vue globale du planning du projet avec les milestones\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Illustration du mod\IeC {\`e}le de d\IeC {\'e}veloppement en V qui est appliqu\IeC {\'e} \IeC {\`a} chaque it\IeC {\'e}ration. \relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Compatibilit\IeC {\'e} entre composant et version du logiciel. Les traits repr\IeC {\'e}sente une compatibilit\IeC {\'e} \IeC {\`a} 100 \%, les traits traitill\IeC {\'e}s repr\IeC {\'e}sente une compatibilit\IeC {\'e} partielle .\relax }}{27}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Vue global de l'architecture du syst\IeC {\`e}me\relax }}{35}{figure.caption.42}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrammes de composant du syst\IeC {\`e}me\relax }}{37}{figure.caption.45}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagramme de s\IeC {\'e}quence du principe de la navigation\relax }}{39}{figure.caption.55}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagramme de classe du composant MainView\relax }}{40}{figure.caption.57}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Contenu du fichier plist de configuration du menu pour la navigation\relax }}{41}{figure.caption.59}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramme de s\IeC {\'e}quence concernant la l\IeC {\'e}cture et la modification des param\IeC {\`e}tres\relax }}{43}{figure.caption.61}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramme de classe du composant Settings\relax }}{44}{figure.caption.63}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage de la carte\relax }}{45}{figure.caption.66}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Exemple de s\IeC {\'e}quence concernant la recherche d'un \IeC {\'e}l\IeC {\'e}ment sur la carte\relax }}{45}{figure.caption.67}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagramme de classe du composant Map\relax }}{47}{figure.caption.69}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagramme de s\IeC {\'e}quence illustrant l'appel asynchrone pour t\IeC {\'e}l\IeC {\'e}charger des donn\IeC {\'e}es depuis internet\relax }}{48}{figure.caption.73}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage des news\relax }}{49}{figure.caption.75}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Diagramme de classe du composant News\relax }}{50}{figure.caption.77}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Illustration de la modification de l'apparence des cellules et plus pr\IeC {\'e}cis\IeC {\'e}ment la couleur du texte du titre.\relax }}{51}{figure.caption.80}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Exemple de s\IeC {\'e}quence concernant choix d'un filtre d'affichage et ensuite l'affichage d'une personne de l'annuaire\relax }}{52}{figure.caption.83}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Diagramme de classe du composant News\relax }}{53}{figure.caption.85}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage de l'horaire pour une journ\IeC {\'e}e et l'affichage du d\IeC {\'e}tail de l'\IeC {\'e}v\IeC {\`e}nement sur la carte\relax }}{57}{figure.caption.92}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Diagramme de classe du composant calendrier\relax }}{58}{figure.caption.94}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage de l'horaire pour une journ\IeC {\'e}e et l'affichage du d\IeC {\'e}tail de l'\IeC {\'e}v\IeC {\`e}nement sur la carte\relax }}{60}{figure.caption.99}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagramme de classe du composant calendrier\relax }}{61}{figure.caption.101}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Vue globale des fonctionnalit\IeC {\'e}s du produit\relax }}{31}{figure.caption.18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme des cas d'utilisation de l'application\relax }}{32}{figure.caption.19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Wireframe illustrant les modifications des param\IeC {\`e}tres sur l'iPhone\relax }}{37}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Navigation sur IPhone}}}{37}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Navigation sur IPad}}}{37}{figure.caption.25}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Wireframe illustrant les modifications des param\IeC {\`e}tres sur l'iPad\relax }}{38}{figure.caption.26}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des cartes sur l'iPone\relax }}{39}{figure.caption.29}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des cartes sur l'iPad\relax }}{39}{figure.caption.30}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des news sur l'iPone\relax }}{40}{figure.caption.33}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage des news sur l'iPad\relax }}{41}{figure.caption.34}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage de l'annuaire sur l'iPone\relax }}{43}{figure.caption.37}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'affichage de l'annuaire sur l'iPad\relax }}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'horaire sur l'iPone\relax }}{45}{figure.caption.41}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres de l'horaire sur l'iPad\relax }}{46}{figure.caption.42}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres des r\IeC {\'e}sultats d'examen sur l'iPone\relax }}{47}{figure.caption.45}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Wireframe illustrant les fen\IeC {\^e}tres des r\IeC {\'e}sultats d'examen sur l'iPad\relax }}{47}{figure.caption.46}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Vue global de l'architecture du syst\IeC {\`e}me\relax }}{62}{figure.caption.104}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{69}{figure.caption.109}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{73}{figure.caption.121}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{75}{figure.caption.130}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{78}{figure.caption.139}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Vue global de l'architecture du syst\IeC {\`e}me\relax }}{51}{figure.caption.47}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrammes de composant du syst\IeC {\`e}me\relax }}{53}{figure.caption.50}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustration du fonctionnement du syst\IeC {\`e}me de cache. \relax }}{57}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ap\IeC {\'e}r\IeC {\c c}u de l'application FaceeBook v\IeC {\'e}rsion iPhone execut\IeC {\'e} sur iPad (zoom 1x) }}}{57}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ap\IeC {\'e}r\IeC {\c c}u de l'\IeC {\'e}dition d'un texte d'une applicaiton iPhone sur l'iPad (zoom 2x) }}}{57}{figure.caption.60}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Interface dans X-Code permettant l'\IeC {\'e}dition de la base de donn\IeC {\'e}es\relax }}{61}{figure.caption.65}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramme de s\IeC {\'e}quence du principe de la navigation\relax }}{63}{figure.caption.67}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramme de classe du composant MainView\relax }}{64}{figure.caption.69}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Contenu du fichier MenuItemsParam.plist de configuration du menu pour la navigation\relax }}{65}{figure.caption.71}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagramme de s\IeC {\'e}quence concernant la l\IeC {\'e}cture et la modification des param\IeC {\`e}tres\relax }}{67}{figure.caption.73}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramme de classe du composant Settings\relax }}{68}{figure.caption.75}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage de la carte\relax }}{69}{figure.caption.78}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Exemple de s\IeC {\'e}quence concernant la recherche d'un \IeC {\'e}l\IeC {\'e}ment sur la carte\relax }}{70}{figure.caption.79}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Diagramme de classe du composant Map\relax }}{71}{figure.caption.81}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Diagramme de s\IeC {\'e}quence illustrant l'appel asynchrone pour t\IeC {\'e}l\IeC {\'e}charger des donn\IeC {\'e}es depuis internet\relax }}{72}{figure.caption.85}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage des news\relax }}{73}{figure.caption.87}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Diagramme de classe du composant News\relax }}{75}{figure.caption.89}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Illustration de la modification de l'apparence des cellules et plus pr\IeC {\'e}cis\IeC {\'e}ment la couleur du texte du titre.\relax }}{76}{figure.caption.92}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Exemple de s\IeC {\'e}quence concernant choix d'un filtre d'affichage et ensuite l'affichage d'une personne de l'annuaire\relax }}{77}{figure.caption.95}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Diagramme de classe du composant News\relax }}{78}{figure.caption.97}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage de l'horaire pour une journ\IeC {\'e}e et l'affichage du d\IeC {\'e}tail de l'\IeC {\'e}v\IeC {\`e}nement sur la carte\relax }}{82}{figure.caption.104}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Diagramme de classe du composant calendrier\relax }}{83}{figure.caption.106}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Exemple de s\IeC {\'e}quence concernant l'affichage de l'horaire pour une journ\IeC {\'e}e et l'affichage du d\IeC {\'e}tail de l'\IeC {\'e}v\IeC {\`e}nement sur la carte\relax }}{85}{figure.caption.111}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Diagramme de classe du composant calendrier\relax }}{86}{figure.caption.113}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Vue global de l'architecture du syst\IeC {\`e}me\relax }}{91}{figure.caption.116}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{98}{figure.caption.121}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{102}{figure.caption.133}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leeks \IeC {\`a} l'aide d'Xcode\relax }}{105}{figure.caption.142}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces R\IeC {\'e}sultat de l'analyse des Leaks \IeC {\`a} l'aide d'Xcode\relax }}{108}{figure.caption.151}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

@@ -41,10 +41,10 @@
  */
 
 - (void)btnCliked:(id)sender {// TODO Other strat then networkActivityIndicatorVisible
-    if(![UIApplication sharedApplication].networkActivityIndicatorVisible){
+                              //if(![UIApplication sharedApplication].networkActivityIndicatorVisible){
         [self.delegate menuClicked:self];
         
-    }
+        //}
 }
 
 - (void) setLogo:(UIImage *)logo{

@@ -130,6 +130,13 @@
 		2FC8EA1013C18FC000B650C2 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */; };
 		2FC8EA1313C192D700B650C2 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC8EA1113C192D600B650C2 /* DetailView.xib */; };
 		2FC8EA1413C192D700B650C2 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC8EA1213C192D700B650C2 /* OverlayView.xib */; };
+		2FCA22D813F56B2600F8777E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22D713F56B2600F8777E /* Default@2x.png */; };
+		2FCA22DA13F56B3600F8777E /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22D913F56B3600F8777E /* Default-Landscape@2x.png */; };
+		2FCA22DC13F56E7600F8777E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22DB13F56E7600F8777E /* Default-Landscape~ipad.png */; };
+		2FCA22DE13F56E8400F8777E /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22DD13F56E8400F8777E /* Default~ipad.png */; };
+		2FCA22E813F56F3D00F8777E /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22E713F56F3D00F8777E /* Default-Portrait~ipad.png */; };
+		2FCA22EB13F5706F00F8777E /* lgApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22EA13F5706F00F8777E /* lgApp.png */; };
+		2FCA22ED13F570A300F8777E /* lgAppIPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCA22EC13F570A300F8777E /* lgAppIPad.png */; };
 		2FCDB34D13EA907300F8B5A5 /* EventOnMapDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCDB34B13EA907200F8B5A5 /* EventOnMapDisplayer.m */; };
 		2FCE204613D6DBA600E3638C /* ServRecDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE204513D6DBA600E3638C /* ServRecDAO.m */; };
 		2FCE204913D6E3E400E3638C /* RectoServTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE204813D6E3E400E3638C /* RectoServTableViewController.m */; };
@@ -250,7 +257,7 @@
 		2F58BB1413BCB6E20011D6EE /* CampusDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusDAO.m; sourceTree = "<group>"; };
 		2F5FE88B13BDB169004787CB /* BatimentDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatimentDAO.h; sourceTree = "<group>"; };
 		2F5FE88C13BDB169004787CB /* BatimentDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatimentDAO.m; sourceTree = "<group>"; };
-		2F71327F13B10F7C00876299 /* ESIB_PAD_SOURCES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESIB_PAD_SOURCES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F71327F13B10F7C00876299 /* ESIB@PAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESIB@PAD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F71328313B10F7C00876299 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F71328513B10F7C00876299 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F71328713B10F7C00876299 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -341,6 +348,13 @@
 		2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		2FC8EA1113C192D600B650C2 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		2FC8EA1213C192D700B650C2 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		2FCA22D713F56B2600F8777E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2FCA22D913F56B3600F8777E /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		2FCA22DB13F56E7600F8777E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		2FCA22DD13F56E8400F8777E /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		2FCA22E713F56F3D00F8777E /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		2FCA22EA13F5706F00F8777E /* lgApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lgApp.png; sourceTree = "<group>"; };
+		2FCA22EC13F570A300F8777E /* lgAppIPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lgAppIPad.png; sourceTree = "<group>"; };
 		2FCDB34A13EA907100F8B5A5 /* EventOnMapDisplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventOnMapDisplayer.h; sourceTree = "<group>"; };
 		2FCDB34B13EA907200F8B5A5 /* EventOnMapDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventOnMapDisplayer.m; sourceTree = "<group>"; };
 		2FCE204413D6DBA600E3638C /* ServRecDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServRecDAO.h; sourceTree = "<group>"; };
@@ -493,6 +507,13 @@
 		2F71327413B10F7C00876299 = {
 			isa = PBXGroup;
 			children = (
+				2FCA22EC13F570A300F8777E /* lgAppIPad.png */,
+				2FCA22EA13F5706F00F8777E /* lgApp.png */,
+				2FCA22E713F56F3D00F8777E /* Default-Portrait~ipad.png */,
+				2FCA22DD13F56E8400F8777E /* Default~ipad.png */,
+				2FCA22DB13F56E7600F8777E /* Default-Landscape~ipad.png */,
+				2FCA22D913F56B3600F8777E /* Default-Landscape@2x.png */,
+				2FCA22D713F56B2600F8777E /* Default@2x.png */,
 				2F99DAF813B3485E00121C48 /* CoreDataEntities */,
 				2F71328B13B10F7C00876299 /* ESIB_PAD_SOURCES */,
 				2F7132B413B10F7C00876299 /* ESIB_PAD_SOURCESTests */,
@@ -504,7 +525,7 @@
 		2F71328013B10F7C00876299 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F71327F13B10F7C00876299 /* ESIB_PAD_SOURCES.app */,
+				2F71327F13B10F7C00876299 /* ESIB@PAD.app */,
 				2F7132AD13B10F7C00876299 /* ESIB_PAD_SOURCESTests.octest */,
 			);
 			name = Products;
@@ -832,7 +853,7 @@
 			);
 			name = ESIB_PAD_SOURCES;
 			productName = ESIB_PAD_SOURCES;
-			productReference = 2F71327F13B10F7C00876299 /* ESIB_PAD_SOURCES.app */;
+			productReference = 2F71327F13B10F7C00876299 /* ESIB@PAD.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2F7132AC13B10F7C00876299 /* ESIB_PAD_SOURCESTests */ = {
@@ -946,6 +967,13 @@
 				2FBD309113E6DEBD00CE6CF9 /* plan.png in Resources */,
 				2FDB839C13E92B5A002C5976 /* exam.png in Resources */,
 				2FDB83A813E937F0002C5976 /* ExameCell.xib in Resources */,
+				2FCA22D813F56B2600F8777E /* Default@2x.png in Resources */,
+				2FCA22DA13F56B3600F8777E /* Default-Landscape@2x.png in Resources */,
+				2FCA22DC13F56E7600F8777E /* Default-Landscape~ipad.png in Resources */,
+				2FCA22DE13F56E8400F8777E /* Default~ipad.png in Resources */,
+				2FCA22E813F56F3D00F8777E /* Default-Portrait~ipad.png in Resources */,
+				2FCA22EB13F5706F00F8777E /* lgApp.png in Resources */,
+				2FCA22ED13F570A300F8777E /* lgAppIPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,7 +1183,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESIB_PAD_SOURCES/ESIB_PAD_SOURCES-Prefix.pch";
 				INFOPLIST_FILE = "ESIB_PAD_SOURCES/ESIB_PAD_SOURCES-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ESIB@PAD";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1168,7 +1196,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESIB_PAD_SOURCES/ESIB_PAD_SOURCES-Prefix.pch";
 				INFOPLIST_FILE = "ESIB_PAD_SOURCES/ESIB_PAD_SOURCES-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ESIB@PAD";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

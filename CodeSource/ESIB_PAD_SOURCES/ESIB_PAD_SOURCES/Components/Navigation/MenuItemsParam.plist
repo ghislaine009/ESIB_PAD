@@ -14,14 +14,14 @@
 		<string>plan.png</string>
 		<key>Directory</key>
 		<string>Directory.png</string>
+		<key>Examination</key>
+		<string>exam.png</string>
 		<key>Map</key>
 		<string>Maps.png</string>
 		<key>News</key>
 		<string>news.png</string>
 		<key>Settings</key>
 		<string>SystemPreferences.png</string>
-		<key>Examination</key>
-		<string>exam.png</string>
 	</dict>
 	<key>ListItem</key>
 	<array>
@@ -31,7 +31,6 @@
 		<string>Calendar</string>
 		<string>Examination</string>
 		<string>Settings</string>
-		<string>About</string>
 	</array>
 	<key>WidthElement</key>
 	<integer>100</integer>

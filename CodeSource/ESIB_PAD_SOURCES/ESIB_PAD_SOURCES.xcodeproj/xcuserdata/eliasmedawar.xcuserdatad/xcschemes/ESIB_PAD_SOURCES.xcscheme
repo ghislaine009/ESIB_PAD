@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F71327E13B10F7C00876299"
-               BuildableName = "ESIB_PAD_SOURCES.app"
+               BuildableName = "ESIB@PAD.app"
                BlueprintName = "ESIB_PAD_SOURCES"
                ReferencedContainer = "container:ESIB_PAD_SOURCES.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F71327E13B10F7C00876299"
-            BuildableName = "ESIB_PAD_SOURCES.app"
+            BuildableName = "ESIB@PAD.app"
             BlueprintName = "ESIB_PAD_SOURCES"
             ReferencedContainer = "container:ESIB_PAD_SOURCES.xcodeproj">
          </BuildableReference>
@@ -92,7 +92,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F71327E13B10F7C00876299"
-            BuildableName = "ESIB_PAD_SOURCES.app"
+            BuildableName = "ESIB@PAD.app"
             BlueprintName = "ESIB_PAD_SOURCES"
             ReferencedContainer = "container:ESIB_PAD_SOURCES.xcodeproj">
          </BuildableReference>

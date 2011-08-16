@@ -2,7 +2,7 @@
 % Latex template author: Yves Peissard ypeissard@gmail.com
 % ---------------------------------------------------------------
 
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper,twoside]{report}
 
 
 %Preamble --------------------------------------------------------
@@ -21,79 +21,295 @@
 \begin{document}
 
 
-%Title page
 \input{./title.tex}
 \input{./header.tex}
 
+\cleardoublepage
+\chapter{A propos }
 
+\cleardoublepage
+\section{Elias Medawar}
+	\begin{tabular}[t]{@{}p{2cm}p{5cm}p{8cm}}
+	\multirow{3}{*}{\includegraphics[scale=0.8]{../comon/figures/elias.jpg} } & 24 ans & \textit{Tel:} +41 76 409 0330 \\[0.4cm]
+	& Célibataire & \textit{E-mail:} \url{elias.medawar@gmail.com}\\[0.4cm]
+  	& Suisse et Libanais\\[0.5cm]
+	\end{tabular}
+\subsection{Compétences personnelles}
+\vspace{-0.4cm}
+Passionné, Flexible, Autonome
+
+\subsection{Formation}
+\vspace{-0.4cm}
+\subsubsection{2008 à aujourd'hui}
+\vspace{-0.4cm}
+\textbf{Bachelor \textbf{bilingue}(Français-Allemand) en Informatique}\\
+\textit{A l'Ecole d'ingénieurs et d'architectes de Fribourg et 1 semestre d'échange à la Hochschule Luzern  }
+ \vspace{-0.4cm}
+ \subsubsection{2004 à 2008}
+ \vspace{-0.4cm}
+ \textbf{Maturité professionnelle et apprentissage en Informatique }\\
+ \textit{Lycée Technique Baptiste Savoye de St-Imier }
+ 
+\subsection{Informatique}
+\vspace{-0.4cm}
+\begin{tabular}[t]{lp{5.5cm}l}
+ & \textbf{Maitrisé} & \textbf{Connaissances} \\
+ Programmation : &  JAVA et JAVA EE, Objective-C(iPhone et iPad) , C\# , PHP, Matlab &  AS3,   C , C++ , VHDL\\ 
+ Base de données : &  Oracle , MySQL&  SQL server \\
+Méthodologie : & UML & Scrum \\
+Bureautique : & Suite office, \LaTeX & \\
+\end{tabular}
+
+\subsection{Activités professionnelle et projet  }
+\vspace{-0.4cm}
+\subsubsection{juin-août 2011}
+\vspace{-0.4cm}
+\textbf{École supérieure des Ingénieurs de Beyrouth, Liban }Travail de bachelor \\
+Création d'une application iPhone/iPad qui permet aux étudiants et professeur de l'université  d'accéder au système d'information de l'école.\\
+\textit{Acquis:} Gestion de projet et recherche de solutions innovantes
+\vspace{-0.2cm}
+\subsubsection{2008 à aujourd'hui}
+\vspace{-0.4cm}
+\textbf{\href{http://www.misg.ch/}{Multimedia  Information System Group} }Fribourg\\
+Collaboration dans différents projets de recherche.
+\begin{itemize}
+\item \href{http://magisystem.project.eia-fr.ch/}{MAGI System} , test de l'interaction home-machine à l'aide des pensées.
+\item \href{http://portal.acm.org/citation.cfm?id=1647363}{WiiNote}, Annotation d'images à l'aide des manettes de la console Wii. 
+\end{itemize}
+\textit{Acquis:}Autonomie et recherche de solutions innovantes
+\vspace{-0.2cm}
+ \subsubsection{09/2010 - 02/2011}
+ \vspace{-0.4cm}
+\textbf{\href{http://www.tura.ch/}{Tura AG, Rotkreuz} }projet de semestre à Luzern\\
+Implémentation d'un serveur webDAV en php pour la plateforme  \href{http://www.yaoos.org/}{YaOOS} 
+\begin{itemize}
+\item Permet le mapage des données comme lecteur réseaux en local
+\end{itemize}
+\textit{Acquis:}Gestion de projet, analyse des besoins. 
+\vspace{-0.2cm}
+ \subsubsection{mars - aout 2008}
+ \vspace{-0.4cm}
+\textbf{\href{http://www.tem-sarl.ch/fr}{Techniques Electroniques Moutier Sàrl}}
+\begin{itemize}
+\item Création d'un CMS pour la gestion dynamique du  \href{http://www.tem-sarl.ch/fr}{site} de l'entreprise
+\end{itemize}
+\textit{Acquis:} Rigueur, travail d'équipe 
+\vspace{-0.2cm}
+ \subsubsection{2006 à 2009}
+ \vspace{-0.4cm}
+\textbf{Création de sites web en free-lance}\\
+\textit{Acquis:}Gestion des priorités, sens de la communication,résistance au stress 
+
+\subsection{Langues }
+\vspace{-0.4cm}
+Français: Langue maternelle\\
+Arabe: Parlé couramment, notions d'écriture  \\
+Allemand: Courant (niveau B2-C1 )\\
+Anglais: Scolaire (niveau A2), bon vocabulaire technique
+
+\cleardoublepage
 %Table of contents page
 \input{../comon/tableofcontents.tex}
 
-
+\cleardoublepage
 \chapter{Introduction}
+\cleardoublepage
+\section{Contexte}
+Ce projet s'inscrit dans le cadre du travail de Bachelor pour l'obtention du diplôme de Bachelor à l'Ecole d'ingénieurs et d'architectes de Fribourg. Il est réalisé à l'Université Saint-Joseph au Liban. 
 
-\chapter{Software Project Management Plan}
+Le potentiel des nouveaux appareils mobiles comme l'iPhone et l'iPad est énorme et il n'est jusqu'à présent pas exploité pour accéder au système d'information de l'\gls{USJ} . A l'aide de ce projet, nous allons exploiter aux mieux les nouvelles technologies et permettre aux utilisateurs du campus de consulter simplement et rapidement des informations telles que le programme des cours, les notes des examens , le plan du campus ou encore l'annuaire du campus.
+
+\section{Structure du rapport}
+La documentation du projet a été faite selon la norme IEEE 829-1998 sur la documentation de projet informatique. Cette norme regroupe les informations selon leurs types par documents. 
+
+Dans les équipes de développement d'une grande taille, chaque personne à un rôle dans le projet(Testeur, Architecte, Deseigner,Chef de projet, etc..). La norme permet  en autre de lié le rôle d'un ingénieur à un document.Par exemple le testeur sera responsable du STD(Software Test Documentation), le chef de projet est responsable du SPMP(Software Project Management Plan), etc . Il est claire que dans le cas présent une seul personne travail sur le projet mais grâce à cette manière de documenter,on est obligé de ce mettre dans le rôle de la personne qui est sensé rédiger le document et de ce faite pensé à tout les points importants comme elle le ferait.
+
+Pour une question de lisibilité, les différents documents ont été regroupé sous forme de chapitre pour former le rapport final.\\
+Le chapitre~\ref{spmp} à partir de la page \pageref{spmp} regroupe toutes les informations concernant la gestion du projet. En suite vient à partir de la page \pageref{srs} le chapitre~\ref{srs}  qui contient toutes les informations sur l'analyse faite durant le projet. Les pages \pageref{sdd} à \pageref{std} rassemblent toutes la documentation de la conception et implémentation de l'application.  Pour finir vient à la page \pageref{std} tout ce qui concerne les tests et leurs résultats. 
+Une conclusion termine le rapport. Elle est suivit par les annexes et information sur le contenu du CD.
+
+
+
+\cleardoublepage
+\chapter{Software Project Management Plan\label{spmp}}
+\vspace{6cm}
+\includegraphics[width=1\textwidth]{../comon/figures/spmpPic.jpg}
+
+
+
+\cleardoublepage
 \input{../SPMP/SPMP.tex}
 
-\chapter{Software Requirement Specification}
+\cleardoublepage
+\chapter{Software Requirement Specification\label{srs}}
+\vspace{6cm}
+\includegraphics[width=1\textwidth]{../comon/figures/srsPic.jpg}
+\cleardoublepage
 \input{../SRS/SRS.tex}
-\chapter{Software Design Description}
+
+\cleardoublepage
+\chapter{Software Design Description\label{sdd}}
+\vspace{6cm}
+\includegraphics[width=1\textwidth]{../comon/figures/sddPic.jpg}
+\cleardoublepage
 \input{../SDD/SDD.tex}
-\chapter{Software Test Description}
+
+\cleardoublepage
+\chapter{Software Test Description\label{std}}
+\vspace{6cm}
+\includegraphics[width=1\textwidth]{../comon/figures/stdPic.jpg}
+\cleardoublepage
 \input{../STD/STD.tex}
 
-%Examples
+\cleardoublepage
+\chapter{Conclusion}
+\cleardoublepage
+\section{Évolutions futures}
+Le résultat obtenu est un prototype fonctionnel est prête à être déployer. Cependant plusieurs fonctions peuvent venir le compléter pour le faire évoluer.
+Voici les principales évolutions possible 
+\subsection{Accès à toutes les données via les services web }  
+Pour l'instant la base de données contient moins d'information que ce que l'application supporte. Les coordonnées GPS des bureau de personnes ainsi que ceux des salles de cours n'a pas été faite. Le planning de chaque personne ainsi que le résultat des examens ne sont pas encore accessible.
+Cette évolution vise plus le côté services web de l'application mais qui est essentiel pour la suite de ce projet.
 
-%  1.Figures ------------------------------------------------------------------------------------------
-%    \EPSFIGTEXTWIDTH{source}{caption}{label}     sets eps image size to textwidth
-%
-%    \EPSFIGSCALE[0.5]{source}{caption}{label}    sets eps image size to 0.5 * the original size
-%
-%    \EPSFIGWRAP [0.5]{source}{caption}{label}    sets size of a wraped eps image to 0.5 * the textsize
-%
-%
-%  2.Equations ----------------------------------------------------------------------------------------
-%    \EQ{x = 1}{label}
-%
-%    \SPLITEQ{                                    used for longer calculations
-%    1 \cdot 1 & = 1\\                            the & is the alignment character
-%    2 \cdot 2 \cdot 2 & = 8
-%    }{label}
-%
-%
-%  3.Code listing --------------------------------------------------------------------------------------
-%    \begin{lstlisting}[label=samplecode,caption=A sample]   simple listing. configure language in config.tex.
-%        for (int i = 0; i < 10; i++) {                      default language is java
-%            // increment p  (*@\label{timer-1}@*)
-%            p++ = i;
-%        }
-%    \end{lstlisting}
-%
-%    \lstinputlisting[label=samplecode,caption=A sample]{listings/Graph.java}   list a whole file
-%
-%
-%  3.Bibliography reference
-%    \cite{Chaiken1995}
-%
-%
-%  4.Text outside of margin
-%    \SIDETEXT{text}
-%
-%
-%  5. Glossary Entry
-%  \gls{Latex}
-%  \glspl{Latex}    (pl for plural)
+\subsection{Nouvelles fonctionnalités } 
+Les idées de fonctionnalités supplémentaire proposées dans le cahier des charges peuvent compléter se projet. Les idées les plus intéressante serait:
+\begin{enumerate}
+\item La fonction ''Où es-tu?'' qui permet d'envoyer un message à une personne et si la personne le désire, ces coordonnés GPS seront renvoyé.  
+\item Modification du calendrier. Permettre la modification(ajout/suppression/modification) d'événements dans le calendrier.
+\end{enumerate}
 
-%   PUT YOUR CONTENTS HERE  -----------------------------------------------------------------------------------
+\subsection{Version de l'application sur d'autre appareil}
+D'autre appareil mobile ont les mêmes capacités que l'iPhone et l'iPad. Il serait aussi intéressant de rendre ce projet compatible avec les autres appareils. 
+
+\subsection{Une version multilingue du projet.}
+\subsection{Des cartes plus complètent des campus}
+L'idée et de fournir des cartes plus détaillés des campus avec des plans détaillés des étages. Ces plans complèterait la carte actuelle de google map. 
+
+\subsection{Accessible pour d'autre université}
+Beaucoup d'autre université ont le besoin du même genres de fonctionnalités. L'idée ici est d'offrir la possibilité à d'autre université d'utiliser cette application mais avec leurs propres service web pour la gestion des données.
+
+\section{Impressions personnelles} 
+Pour moi ce projet représente pas uniquement le travail de 3 mois mais plutôt le résultat de 3 ans d'études passionnante. Mon principale but était d'appliquer le plus grand nombre de concept vu lors de mes études d'une façon exemplaire. Ce but est pour moi atteints et je suis satisfaits de mon travail.  Ce travail m'a permis de consolider la rampe  qui me servira pour le départ dans la vie actif et le monde de travail de l'ingénierie.  
+   
+C'est avec grand plaisir que j'ai était confronter au mode de travail de l'USJ au Liban. J'ai trouvé que le mode de travail à l'USJ est plus orienté résultat que celui auquel j'ai était confronté jusqu'à présent (à l'école ou lors d'autre expérience de travail). En ce sens je considère ce mode de travail plus proche de celui qui m'attend dans l'industrie. 
+
+Le seul point négatif est qu'il n'a pas toujours était évident de garder une motivation constante tout au long du projet. Ceci est du à la durée(3 mois) de travail seul sur un projet.
+
+J'ai pu traiter d'une manière assez profonde différent concept de développement iOS et peut me considérer désormais comme jeune connaisseur dans ce domaine.
+C'est avec un petit chagrin au coeur que je termine ce projet passionnant  car il reste des choses intéressante à y développer. 
+
+\section{Remerciements}
+Je tiens à remercier M. Dany Mezher  en tant que responsable externe qui m'a suivi tout au long de ce travail.Il m'a soutenu autant sur le plan technique avec ses conseils d'expert dans le domaine du développement iOS que sur le plan social en m'accueillant généreusement et chaleureusement au Liban. J'espère que cette application pourra être utile à l'USJ. 
+
+Je remercie aussi mes deux responsables internes, Mme Elena Mugellini et M. Omar Abou Khaled qui eux aussi m'ont suivi tout au long de mon travail.
+Je remercie encore une fois M. Omar Abou Khaled  qui a organisé et rendu possible cette échange au Liban. 
+
+Je remercie également mes deux experts, M. Marc Wuergle et M.Roland Marro.
+
+Je remercie Mme Caroline Geissbühler pour la correction du rapport. Et plus particulièrement pour son soutient tout au long du projet. 
+
+Pour terminer un merci particulier revient à ma famille au Liban qui m'ont accueillis et soutenu ainsi rendant ces 3 mois de séjour au Liban plus agréable .
+
+\section{Conclusion}
+Je m'attendais à une plus grand compatibilité entre l'iPhone et l'iPad et en conséquence a passé moins de temps sur la partie implémentation de chaque itération.
+
+La méthodologie de travail itérative a permis de garantir une bonne  qualité du produit final. J'ai pu constater en découpant le temps à disposition en itération l'utilité d'avoir des jalons et de fixer des objectifs intermédiaire. 
+
+Les objectifs fixé au départ du projet ont été atteint. Le prototype rendu est fonctionnel, il peut être facilement finalisé et exploité.  La documentation rendu avec le projet facilite la réutilisation et la continuation du projet  par une autre personne. Le code rendu est commenté et peut être aisément retravaillé pas d'autre personnes.
+
+\cleardoublepage
+
+
+\chapter{Indexes}
+\cleardoublepage
+
+\renewcommand{\bibname}{Références}
+
+\begin{flushleft}
+\bibliography{../comon/bibliography/references}
+\end{flushleft}
+
+\bibliographystyle{plain}
+
+
+\printglossaries
+
+\listoffigures
+
+\lstlistoflistings
+
+\cleardoublepage
+\chapter{Annexes}
+\section{Imprimé}
+\subsection{Annexe A - directive du projet}
+Contient la directive distribué au début du projet.
+\subsection {Annexe F \- Flyer}
+Le résumé du projet en allemand.
+\subsection {Annexe G \- Cahier des charges}
+Contient le cahier des charges établi au début du projet.
+\subsection {Annexe H \- Journal de bord}
+Le journal de bord.
+
+\section{le CD}
+ |- CodeSource : Contient tout les resources nécessaire pour le développement à l'aide de XCode\\
+ |---AppDevCenterCertification : Contient les fichiers permettant d'accéder au compte développeur de l'EIF \\
+ |---ESIB\_PAD\_SOURCES : Code source de l'application \\
+ |-----ESIB\_PAD\_SOURCES : \\
+ |-------Components : Contient les différents composant développé. La parite DAO de chaque composant est dans le dossier  DAO \\
+ |---------Calendrier : Composant Calendrier\\
+ |---------Directory : Composant Directory\\
+ |-----------iPad : Partie graphique concernant l'iPAD\\
+ |-----------iPhone : Partie graphique concernant l'iPone \\
+ |---------ExamResult : Composant qui affiche les résultats de examens.\\
+ |---------Map : Composant Map\\
+ |---------Navigation: Composant Navigation avec le menu.\\
+ |---------News : Composant News \\
+ |---------Settings: Composant qui perment le paramétrage de l'application\\
+ |-----------iPad : Partie graphique concernant l'iPAD\\
+ |-----------iPhone : Partie graphique concernant l'iPone\\
+ |---------Utility : Dossier contenant des classes à but d'utilitaire utilisé et développé dans le projet \\
+ |-----------GCCalendar : version modifié du composant https://github.com/fraca7/GCCalendar/ \\
+ |-------CoreDataEntities : Contient les entités de la base de données(Classe représentant une table dans la DB)\\
+ |-------DAO : Contient toute les classe qui regroupe la logique métier et permet l'accès au donné.\\
+ |-------ESIB\_PAD\_SOURCES.xcdatamodeld : Contient le modèl de la base de données \\
+ |-------Images : Contient toutes les images, logo utilisé par l'application.\\
+ |-----ESIB\_PAD\_SOURCESTests : Contient le code de test de l'application\\
+ |---desing : Contient les fichiers Photoshop CS5 de design de l'application\\
+ |---webServices : Contient le service web local écrit en php ainsi que les données.\\
+ |-Documentation : Contient la documentation sous format PDF ainsi que le code Latex. \\
+ |--- makeRapportFinal, make : sont des fichier bash permettant de générer la documentation (Compatible MAC OS X)\\
+ |---Annexes\\
+ |-----A\_Directive\\
+ |-----B\_Plannigs\\
+ |-----C\_ProcesVerbaux\\
+ |-----D\_DiagramesUML\\
+ |-----E\_XML\_WEB\_SERVICES\\
+ |-----F\_Flyer\\
+ |-----G\_Cahie\_des\_charges\\
+ |-----H\_Journal\_de\_bord
+ |---Source : Code latex pour la génération de la documentation\\
+ |-----CDC : Cahier des charges\\
+ |-----RapportFinal : Le rapport final.\\
+ |-----RapportRelease : Les différent rapport de release.\\
+ |-----SDD \\
+ |-----SPMP\\
+ |-----SRS\\
+ |-----STD\\
+ |-----comon\\
+ |-------figure : Contient toute les figures et images utilisé dans la documentation.\\
+ |-------logos : Les logos utilisé\\
 
 
 
-%Bibliography: Use JabRef to manage your bibliography: http://jabref.sourceforge.net/
-%\clearpage
-%	\addcontentsline{toc}{chapter}{Referenzen}
+\cleardoublepage
+\chapter*{Annexe A \- Directives du projet}
+\cleardoublepage
+\chapter*{Annexe F \- Flyer}
+\cleardoublepage
+\chapter*{Annexe G \- Cahier des charges}
 
-
-\newpage
+\cleardoublepage
+\chapter*{Annexe H \- Journal de bord}
 
 %\renewcommand{\bibname}{Referenzen}
 
@@ -104,21 +320,6 @@
 %\bibliographystyle{plain}
 
 
-
-%Glossary
-\printglossaries
-
-\listoffigures
-\lstlistoflistings
-
-
-%appendices
-%\newpage
-%\pagestyle{plain}
-%\begin{appendices}
-%	\appendix
-
-%\end{appendices}
 
 
 \end{document}

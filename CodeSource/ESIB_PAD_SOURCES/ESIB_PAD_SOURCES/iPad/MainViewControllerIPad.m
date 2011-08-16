@@ -57,6 +57,30 @@
                                              selector:@selector(didRotate:)
                                                  name:@"UIDeviceOrientationDidChangeNotification" object:nil];
     [self resizeCenterSubviews];
+    NewsViewController *controller = [[NewsViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    CGRect r = [controller.view frame];
+    r.origin.x = 0;
+    r.origin.y = [[UIScreen mainScreen] bounds].size.height;
+    r.size.width = _centerView.frame.size.width;
+    r.size.height = _centerView.frame.size.height;
+    controller.view.autoresizesSubviews = YES;
+    [controller.view setFrame:r];
+    [_centerView addSubview:controller.view];
+    
+    CGRect newViewFrame = controller.view.frame;
+    newViewFrame.origin.y = 0;
+    [UIView animateWithDuration:0.5
+                          delay:0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         controller.view.frame= newViewFrame;
+                     } 
+                     completion:^(BOOL finished){
+                         _crntView = controller.view;
+                     }];
+
+    [UIView commitAnimations];
+
 }
 -(void) resizeCenterSubviews{
     UIInterfaceOrientation currentOrientation = [[UIDevice currentDevice] orientation];

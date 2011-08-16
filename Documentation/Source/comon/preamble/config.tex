@@ -1,7 +1,7 @@
 %packages
 %\usepackage[dvipdf]{graphicx}
 \usepackage[pdftex]{graphicx}
-\usepackage[a4paper,top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[a4paper,top=2.5cm,left=2.5cm,right=2.5cm,bottom=4.5cm]{geometry}
 \usepackage[utf8x]{inputenc}
 \usepackage{float}
 \usepackage[frenchb]{babel}
@@ -36,6 +36,8 @@
 \usepackage{ulem}
 \usepackage{color}
 \usepackage{listings}
+\usepackage{algorithm}
+\usepackage{multirow}
 %\sout{Texte à barrer}
 %\xout{Texte à hachurer}
 %\uwave{Texte à souligner par une vaguelette}
@@ -100,7 +102,7 @@
     \thispagestyle{plain}
     \newpage
     \if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
+\makeatother \clearpage{\thispagestyle{plain}\cleardoublepage}
 
 \definecolor{gray}{rgb}{0.4,0.4,0.4}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.6}

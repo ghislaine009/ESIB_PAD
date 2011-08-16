@@ -10,6 +10,11 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>lgApp.png</string>
+		<string>lgAppIPad.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>ESIB.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

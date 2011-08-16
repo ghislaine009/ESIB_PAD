@@ -1,96 +1,132 @@
 \select@language {frenchb}
 \select@language {french}
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}Software Project Management Plan}{4}{chapter.2}
-\contentsline {section}{\numberline {1}Introduction}{4}{section.2.1}
-\contentsline {section}{\numberline {2}Organisation}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.1}S\IeC {\'e}ances}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2}Site internet}{4}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Communication}{5}{subsection.2.2.3}
-\contentsline {section}{\numberline {3}Planification}{6}{section.2.3}
-\contentsline {subsection}{\numberline {3.1}Plan global}{6}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {3.2}Description des jalons}{6}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {3.3}Planification d\IeC {\'e}taill\IeC {\'e} le 1 juin 2011}{9}{subsection.2.3.3}
-\contentsline {section}{\numberline {4}Processus technique}{10}{section.2.4}
-\contentsline {section}{\numberline {5}Gestion des risques}{10}{section.2.5}
-\contentsline {subsection}{\numberline {5.1}\IeC {\'E}tat le 01/06/2011 }{11}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {5.2}\IeC {\'E}tat le 22/06/2011 }{12}{subsection.2.5.2}
-\contentsline {section}{\numberline {6}Gestion des configurations}{12}{section.2.6}
-\contentsline {section}{\numberline {7}Gestion de la documentation}{13}{section.2.7}
-\contentsline {section}{\numberline {8}Gestion des finances}{14}{section.2.8}
-\contentsline {subsection}{\numberline {8.1}Ressources humaines}{14}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {8.2}Ressources mat\IeC {\'e}rielles}{14}{subsection.2.8.2}
-\contentsline {chapter}{\numberline {3}Software Requirement Specification}{15}{chapter.3}
-\contentsline {section}{\numberline {1}Introduction}{15}{section.3.1}
-\contentsline {section}{\numberline {2}Analyse}{16}{section.3.2}
-\contentsline {subsection}{\numberline {2.1} Aper\IeC {\c c}u global}{16}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {2.2}Use case}{17}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {2.3}Description des utilisateurs}{17}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {2.4}Faisabilit\IeC {\'e}}{18}{subsection.3.2.4}
-\contentsline {section}{\numberline {3}Sp\IeC {\'e}cification des exigences }{18}{section.3.3}
-\contentsline {subsection}{\numberline {3.1}Sp\IeC {\'e}cification des interfaces}{18}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.2}Exigences fonctionnelles }{19}{subsection.3.3.2}
-\contentsline {subsubsection}{Naviguer}{19}{section*.12}
-\contentsline {subsubsection}{Param\IeC {\'e}trer l'application}{22}{section*.15}
-\contentsline {subsubsection}{Login}{23}{section*.19}
-\contentsline {subsubsection}{Visualiser la carte}{25}{section*.22}
-\contentsline {subsubsection}{Afficher les nouvelles}{26}{section*.26}
-\contentsline {subsubsection}{Afficher l'annuaire}{28}{section*.30}
-\contentsline {subsubsection}{Afficher l'horaire}{30}{section*.34}
-\contentsline {subsubsection}{Afficher le r\IeC {\'e}sultat des examens}{32}{section*.38}
-\contentsline {chapter}{\numberline {4}Software Design Description}{34}{chapter.4}
-\contentsline {section}{\numberline {1}Introduction}{34}{section.4.1}
-\contentsline {subsection}{\numberline {1.1}But du document}{34}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {1.2}Aper\IeC {\c c}u du document}{34}{subsection.4.1.2}
-\contentsline {section}{\numberline {2}Architecture du syst\IeC {\`e}me }{35}{section.4.2}
-\contentsline {subsection}{\numberline {2.1}Architecture choisie}{35}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {2.2}Discussion des alternatives d'architectures}{36}{subsection.4.2.2}
-\contentsline {subsubsection}{Alternative 1: Sans base de donn\IeC {\'e}es }{36}{section*.43}
-\contentsline {subsubsection}{Alternative 2: Objet pour la communication en C++ }{36}{section*.44}
-\contentsline {subsection}{\numberline {2.3}Composants du syst\IeC {\`e}me}{37}{subsection.4.2.3}
-\contentsline {subsubsection}{Description des composants}{37}{section*.46}
-\contentsline {section}{\numberline {3}Conception et Impl\IeC {\'e}mentation des composants}{38}{section.4.3}
-\contentsline {subsection}{\numberline {3.1}Syst\IeC {\`e}me de cache }{38}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {3.2}Base de donn\IeC {\'e}e}{38}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {3.3}Base technique du d\IeC {\'e}veloppement iOS}{38}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {3.4}Navigation}{39}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {3.5}Settings}{43}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {3.6}Map}{45}{subsection.4.3.6}
-\contentsline {paragraph}{Le framework MapKit }{48}{section*.71}
-\contentsline {paragraph}{L'appel asynchrone}{48}{section*.72}
-\contentsline {subsection}{\numberline {3.7}News}{49}{subsection.4.3.7}
-\contentsline {paragraph}{Personnalisation des cellules d'un tableau:}{51}{section*.79}
-\contentsline {paragraph}{T\IeC {\'e}l\IeC {\'e}chargement d'image \IeC {\`a} partir d'Internet}{51}{section*.81}
-\contentsline {subsection}{\numberline {3.8}Directory}{52}{subsection.4.3.8}
-\contentsline {paragraph}{Interface graphique sur iPad:}{53}{section*.87}
-\contentsline {paragraph}{Recherche :}{54}{section*.88}
-\contentsline {paragraph}{Lancer un appel t\IeC {\'e}l\IeC {\'e}phonique:}{55}{section*.89}
-\contentsline {paragraph}{\IeC {\'E}crire un e-mail:}{55}{section*.90}
-\contentsline {subsection}{\numberline {3.9}Calendrier}{57}{subsection.4.3.9}
-\contentsline {paragraph}{GCCalendarPortraitView}{58}{section*.96}
-\contentsline {paragraph}{Affichage de l'\IeC {\'e}v\IeC {\'e}nement sur la carte}{59}{section*.97}
-\contentsline {subsection}{\numberline {3.10}ExamResult}{60}{subsection.4.3.10}
-\contentsline {paragraph}{Tout comme les news}{61}{section*.103}
-\contentsline {chapter}{\numberline {5}Software Test Description}{62}{chapter.5}
-\contentsline {section}{\numberline {1}Introduction}{62}{section.5.1}
-\contentsline {subsection}{\numberline {1.1}Philosophie de test}{62}{subsection.5.1.1}
-\contentsline {section}{\numberline {2}Organisation des tests }{63}{section.5.2}
-\contentsline {subsection}{\numberline {2.1}\IeC {\'E}l\IeC {\'e}ments \IeC {\`a} tester}{63}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {2.2}\IeC {\'E}l\IeC {\'e}ments \IeC {\`a} ne pas tester}{63}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {2.3}Outils de test et environnement}{63}{subsection.5.2.3}
-\contentsline {section}{\numberline {3}Cas de test }{63}{section.5.3}
-\contentsline {subsection}{\numberline {3.1}Navigation}{63}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {3.2}Param\IeC {\'e}trer}{64}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {3.3}Carte}{64}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {3.4}News}{65}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {3.5}Directory}{66}{subsection.5.3.5}
-\contentsline {subsection}{\numberline {3.6}Calendrier}{66}{subsection.5.3.6}
-\contentsline {subsection}{\numberline {3.7}R\IeC {\'e}sultat d'examen}{67}{subsection.5.3.7}
-\contentsline {section}{\numberline {4}Protocole de test}{67}{section.5.4}
-\contentsline {subsection}{\numberline {4.1}Environnement de test}{67}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {4.2}Protocole de test 1}{68}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {4.3}Protocole de test 2}{69}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {4.4}Protocole de test 3}{71}{subsection.5.4.4}
-\contentsline {subsection}{\numberline {4.5}Protocole de test 4}{73}{subsection.5.4.5}
-\contentsline {subsection}{\numberline {4.6}Protocole de test 5}{76}{subsection.5.4.6}
-\contentsline {chapter}{Glossary}{79}{section*.140}
+\contentsline {chapter}{\numberline {1}A propos }{3}{chapter.1}
+\contentsline {section}{\numberline {1}Elias Medawar}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1}Comp\IeC {\'e}tences personnelles}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.2}Formation}{5}{subsection.1.1.2}
+\contentsline {subsubsection}{2008 \IeC {\`a} aujourd'hui}{5}{section*.1}
+\contentsline {subsubsection}{2004 \IeC {\`a} 2008}{5}{section*.2}
+\contentsline {subsection}{\numberline {1.3}Informatique}{5}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.4}Activit\IeC {\'e}s professionnelle et projet }{5}{subsection.1.1.4}
+\contentsline {subsubsection}{juin-ao\IeC {\^u}t 2011}{5}{section*.3}
+\contentsline {subsubsection}{2008 \IeC {\`a} aujourd'hui}{6}{section*.4}
+\contentsline {subsubsection}{09/2010 - 02/2011}{6}{section*.5}
+\contentsline {subsubsection}{mars - aout 2008}{6}{section*.6}
+\contentsline {subsubsection}{2006 \IeC {\`a} 2009}{6}{section*.7}
+\contentsline {subsection}{\numberline {1.5}Langues }{6}{subsection.1.1.5}
+\contentsline {chapter}{\numberline {2}Introduction}{11}{chapter.2}
+\contentsline {section}{\numberline {1}Contexte}{13}{section.2.1}
+\contentsline {section}{\numberline {2}Structure du rapport}{13}{section.2.2}
+\contentsline {chapter}{\numberline {3}Software Project Management Plan}{15}{chapter.3}
+\contentsline {section}{\numberline {1}Introduction}{17}{section.3.1}
+\contentsline {section}{\numberline {2}Organisation}{17}{section.3.2}
+\contentsline {subsection}{\numberline {2.1}S\IeC {\'e}ances}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {2.2}Site internet}{17}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {2.3}Communication}{18}{subsection.3.2.3}
+\contentsline {section}{\numberline {3}Planification}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.1}Plan global}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.2}Description des jalons}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3}Planification d\IeC {\'e}taill\IeC {\'e}}{22}{subsection.3.3.3}
+\contentsline {section}{\numberline {4}Processus technique}{23}{section.3.4}
+\contentsline {section}{\numberline {5}Gestion des risques}{24}{section.3.5}
+\contentsline {subsection}{\numberline {5.1}\IeC {\'E}tat le 01/06/2011 }{24}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {5.2}\IeC {\'E}tat le 04/07/2011 }{25}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {5.3}\IeC {\'E}tat le 08/08/2011 }{26}{subsection.3.5.3}
+\contentsline {section}{\numberline {6}Gestion des configurations}{26}{section.3.6}
+\contentsline {section}{\numberline {7}Gestion de la documentation}{27}{section.3.7}
+\contentsline {section}{\numberline {8}Gestion des finances}{28}{section.3.8}
+\contentsline {subsection}{\numberline {8.1}Ressources humaines}{28}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {8.2}Ressources mat\IeC {\'e}rielles}{28}{subsection.3.8.2}
+\contentsline {chapter}{\numberline {4}Software Requirement Specification}{29}{chapter.4}
+\contentsline {section}{\numberline {1}Introduction}{31}{section.4.1}
+\contentsline {section}{\numberline {2}Analyse}{31}{section.4.2}
+\contentsline {subsection}{\numberline {2.1} Aper\IeC {\c c}u global}{31}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {2.2}Use case}{32}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {2.3}Description des utilisateurs}{32}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {2.4}Faisabilit\IeC {\'e}}{33}{subsection.4.2.4}
+\contentsline {section}{\numberline {3}Sp\IeC {\'e}cification des exigences }{33}{section.4.3}
+\contentsline {subsection}{\numberline {3.1}Sp\IeC {\'e}cification des interfaces}{33}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {3.2}Exigences fonctionnelles }{35}{subsection.4.3.2}
+\contentsline {subsubsection}{Naviguer}{35}{section*.20}
+\contentsline {subsubsection}{Param\IeC {\'e}trer l'application}{36}{section*.23}
+\contentsline {subsubsection}{Visualiser la carte}{38}{section*.27}
+\contentsline {subsubsection}{Afficher les nouvelles}{39}{section*.31}
+\contentsline {subsubsection}{Afficher l'annuaire}{41}{section*.35}
+\contentsline {subsubsection}{Afficher l'horaire}{44}{section*.39}
+\contentsline {subsubsection}{Afficher le r\IeC {\'e}sultat des examens}{46}{section*.43}
+\contentsline {chapter}{\numberline {5}Software Design Description}{49}{chapter.5}
+\contentsline {section}{\numberline {1}Introduction}{51}{section.5.1}
+\contentsline {subsection}{\numberline {1.1}But du chapitre}{51}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {1.2}Aper\IeC {\c c}u du chapitre}{51}{subsection.5.1.2}
+\contentsline {section}{\numberline {2}Architecture du syst\IeC {\`e}me }{51}{section.5.2}
+\contentsline {subsection}{\numberline {2.1}Architecture choisie}{51}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {2.2}Discussion des alternatives d'architectures}{52}{subsection.5.2.2}
+\contentsline {subsubsection}{Alternative 1: Sans base de donn\IeC {\'e}es }{52}{section*.48}
+\contentsline {subsubsection}{Alternative 2: Objet pour la communication en C++ }{52}{section*.49}
+\contentsline {subsection}{\numberline {2.3}Composants du syst\IeC {\`e}me}{53}{subsection.5.2.3}
+\contentsline {subsubsection}{Description des composants}{54}{section*.51}
+\contentsline {section}{\numberline {3}Conception et Impl\IeC {\'e}mentation des composants}{55}{section.5.3}
+\contentsline {subsection}{\numberline {3.1}Compatibilit\IeC {\'e} graphique iPhone,iPad}{55}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {3.2}Syst\IeC {\`e}me de cache }{56}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {3.3}Acc\IeC {\`e}s au donn\IeC {\'e}es des services web}{57}{subsection.5.3.3}
+\contentsline {subsubsection}{Services web locaux}{58}{section*.62}
+\contentsline {subsubsection}{T\IeC {\'e}l\IeC {\'e}chargement de fichier XML en Objective-c}{59}{section*.63}
+\contentsline {subsubsection}{Exploiter des XML en Objective-c}{60}{section*.64}
+\contentsline {subsection}{\numberline {3.4}Base de donn\IeC {\'e}e}{61}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {3.5}Navigation}{63}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {3.6}Settings}{67}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {3.7}Map}{69}{subsection.5.3.7}
+\contentsline {paragraph}{Le framework MapKit }{72}{section*.83}
+\contentsline {paragraph}{L'appel asynchrone}{72}{section*.84}
+\contentsline {subsection}{\numberline {3.8}News}{73}{subsection.5.3.8}
+\contentsline {paragraph}{Personnalisation des cellules d'un tableau:}{76}{section*.91}
+\contentsline {paragraph}{T\IeC {\'e}l\IeC {\'e}chargement d'image \IeC {\`a} partir d'Internet}{76}{section*.93}
+\contentsline {subsection}{\numberline {3.9}Directory}{77}{subsection.5.3.9}
+\contentsline {paragraph}{Interface graphique sur iPad:}{78}{section*.99}
+\contentsline {paragraph}{Recherche :}{79}{section*.100}
+\contentsline {paragraph}{Lancer un appel t\IeC {\'e}l\IeC {\'e}phonique:}{80}{section*.101}
+\contentsline {paragraph}{\IeC {\'E}crire un e-mail:}{80}{section*.102}
+\contentsline {subsection}{\numberline {3.10}Calendrier}{82}{subsection.5.3.10}
+\contentsline {paragraph}{GCCalendarPortraitView}{84}{section*.108}
+\contentsline {paragraph}{Affichage de l'\IeC {\'e}v\IeC {\'e}nement sur la carte}{84}{section*.109}
+\contentsline {subsection}{\numberline {3.11}ExamResult}{85}{subsection.5.3.11}
+\contentsline {paragraph}{Tout comme les news}{87}{section*.115}
+\contentsline {chapter}{\numberline {6}Software Test Description}{89}{chapter.6}
+\contentsline {section}{\numberline {1}Introduction}{91}{section.6.1}
+\contentsline {subsection}{\numberline {1.1}Philosophie de test}{91}{subsection.6.1.1}
+\contentsline {section}{\numberline {2}Organisation des tests }{91}{section.6.2}
+\contentsline {subsection}{\numberline {2.1}\IeC {\'E}l\IeC {\'e}ments \IeC {\`a} tester}{91}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {2.2}\IeC {\'E}l\IeC {\'e}ments \IeC {\`a} ne pas tester}{92}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {2.3}Outils de test et environnement}{92}{subsection.6.2.3}
+\contentsline {section}{\numberline {3}Cas de test }{92}{section.6.3}
+\contentsline {subsection}{\numberline {3.1}Navigation}{92}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {3.2}Param\IeC {\'e}trer}{93}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {3.3}Carte}{94}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {3.4}News}{94}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {3.5}Directory}{95}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {3.6}Calendrier}{95}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {3.7}R\IeC {\'e}sultat d'examen}{96}{subsection.6.3.7}
+\contentsline {section}{\numberline {4}Protocole de test}{97}{section.6.4}
+\contentsline {subsection}{\numberline {4.1}Protocole de test 1}{97}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {4.2}Protocole de test 2}{98}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {4.3}Protocole de test 3}{100}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {4.4}Protocole de test 4}{102}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {4.5}Protocole de test 5}{105}{subsection.6.4.5}
+\contentsline {chapter}{\numberline {7}Conclusion}{109}{chapter.7}
+\contentsline {section}{\numberline {1}\IeC {\'E}volutions futures}{111}{section.7.1}
+\contentsline {subsection}{\numberline {1.1}Acc\IeC {\`e}s \IeC {\`a} toutes les donn\IeC {\'e}es via les services web }{111}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {1.2}Nouvelles fonctionnalit\IeC {\'e}s }{111}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {1.3}Version de l'application sur d'autre appareil}{111}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {1.4}Une version multilingue du projet.}{111}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {1.5}Accessible pour d'autre universit\IeC {\'e}}{111}{subsection.7.1.5}
+\contentsline {section}{\numberline {2}Impressions personnelles}{112}{section.7.2}
+\contentsline {section}{\numberline {3}Remerciements}{112}{section.7.3}
+\contentsline {section}{\numberline {4}Conclusion}{112}{section.7.4}
+\contentsline {chapter}{\numberline {8}Indexes}{115}{chapter.8}
+\contentsline {chapter}{\numberline {9}Annexes}{123}{chapter.9}
+\contentsline {section}{\numberline {1}Imprim\IeC {\'e}}{123}{section.9.1}
+\contentsline {subsection}{\numberline {1.1}Annexe A - directive du projet}{123}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {1.2}Annexe F \discretionary {-}{}{} Flyer}{123}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {1.3}Annexe G \discretionary {-}{}{} Cahier des charges}{123}{subsection.9.1.3}
+\contentsline {subsection}{\numberline {1.4}Annexe H \discretionary {-}{}{} Journal de bord}{123}{subsection.9.1.4}
+\contentsline {section}{\numberline {2}le CD}{123}{section.9.2}
