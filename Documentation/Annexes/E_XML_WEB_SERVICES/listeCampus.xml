@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+	<row>
+		<code>CEUDB</code>
+		<campus>Centre d'études universitaires de Dubaï</campus>
+		<adresse></adresse>
+		<responsable>Directrice</responsable>
+		<titre>Mlle</titre>
+
+		<nom>MOUNSEF ABBOUD</nom>
+		<prenom>Mireille</prenom>
+		<extension>4616</extension>
+		<email>mabboud@usj.edu.lb</email>
+		<longitude></longitude>
+		<latitude></latitude>
+		<img>http://www.usj.edu.lb/logos/80/ceudb.jpg</img>
+
+	</row>
+	<row>
+		<code>CEULN</code>
+		<campus>Centre d'études universitaires du Liban-Nord</campus>
+		<adresse>Ras Maska - Koura - B.P. 44<BR />Tripoli</adresse>
+		<responsable>Directrice</responsable>
+
+		<titre>Mme</titre>
+		<nom>ALAM (EL) GEMAYEL</nom>
+		<prenom>Fadia</prenom>
+		<extension>06-401821</extension>
+		<email>falam@usj.edu.lb</email>
+		<longitude>35.830723</longitude>
+
+		<latitude>34.401024</latitude>
+		<img>http://www.usj.edu.lb/logos/80/ceuln.jpg</img>
+	</row>
+	<row>
+		<code>CEULS</code>
+		<campus>Centre d'études universitaires du Liban-Sud</campus>
+		<adresse>Bramieh - B.P. 42<BR />Saïda</adresse>
+
+		<responsable>Directeur</responsable>
+		<titre>M.</titre>
+		<nom>ASSAAD</nom>
+		<prenom>Moustapha</prenom>
+		<extension>07 731 284/5-ext:122</extension>
+		<email>massaad@usj.edu.lb</email>
+
+		<longitude>35.867795</longitude>
+		<latitude>33.879058</latitude>
+		<img>http://www.usj.edu.lb/logos/80/ceuls.jpg</img>
+	</row>
+	<row>
+		<code>CEUZB</code>
+		<campus>Centre d'études universitaires de Zahlé et de la Békaa</campus>
+
+		<adresse>Hazerta - BP 159<BR />Zahlé</adresse>
+		<responsable>Directeur</responsable>
+		<titre>M.</titre>
+		<nom>MOURAD</nom>
+		<prenom>Jean</prenom>
+		<extension>(08)812204</extension>
+
+		<email>jean.mourad@usj.edu.lb</email>
+		<longitude>35.901952</longitude>
+		<latitude>33.846256</latitude>
+		<img>http://www.usj.edu.lb/logos/80/ceuzb.jpg</img>
+	</row>
+	<row>
+		<code>CIS</code>
+
+		<campus>Campus de l'innovation et du sport</campus>
+		<adresse></adresse>
+		<responsable>Administrateur</responsable>
+		<titre>M.</titre>
+		<nom>BEAINO</nom>
+		<prenom>Marwan</prenom>
+
+		<extension>6601</extension>
+		<email>marwan.beaino@usj.edu.lb</email>
+		<longitude></longitude>
+		<latitude></latitude>
+		<img>http://www.usj.edu.lb/logos/80/cis.jpg</img>
+	</row>
+	<row>
+
+		<code>CSH</code>
+		<campus>Campus des sciences humaines</campus>
+		<adresse>Rue de Damas<BR />B.P. 17-5208 - Mar Mikhael<BR />Beyrouth 1104 2020</adresse>
+		<responsable>Administrateur</responsable>
+		<titre>M.</titre>
+
+		<nom>RENNO</nom>
+		<prenom>Jihad</prenom>
+		<extension>5000</extension>
+		<email>jihad.renno@usj.edu.lb</email>
+		<longitude>35.511663</longitude>
+		<latitude>33.881037</latitude>
+
+		<img>http://www.usj.edu.lb/logos/80/csh.jpg</img>
+	</row>
+	<row>
+		<code>CSM</code>
+		<campus>Campus des sciences médicales et infirmières</campus>
+		<adresse>Rue de Damas<BR />B.P. 11-5076 - Riad El Solh<BR />Beyrouth 1107 2180</adresse>
+
+		<responsable>Administrateur</responsable>
+		<titre>M.</titre>
+		<nom>HINDI</nom>
+		<prenom>Fadi</prenom>
+		<extension>2202</extension>
+		<email>fadi.hindi@usj.edu.lb</email>
+
+		<longitude>35.512211</longitude>
+		<latitude>33.882245</latitude>
+		<img>http://www.usj.edu.lb/logos/80/csm.jpg</img>
+	</row>
+	<row>
+		<code>CSS</code>
+		<campus>Campus des sciences sociales</campus>
+
+		<adresse>Rue Huvelin<BR />B.P. 17-5208 - Mar Mikhaël<BR />Beyrouth 1104 2020</adresse>
+		<responsable>Administrateur</responsable>
+		<titre>M.</titre>
+		<nom>NICOLAS</nom>
+		<prenom>Fadi</prenom>
+
+		<extension>4422</extension>
+		<email>fnicolas@usj.edu.lb</email>
+		<longitude>35.508482</longitude>
+		<latitude>33.890227</latitude>
+		<img>http://www.usj.edu.lb/logos/80/css.jpg</img>
+	</row>
+
+	<row>
+		<code>CST</code>
+		<campus>Campus des sciences et technologies</campus>
+		<adresse>Mar Roukos - Mkallès<BR />B.P. 1514 - Riad El Solh<BR />Beyrouth 1107 2050</adresse>
+		<responsable>Administrateur</responsable>
+		<titre>M.</titre>
+
+		<nom>BTERRANY</nom>
+		<prenom>Gaby</prenom>
+		<extension>3301</extension>
+		<email>gbterrany@usj.edu.lb</email>
+		<longitude>35.563135</longitude>
+		<latitude>33.865221</latitude>
+
+		<img>http://www.usj.edu.lb/logos/80/cst.jpg</img>
+	</row>
+</data>

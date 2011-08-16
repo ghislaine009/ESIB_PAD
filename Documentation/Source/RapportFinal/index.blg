@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: index.aux
+The style file: plain.bst
+Database file #1: ../comon/bibliography/references.bib
+I was expecting a `,' or a `}'---line 11 of file ../comon/bibliography/references.bib
+ :   
+ :   url = {https://github.com/fraca7/GCCalendar}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 52 of file ../comon/bibliography/references.bib
+ :  
+ :  author = {Apple  (auteur inconnu)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 60 of file ../comon/bibliography/references.bib
+ :  
+ :  author = {Ray Wenderlich},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--can't use both author and editor fields in bookErgo
+You've used 5 entries,
+            2118 wiz_defined-function locations,
+            524 strings with 4609 characters,
+and the built_in function-call counts, 1084 in all, are:
+= -- 98
+> -- 35
+< -- 1
++ -- 15
+- -- 10
+* -- 40
+:= -- 186
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 19
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 40
+empty$ -- 111
+format.name$ -- 10
+if$ -- 231
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 2
+newline$ -- 29
+num.names$ -- 10
+pop$ -- 41
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 35
+stack$ -- 0
+substring$ -- 25
+swap$ -- 7
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 1
+while$ -- 10
+width$ -- 6
+write$ -- 55
+(There were 3 error messages)

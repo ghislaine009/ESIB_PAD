@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+	<row>
+		<id>1930</id>
+		<titre>Test d’aptitude en langue française</titre>
+		<ss_titre></ss_titre>
+		<date_event>Calendrier des inscriptions en juin, juillet, août et septembre 2011</date_event>
+		<horaire></horaire>
+
+		<type_event>Info officielle</type_event>
+		<img>http://www.usj.edu.lb/intranet/actu/imag_actu_sm/1930.jpg</img>
+	</row>
+	<row>
+		<id>1931</id>
+		<titre>Cours de mise à niveau en langue française</titre>
+		<ss_titre></ss_titre>
+
+		<date_event>Calendrier des sessions 2011</date_event>
+		<horaire></horaire>
+		<type_event>Info officielle</type_event>
+		<img>http://www.usj.edu.lb/intranet/actu/imag_actu_sm/1931.jpg</img>
+	</row>
+	<row>
+		<id>1891</id>
+
+		<titre>Master professionnel en événementiel : Conception et organisation des événements culturels et touristiques</titre>
+		<ss_titre>Dossier de candidature</ss_titre>
+		<date_event>Dossier à renvoyer avant le 18 juillet 2011</date_event>
+		<horaire></horaire>
+		<type_event>Document en ligne</type_event>
+		<img>http://www.usj.edu.lb/intranet/actu/imag_actu_sm/1891.jpg</img>
+
+	</row>
+	<row>
+		<id>1956</id>
+		<titre>Mélanges de l'Université Saint-Joseph. Volume 62 (2009)</titre>
+		<ss_titre></ss_titre>
+		<date_event>2011</date_event>
+		<horaire></horaire>
+
+		<type_event>Info pratique</type_event>
+		<img>http://www.usj.edu.lb/intranet/actu/imag_actu_sm/1956.jpg</img>
+	</row>
+	<row>
+		<id>1962</id>
+		<titre>Remise des DU en Qualité et Accréditation des Établissements de Santé</titre>
+		<ss_titre>1ère et 2ème promotions</ss_titre>
+
+		<date_event>Mardi 19 juillet 2011</date_event>
+		<horaire>18h précises</horaire>
+		<type_event>Remise de diplômes</type_event>
+		<img>http://www.usj.edu.lb/intranet/actu/imag_actu_sm/1962.jpg</img>
+	</row>
+	<row>
+		<id>1961</id>
+
+		<titre>Sri Lanka - Fédération des Associations d'Anciens de l'USJ </titre>
+		<ss_titre></ss_titre>
+		<date_event>Du 13 au 20 août 2011</date_event>
+		<horaire></horaire>
+		<type_event>Voyage</type_event>
+		<img>http://www.usj.edu.lb/intranet/actu/imag_actu_sm/1961.jpg</img>
+	</row>
+
+</data>
