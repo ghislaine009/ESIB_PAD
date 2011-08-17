@@ -1,0 +1,26 @@
+<map id="G" name="G">
+<area shape="rect" href="$d4/d70/_directory_view_controller_i_phone_8h.html" title="DirectoryViewControllerIPhone.h" alt="" coords="1247,84,1500,111"/>
+<area shape="rect" href="$d1/dbc/_main_filter_table_view_controller_8h.html" title="MainFilterTableViewController.h" alt="" coords="592,161,843,188"/>
+<area shape="rect" href="$d8/d5b/_directory_displayer_protocol_8h.html" title="DirectoryDisplayerProtocol.h" alt="" coords="896,239,1120,265"/>
+<area shape="rect" href="$d7/da7/_sub_menu_filter_table_view_controller_8h.html" title="SubMenuFilterTableViewController.h" alt="" coords="867,161,1149,188"/>
+<area shape="rect" href="$d0/dd9/_recto_serv_table_view_controller_8h.html" title="RectoServTableViewController.h" alt="" coords="2061,239,2315,265"/>
+<area shape="rect" href="$d8/d0a/_person_list_view_controller_8h.html" title="PersonListViewController.h" alt="" coords="1313,316,1524,343"/>
+<area shape="rect" href="$da/d83/_person_8h.html" title="Person.h" alt="" coords="1037,548,1120,575"/>
+<area shape="rect" href="$db/d34/_campus_d_a_o_8h.html" title="CampusDAO.h" alt="" coords="192,316,317,343"/>
+<area shape="rect" href="$d9/dd5/_institution_d_a_o_8h.html" title="InstitutionDAO.h" alt="" coords="499,316,637,343"/>
+<area shape="rect" href="$df/d77/_person_d_a_o_8h.html" title="PersonDAO.h" alt="" coords="757,239,872,265"/>
+<area shape="rect" href="$dd/da7/_generic_d_a_o_8h.html" title="GenericDAO.h" alt="" coords="507,393,629,420"/>
+<area shape="rect" href="$d1/d1e/_campus_8h.html" title="Campus.h" alt="" coords="5,548,99,575"/>
+<area shape="rect" href="$d8/d37/_e_s_i_b___p_a_d___s_o_u_r_c_e_s_app_delegate_8h.html" title="ESIB_PAD_SOURCESAppDelegate.h" alt="" coords="699,471,968,497"/>
+<area shape="rect" href="$d3/d8f/_settings_d_a_o_8h.html" title="SettingsDAO.h" alt="" coords="600,548,725,575"/>
+<area shape="rect" href="$db/d4a/_salle_8h.html" title="Salle.h" alt="" coords="456,548,525,575"/>
+<area shape="rect" href="$d1/d7a/_map_displayer_delegate_8h.html" title="MapDisplayerDelegate.h" alt="" coords="427,471,624,497"/>
+<area shape="rect" href="$d5/dbf/_institution_8h.html" title="Institution.h" alt="" coords="224,548,331,575"/>
+<area shape="rect" href="$d3/d64/_rect_serv_view_controller_8h.html" title="RectServViewController.h" alt="" coords="2251,393,2453,420"/>
+<area shape="rect" href="$db/d03/_serv_rec_d_a_o_8h.html" title="ServRecDAO.h" alt="" coords="2387,316,2512,343"/>
+<area shape="rect" href="$d0/da6/_serv_rectora_8h.html" title="ServRectora.h" alt="" coords="1612,548,1735,575"/>
+<area shape="rect" href="$d1/dc9/_overlay_view_controller_8h.html" title="OverlayViewController.h" alt="" coords="1525,393,1720,420"/>
+<area shape="rect" href="$dc/da2/_contact_detail_table_view_controller_8h.html" title="ContactDetailTableViewController.h" alt="" coords="1744,393,2024,420"/>
+<area shape="rect" href="$d8/dd4/_rotable_u_i_nav_controller_8h.html" title="RotableUINavController.h" alt="" coords="1245,393,1451,420"/>
+<area shape="rect" href="$d7/d66/_contact_view_cell_controller_8h.html" title="ContactViewCellController.h" alt="" coords="1499,471,1723,497"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$d3/da7/protocol_map_displayer_delegate&#45;p.html" title="This protocol define function to be implemented by the map displayer component." alt="" coords="5,340,229,476"/>
+<area shape="rect" href="$d8/dfc/protocol_campus_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="253,357,485,459"/>
+<area shape="rect" href="$dc/d80/protocol_person_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="509,367,717,449"/>
+<area shape="rect" href="$d0/d83/protocol_batiment_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="741,367,973,449"/>
+<area shape="rect" href="$d8/dad/protocol_salle_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="997,367,1168,449"/>
+<area shape="rect" href="$db/d9a/interface_salle_table_view_controller.html" title="Display a list of salle with gps coordinate." alt="" coords="1192,201,1533,615"/>
+<area shape="rect" href="$d4/dc7/interface_overlay_view_controller.html" title="{OverlayViewController\n|+ rvController\l|+ touchesBegan:withEvent:()\l+ didReceiveMemoryWarning()\l+ dealloc()\l}" alt="" coords="1452,7,1697,124"/>
+<area shape="rect" href="$d4/d1c/interface_person_table_view_controller.html" title="Display a list of person with gps coordinate." alt="" coords="1557,193,1899,623"/>
+</map>

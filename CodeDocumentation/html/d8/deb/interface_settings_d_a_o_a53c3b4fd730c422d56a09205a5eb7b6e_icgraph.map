@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a9161b5b632be97c1a80622d04a14d336" title="SettingsViewController::saveChangement" alt="" coords="296,5,619,32"/>
+<area shape="rect" href="$dd/d3c/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_app_delegate.html#a1058f725a6265a06d8dc1a24ebdf1270" title="ESIB_PAD_SOURCESAppDelegate::applicationDidEnterBackground:" alt="" coords="208,56,707,83"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a1dd9e6b71f1d83d86afd859c95788b52" title="ESIB_PAD_SOURCESTests::testSettings" alt="" coords="312,107,603,133"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#abe0bb47d65ef27c6dc14731b3d6bbb8e" title="ESIB_PAD_SOURCESTests::testPlaning" alt="" coords="840,132,1125,159"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#aa6868e4c7bbf43341564cf925cd05151" title="ESIB_PAD_SOURCESTests::testExam" alt="" coords="847,183,1119,209"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a66a65bc56036194374262f2bbade205a" title="ESIB_PAD_SOURCESTests::waitForEnableConnection" alt="" coords="261,259,653,285"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ac08ceaf28f58269d70dbdf907c4334b5" title="ESIB_PAD_SOURCESTests::waitForDisableConnection" alt="" coords="260,461,655,488"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#af544471038a9bef9af2f8734c576d9ca" title="ESIB_PAD_SOURCESTests::displayExamResult:" alt="" coords="811,385,1155,412"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a2bdfcc2dbd6bb90541beb1802611fed4" title="ESIB_PAD_SOURCESTests::planningDataLoadedFromInternet" alt="" coords="756,588,1209,615"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a1e41f17c02b850b3129f8a60f742d2a0" title="SettingsViewController::fieldChanged:" alt="" coords="835,5,1131,32"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68fb725ef076157e5a0b87ddf83ba667" title="ESIB_PAD_SOURCESTests::testCarte" alt="" coords="847,233,1119,260"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a57d18bb704964c72de476d51c1b696ca" title="ESIB_PAD_SOURCESTests::testNews" alt="" coords="848,284,1117,311"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ad76f4b8c8e51b287e408d174ad25c0ba" title="ESIB_PAD_SOURCESTests::testDirectory" alt="" coords="833,335,1132,361"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a3dd837dce232fe096448d6ae64318b00" title="ESIB_PAD_SOURCESTests::displayNews:" alt="" coords="833,436,1132,463"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ade7f0576438c2860e397ef81984760fe" title="This function will be called at the end of async loading of the data The delegate object have to impl..." alt="" coords="800,487,1165,513"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68730a6f611b9e738aa6c8f1ee5d431e" title="ESIB_PAD_SOURCESTests::displayAllCampusOnMap:" alt="" coords="788,537,1177,564"/>
+</map>

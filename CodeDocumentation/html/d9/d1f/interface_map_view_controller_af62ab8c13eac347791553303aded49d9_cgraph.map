@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#aa29824b1a9b4c8bf957d6c3b84e9084a" title="CampusDAO::getCampusAndDisplayOnMap" alt="" coords="313,107,649,133"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#ac7946b2cd7cd17b7bdb1c2b479087a65" title="Return the number of data in cache The data are loaded from the table with name :entityDescription." alt="" coords="700,5,1084,32"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aaca575728ddb299651427e9b5a2ee0f0" title="Remove the data with the specified filteroption The data are deleted from the table with name :entity..." alt="" coords="713,56,1071,83"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#a85bf0c8e3e347acc368e3c2427bf6a0c" title="CampusDAO::returnForDisplay" alt="" coords="772,107,1012,133"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#afb14dd67a4b92f1b8be2c4359ed771cb" title="Create the request and send it asynchronous to the server.It define self as delegate for recieving th..." alt="" coords="785,157,999,184"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aedfc9be9d0e3b33cbaa1bc33b0ced714" title="Load data from the DB, (dont check if the data are valid in cache) The data are loaded from the table..." alt="" coords="707,208,1077,235"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a0c293c3ffea29c42e8ccbd5d2b39a769" title="Reachability::reachabilityWithHostName:" alt="" coords="1135,132,1449,159"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a8396438436e7ff3770039fb527cd1d34" title="Reachability::currentReachabilityStatus" alt="" coords="1140,183,1444,209"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#aced47c517b02b7fabb76c3e1ccf34a7a" title="Reachability::localWiFiStatusForFlags:" alt="" coords="1500,157,1791,184"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a02eee204b6f5f336b9dc103f087d6d91" title="Reachability::networkStatusForFlags:" alt="" coords="1503,208,1788,235"/>
+</map>

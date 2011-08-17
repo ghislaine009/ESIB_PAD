@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$dc/d67/interface_main_menu_i_pad.html" title="{MainMenuIPad\n||+ init()\l}" alt="" coords="35,444,160,527"/>
+<area shape="rect" href="$dc/d6f/protocol_menu_item_delegate&#45;p.html" title="{\&lt;MenuItemDelegate\&gt;\n||+ menuClicked:()\l+ unloadModalView()\l}" alt="" coords="5,5,189,107"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="G" name="G">
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a131470c82c890b5432992d49b2eb623b" title="SettingsDAO::init" alt="" coords="381,81,523,108"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a53c3b4fd730c422d56a09205a5eb7b6e" title="Save the content of vars to the file system." alt="" coords="376,233,528,260"/>
+<area shape="rect" href="$dd/d3c/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_app_delegate.html#a1058f725a6265a06d8dc1a24ebdf1270" title="ESIB_PAD_SOURCESAppDelegate::applicationDidEnterBackground:" alt="" coords="699,56,1197,83"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a1dd9e6b71f1d83d86afd859c95788b52" title="ESIB_PAD_SOURCESTests::testSettings" alt="" coords="803,157,1093,184"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a05d1eee785c8433c5f9e574df2aaa753" title="Save the time of the modification for a key." alt="" coords="253,335,651,361"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a3d6241c5e722d5b0a315e55646ef7316" title="Reset the initial data of the settings This function reset the cache information at the same tiem..." alt="" coords="375,284,529,311"/>
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html#aff33cb4aa0cd4b3befd0decaf2aaef08" title="MainViewControllerIPad::menuClicked:" alt="" coords="303,385,601,412"/>
+<area shape="rect" href="$de/dc5/interface_main_view_controller.html#ae6b28e5eaa1218ff75a9f8154446f998" title="MainViewController::menuClicked:" alt="" coords="317,436,587,463"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a9161b5b632be97c1a80622d04a14d336" title="SettingsViewController::saveChangement" alt="" coords="787,5,1109,32"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#abe0bb47d65ef27c6dc14731b3d6bbb8e" title="ESIB_PAD_SOURCESTests::testPlaning" alt="" coords="1331,157,1616,184"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#aa6868e4c7bbf43341564cf925cd05151" title="ESIB_PAD_SOURCESTests::testExam" alt="" coords="1337,309,1609,336"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a66a65bc56036194374262f2bbade205a" title="ESIB_PAD_SOURCESTests::waitForEnableConnection" alt="" coords="752,259,1144,285"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ac08ceaf28f58269d70dbdf907c4334b5" title="ESIB_PAD_SOURCESTests::waitForDisableConnection" alt="" coords="751,512,1145,539"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#af544471038a9bef9af2f8734c576d9ca" title="ESIB_PAD_SOURCESTests::displayExamResult:" alt="" coords="1301,411,1645,437"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a2bdfcc2dbd6bb90541beb1802611fed4" title="ESIB_PAD_SOURCESTests::planningDataLoadedFromInternet" alt="" coords="1247,613,1700,640"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a1e41f17c02b850b3129f8a60f742d2a0" title="SettingsViewController::fieldChanged:" alt="" coords="1325,5,1621,32"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68fb725ef076157e5a0b87ddf83ba667" title="ESIB_PAD_SOURCESTests::testCarte" alt="" coords="1337,208,1609,235"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a57d18bb704964c72de476d51c1b696ca" title="ESIB_PAD_SOURCESTests::testNews" alt="" coords="1339,360,1608,387"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ad76f4b8c8e51b287e408d174ad25c0ba" title="ESIB_PAD_SOURCESTests::testDirectory" alt="" coords="1324,259,1623,285"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a3dd837dce232fe096448d6ae64318b00" title="ESIB_PAD_SOURCESTests::displayNews:" alt="" coords="1324,461,1623,488"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ade7f0576438c2860e397ef81984760fe" title="This function will be called at the end of async loading of the data The delegate object have to impl..." alt="" coords="1291,512,1656,539"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68730a6f611b9e738aa6c8f1ee5d431e" title="ESIB_PAD_SOURCESTests::displayAllCampusOnMap:" alt="" coords="1279,563,1668,589"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#aad78c91c4a819bac7e57dba6fda0d6dc" title="SettingsViewController::resetSettings:" alt="" coords="803,613,1093,640"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a51d2d763d0a86f5c8823f955ad6eb8f0" title="ESIB_PAD_SOURCESTests::setUp" alt="" coords="824,664,1072,691"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html" title="{ESIB_PAD_SOURCESTests\n||+ waitForEnableConnection()\l+ waitForDisableConnection()\l+ setUp()\l+ tearDown()\l+ testSettings()\l+ testCarte()\l+ testNews()\l+ testDirectory()\l+ testPlaning()\l+ testExam()\l+ displayExamResult:()\l+ displayNews:()\l+ consumeListOfPerson:()\l+ planningDataLoadedFromInternet()\l+ displayPersonList:()\l+ displaySallesList:()\l+ displayPersonOnMap:()\l+ displaySalleOnMap:()\l+ displayAllCampusOnMap:()\l+ consumeListOfCampus:()\l+ displayBatiments:()\l+ campusSelected:()\l+ removeListFromTopView()\l}" alt="" coords="5,400,301,864"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html" title="Resposible to diplay the map with different options." alt="" coords="325,140,667,1124"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html" title="Manage the submenu filters view." alt="" coords="691,391,1032,873"/>
+</map>

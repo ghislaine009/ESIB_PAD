@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$dc/d6f/protocol_menu_item_delegate&#45;p.html" title="\&lt;MenuItemDelegate\&gt;" alt="" coords="7,56,191,83"/>
+<area shape="rect" href="$d1/dbf/interface_main_menu.html" title="Class of the main menu of the application this class represent the items in a grid." alt="" coords="288,5,384,32"/>
+<area shape="rect" href="$de/dc5/interface_main_view_controller.html" title="MainViewController" alt="" coords="256,56,416,83"/>
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html" title="MainViewControllerIPad" alt="" coords="240,107,432,133"/>
+<area shape="rect" href="$dc/d67/interface_main_menu_i_pad.html" title="MainMenuIPad" alt="" coords="481,5,607,32"/>
+</map>

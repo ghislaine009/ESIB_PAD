@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#aa29824b1a9b4c8bf957d6c3b84e9084a" title="CampusDAO::getCampusAndDisplayOnMap" alt="" coords="295,56,631,83"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#af62ab8c13eac347791553303aded49d9" title="MapViewController::viewDidLoad" alt="" coords="748,5,1004,32"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68fb725ef076157e5a0b87ddf83ba667" title="ESIB_PAD_SOURCESTests::testCarte" alt="" coords="740,56,1012,83"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68730a6f611b9e738aa6c8f1ee5d431e" title="ESIB_PAD_SOURCESTests::displayAllCampusOnMap:" alt="" coords="681,107,1071,133"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#afc686f26c4932a3fb2b9f20ea69816e9" title="CampusDAO::getCampus:" alt="" coords="401,107,609,133"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#a7a06b127d48e5aafb8f5595b31e51c5b" title="MapViewController::consumeListOfCampus:" alt="" coords="337,157,673,184"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#ac7946b2cd7cd17b7bdb1c2b479087a65" title="Return the number of data in cache The data are loaded from the table with name :entityDescription." alt="" coords="724,5,1108,32"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aaca575728ddb299651427e9b5a2ee0f0" title="Remove the data with the specified filteroption The data are deleted from the table with name :entity..." alt="" coords="737,56,1095,83"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#ae3e1654d2c255015b374165f138148b0" title="CampusDAO::finishLoadingCousume" alt="" coords="772,107,1060,133"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#afb14dd67a4b92f1b8be2c4359ed771cb" title="Create the request and send it asynchronous to the server.It define self as delegate for recieving th..." alt="" coords="809,157,1023,184"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aedfc9be9d0e3b33cbaa1bc33b0ced714" title="Load data from the DB, (dont check if the data are valid in cache) The data are loaded from the table..." alt="" coords="731,208,1101,235"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a0c293c3ffea29c42e8ccbd5d2b39a769" title="Reachability::reachabilityWithHostName:" alt="" coords="1159,132,1473,159"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a8396438436e7ff3770039fb527cd1d34" title="Reachability::currentReachabilityStatus" alt="" coords="1164,183,1468,209"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#aced47c517b02b7fabb76c3e1ccf34a7a" title="Reachability::localWiFiStatusForFlags:" alt="" coords="1524,157,1815,184"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a02eee204b6f5f336b9dc103f087d6d91" title="Reachability::networkStatusForFlags:" alt="" coords="1527,208,1812,235"/>
+</map>

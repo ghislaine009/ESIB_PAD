@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$df/daa/interface_batiment_d_a_o.html#a1a562ec087bc4c2c5228b8166246221d" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="313,5,649,32"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#acbff31d32bcb5b470c71acf362814f15" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="316,56,647,83"/>
+<area shape="rect" href="$d7/d7a/interface_exam_result_d_a_o.html#a575aaf696b64cb50cbc50eeedaeea7ba" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="304,107,659,133"/>
+<area shape="rect" href="$dc/dcf/interface_horraire_d_a_o.html#aeda227077e3cd0524216b5963ee538d3" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="317,157,645,184"/>
+<area shape="rect" href="$df/d50/interface_institution_d_a_o.html#a6bd72597e4a49df8510df035ecd6ac19" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="311,208,652,235"/>
+<area shape="rect" href="$d7/d21/interface_news_d_a_o.html#ab206fabb91f8b01d20b10e3c4015391f" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="328,259,635,285"/>
+<area shape="rect" href="$db/d3b/interface_person_d_a_o.html#a7eb52e00550d43fb44c30df9a147d609" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="323,309,640,336"/>
+<area shape="rect" href="$de/d04/interface_salle_d_a_o.html#aecae62f456fcb34321cc7e06066e6046" title="Important, this function have to be overwrited by you to modifie the comportement when we recieve the..." alt="" coords="328,360,635,387"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d8a/protocol_directory_displayer_protocol&#45;p.html" title="Protocol to bee implemented by object how wants to display the Directory." alt="" coords="5,305,280,492"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html" title="Manage the submenu filters view." alt="" coords="304,157,645,640"/>
+<area shape="rect" href="$d8/dfc/protocol_campus_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="115,5,347,107"/>
+<area shape="rect" href="$dc/d80/protocol_person_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="371,15,579,97"/>
+<area shape="rect" href="$d0/d1b/protocol_institution_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="603,15,835,97"/>
+</map>

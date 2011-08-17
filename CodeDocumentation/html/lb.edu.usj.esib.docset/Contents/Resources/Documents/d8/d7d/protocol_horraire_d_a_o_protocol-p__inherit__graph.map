@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$d7/dee/interface_calendar_view_controller.html" title="Class responsible to matnage the content of the calendar." alt="" coords="5,227,347,517"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html" title="{ESIB_PAD_SOURCESTests\n||+ waitForEnableConnection()\l+ waitForDisableConnection()\l+ setUp()\l+ tearDown()\l+ testSettings()\l+ testCarte()\l+ testNews()\l+ testDirectory()\l+ testPlaning()\l+ testExam()\l+ displayExamResult:()\l+ displayNews:()\l+ consumeListOfPerson:()\l+ planningDataLoadedFromInternet()\l+ displayPersonList:()\l+ displaySallesList:()\l+ displayPersonOnMap:()\l+ displaySalleOnMap:()\l+ displayAllCampusOnMap:()\l+ consumeListOfCampus:()\l+ displayBatiments:()\l+ campusSelected:()\l+ removeListFromTopView()\l}" alt="" coords="371,140,667,604"/>
+</map>

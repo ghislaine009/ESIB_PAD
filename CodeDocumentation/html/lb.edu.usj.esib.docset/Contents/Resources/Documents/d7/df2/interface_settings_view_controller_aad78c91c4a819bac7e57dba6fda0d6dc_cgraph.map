@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a3d6241c5e722d5b0a315e55646ef7316" title="Reset the initial data of the settings This function reset the cache information at the same tiem..." alt="" coords="417,5,572,32"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#aa4dcb20d088fdfc3a07688d9ab7c31fd" title="Refresh the values of the field from the DAO." alt="" coords="347,56,643,83"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#ab94594d790a8aa9716bf36616fa7d1db" title="Load the value from the fileSystem." alt="" coords="691,5,891,32"/>
+</map>

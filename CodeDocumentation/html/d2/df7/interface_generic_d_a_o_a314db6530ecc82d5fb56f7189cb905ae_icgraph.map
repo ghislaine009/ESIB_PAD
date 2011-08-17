@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" href="$df/daa/interface_batiment_d_a_o.html#a6cdab65fbcd3451859e7942e07b21878" title="BatimentDAO::init" alt="" coords="324,5,473,32"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#a6975737f4c612d7963cbaaafc65c0d71" title="CampusDAO::init" alt="" coords="327,56,471,83"/>
+<area shape="rect" href="$d7/d7a/interface_exam_result_d_a_o.html#a339c62b474146a7d1fd5e932a84bb46a" title="ExamResultDAO::init" alt="" coords="315,107,483,133"/>
+<area shape="rect" href="$dc/dcf/interface_horraire_d_a_o.html#ae9f25e38df4ea56376dd6e9f6b86e22f" title="HorraireDAO::init" alt="" coords="328,157,469,184"/>
+<area shape="rect" href="$df/d50/interface_institution_d_a_o.html#a26f0a7ad942df6e10b0bf465871d6c3b" title="InstitutionDAO::init" alt="" coords="321,208,476,235"/>
+<area shape="rect" href="$d7/d21/interface_news_d_a_o.html#aa02539fd7efe542f50a3c83acf7a2d04" title="NewsDAO::init" alt="" coords="339,259,459,285"/>
+<area shape="rect" href="$db/d3b/interface_person_d_a_o.html#a8a89d33821c4cf0f6bb99fe8c5fab765" title="PersonDAO::init" alt="" coords="333,309,464,336"/>
+<area shape="rect" href="$de/d04/interface_salle_d_a_o.html#a7d46c0b8d11f56e187681a34ea2c19f0" title="SalleDAO::init" alt="" coords="339,360,459,387"/>
+<area shape="rect" href="$db/d3c/interface_serv_rec_d_a_o.html#a6efee832e3b464edda9bdd5013669cdd" title="ServRecDAO::init" alt="" coords="328,411,469,437"/>
+</map>

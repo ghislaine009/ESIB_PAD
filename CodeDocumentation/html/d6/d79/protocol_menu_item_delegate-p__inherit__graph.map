@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$d1/dbf/interface_main_menu.html" title="Class of the main menu of the application this class represent the items in a grid." alt="" coords="5,207,181,447"/>
+<area shape="rect" href="$de/dc5/interface_main_view_controller.html" title="{MainViewController\n|+ owningController\l+ menuView\l# _menuView\l|+ menuClicked:()\l+ initWithNibName:bundle:()\l+ dealloc()\l+ didReceiveMemoryWarning()\l+ viewDidLoad()\l+ viewDidUnload()\l+ shouldAutorotateToInterfaceOrientation:()\l+ unloadModalView()\l}" alt="" coords="205,207,547,447"/>
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html" title="{MainViewControllerIPad\n|+ centerView\l+ menuView\l+ lgView\l+ context\l# _crntView\l# _context\l|+ menuClicked:()\l+ resizeCenterSubviews()\l+ initWithNibName:bundle:()\l+ dealloc()\l+ didReceiveMemoryWarning()\l+ viewDidLoad()\l+ didRotate:()\l+ unloadModalView()\l+ viewDidUnload()\l+ shouldAutorotateToInterfaceOrientation:()\l+ loadViewControler:withTheName:()\l}" alt="" coords="571,155,912,499"/>
+<area shape="rect" href="$dc/d67/interface_main_menu_i_pad.html" title="{MainMenuIPad\n||+ init()\l}" alt="" coords="31,548,156,631"/>
+</map>

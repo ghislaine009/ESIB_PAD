@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d8a/protocol_directory_displayer_protocol&#45;p.html" title="Protocol to bee implemented by object how wants to display the Directory." alt="" coords="7,31,241,57"/>
+<area shape="rect" href="$dc/d8c/interface_directory_view_controller_i_pad.html" title="Class responsible to manage the view of the directory part of the application on the iPad Implement t..." alt="" coords="301,5,523,32"/>
+<area shape="rect" href="$d7/d49/interface_directory_view_controller_i_phone.html" title="Class responsible to manage the view of the directory part of the application on the iPhone Implement..." alt="" coords="292,56,532,83"/>
+</map>

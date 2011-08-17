@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#afc686f26c4932a3fb2b9f20ea69816e9" title="CampusDAO::getCampus:" alt="" coords="343,31,551,57"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html#a693537a48c5b12ac105ba9357cf94434" title="Load a list of campus to choise the sub filter." alt="" coords="601,5,985,32"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#ab28db4a05271f2d76e567922717f10cb" title="MapViewController::chooseCampus:" alt="" coords="653,56,933,83"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html#ade47441b67aa7fce1aecb20aed6446f6" title="SubMenuFilterTableViewController::viewDidLoad" alt="" coords="1035,5,1405,32"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#a81d5f528c122d9885343f54e74115721" title="MapViewController::searchPersonn:" alt="" coords="1083,56,1357,83"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#abdd030a7774c212ac2c421b7c8e8f20a" title="MapViewController::searchSalle:" alt="" coords="1093,107,1347,133"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a9161b5b632be97c1a80622d04a14d336" title="SettingsViewController::saveChangement" alt="" coords="349,5,672,32"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a53c3b4fd730c422d56a09205a5eb7b6e" title="Save the content of vars to the file system." alt="" coords="721,5,873,32"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#ab94594d790a8aa9716bf36616fa7d1db" title="Load the value from the fileSystem." alt="" coords="923,5,1123,32"/>
+</map>

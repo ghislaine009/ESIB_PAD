@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html" title="This class represent a generic DAP." alt="" coords="5,208,115,235"/>
+<area shape="rect" href="$df/daa/interface_batiment_d_a_o.html" title="BatimentDAO" alt="" coords="172,5,292,32"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html" title="CampusDAO" alt="" coords="176,56,288,83"/>
+<area shape="rect" href="$d7/d7a/interface_exam_result_d_a_o.html" title="ExamResultDAO" alt="" coords="164,107,300,133"/>
+<area shape="rect" href="$dc/dcf/interface_horraire_d_a_o.html" title="HorraireDAO" alt="" coords="176,157,288,184"/>
+<area shape="rect" href="$df/d50/interface_institution_d_a_o.html" title="InstitutionDAO" alt="" coords="169,208,295,235"/>
+<area shape="rect" href="$d7/d21/interface_news_d_a_o.html" title="NewsDAO" alt="" coords="187,259,277,285"/>
+<area shape="rect" href="$db/d3b/interface_person_d_a_o.html" title="This class allow acces to the person information." alt="" coords="181,309,283,336"/>
+<area shape="rect" href="$de/d04/interface_salle_d_a_o.html" title="This class allow acces to the salle information." alt="" coords="188,360,276,387"/>
+<area shape="rect" href="$db/d3c/interface_serv_rec_d_a_o.html" title="ServRecDAO" alt="" coords="176,411,288,437"/>
+</map>

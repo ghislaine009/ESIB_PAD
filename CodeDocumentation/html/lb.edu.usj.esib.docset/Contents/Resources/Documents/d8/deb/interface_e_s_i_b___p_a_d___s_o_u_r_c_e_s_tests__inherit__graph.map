@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$d8/dfc/protocol_campus_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="5,5,237,107"/>
+<area shape="rect" href="$d7/dc7/protocol_news_d_a_d_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="261,15,432,97"/>
+<area shape="rect" href="$dc/d80/protocol_person_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="456,15,664,97"/>
+<area shape="rect" href="$d2/d7d/protocol_horraire_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="688,15,984,97"/>
+<area shape="rect" href="$d7/d7f/protocol_exam_result_d_a_o_protocol&#45;p.html" title="This protocol have to be implemented by objects how want to consume async returned resul of this DAO..." alt="" coords="1008,15,1227,97"/>
+</map>

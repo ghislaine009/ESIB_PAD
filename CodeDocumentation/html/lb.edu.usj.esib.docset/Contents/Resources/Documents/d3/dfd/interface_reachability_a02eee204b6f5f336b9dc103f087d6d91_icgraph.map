@@ -1,0 +1,39 @@
+<map id="G" name="G">
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a8396438436e7ff3770039fb527cd1d34" title="Reachability::currentReachabilityStatus" alt="" coords="340,563,644,589"/>
+<area shape="rect" href="$d7/d7a/interface_exam_result_d_a_o.html#a42c8e80893ec02ec7fdbbcdef3bb09ce" title="ExamResultDAO::getExamResult" alt="" coords="1044,107,1297,133"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#afb14dd67a4b92f1b8be2c4359ed771cb" title="Create the request and send it asynchronous to the server.It define self as delegate for recieving th..." alt="" coords="693,563,907,589"/>
+<area shape="rect" href="$d7/d21/interface_news_d_a_o.html#a6fd35d3acb6e08819500c84b16318628" title="Return the news if the system is able to connect to internet, cache data will be ignored." alt="" coords="1091,917,1251,944"/>
+<area shape="rect" href="$d4/df2/interface_exam_result_table_view_controller.html#a93e29874b51c43eb2aa28d1b0cb04129" title="ExamResultTableViewController::viewDidLoad" alt="" coords="1488,5,1837,32"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#aa6868e4c7bbf43341564cf925cd05151" title="ESIB_PAD_SOURCESTests::testExam" alt="" coords="1527,56,1799,83"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#af544471038a9bef9af2f8734c576d9ca" title="ESIB_PAD_SOURCESTests::displayExamResult:" alt="" coords="1491,107,1835,133"/>
+<area shape="rect" href="$df/daa/interface_batiment_d_a_o.html#ab7d2c3920d0c56c9831b6710eb103c2c" title="BatimentDAO::getBatimentWithLocalisationForDomaine:" alt="" coords="956,613,1385,640"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#afc686f26c4932a3fb2b9f20ea69816e9" title="CampusDAO::getCampus:" alt="" coords="1067,715,1275,741"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#aa29824b1a9b4c8bf957d6c3b84e9084a" title="CampusDAO::getCampusAndDisplayOnMap" alt="" coords="1003,233,1339,260"/>
+<area shape="rect" href="$dc/dcf/interface_horraire_d_a_o.html#a5a8dd5fdb15e62ff44f41da66ead8389" title="HorraireDAO::loadHorraire" alt="" coords="1065,360,1276,387"/>
+<area shape="rect" href="$df/d50/interface_institution_d_a_o.html#a5560875709910781b7ad4fe36b194008" title="InstitutionDAO::getInstitutionForDomaine:" alt="" coords="1009,411,1332,437"/>
+<area shape="rect" href="$df/d50/interface_institution_d_a_o.html#a8a683f47e3b1783a33ad3037c220427c" title="InstitutionDAO::getInstitution" alt="" coords="1056,855,1285,881"/>
+<area shape="rect" href="$db/d3b/interface_person_d_a_o.html#ae53dd43a16156fec831201dba4543402" title="Return the personns for a sprecifique domaine." alt="" coords="1031,461,1311,488"/>
+<area shape="rect" href="$db/d3b/interface_person_d_a_o.html#a843ab6ab60ec7a9b92087235416ab324" title="Return the personns with gps coordoniate for a sprecifique domaine." alt="" coords="971,664,1371,691"/>
+<area shape="rect" href="$db/d3b/interface_person_d_a_o.html#aaf30cfe9a18fea5adafea11995ee29e4" title="Return the personns for a sprecifique institution." alt="" coords="1028,512,1313,539"/>
+<area shape="rect" href="$de/d04/interface_salle_d_a_o.html#ab2ddde38006507700e4ff89ed5711515" title="Return the salles for a sprecifique domaine." alt="" coords="983,779,1359,805"/>
+<area shape="rect" href="$db/d3c/interface_serv_rec_d_a_o.html#a21ff93409c5ea79f7e453a565d3f8386" title="ServRecDAO::getServRec" alt="" coords="1069,563,1272,589"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#acc0af05ddc3aecd0e2283441614a37e1" title="MapViewController::campusSelected:" alt="" coords="1517,613,1808,640"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html#a693537a48c5b12ac105ba9357cf94434" title="Load a list of campus to choise the sub filter." alt="" coords="1471,765,1855,792"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#ab28db4a05271f2d76e567922717f10cb" title="MapViewController::chooseCampus:" alt="" coords="1523,715,1803,741"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html#ade47441b67aa7fce1aecb20aed6446f6" title="SubMenuFilterTableViewController::viewDidLoad" alt="" coords="1939,848,2309,875"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#a81d5f528c122d9885343f54e74115721" title="MapViewController::searchPersonn:" alt="" coords="1987,689,2261,716"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#abdd030a7774c212ac2c421b7c8e8f20a" title="MapViewController::searchSalle:" alt="" coords="1997,760,2251,787"/>
+<area shape="rect" href="$d9/d1f/interface_map_view_controller.html#af62ab8c13eac347791553303aded49d9" title="MapViewController::viewDidLoad" alt="" coords="1535,157,1791,184"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68fb725ef076157e5a0b87ddf83ba667" title="ESIB_PAD_SOURCESTests::testCarte" alt="" coords="1527,208,1799,235"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a68730a6f611b9e738aa6c8f1ee5d431e" title="ESIB_PAD_SOURCESTests::displayAllCampusOnMap:" alt="" coords="1468,259,1857,285"/>
+<area shape="rect" href="$d7/dee/interface_calendar_view_controller.html#aeb159242ade761baeddf783be65a6a03" title="CalendarViewController::viewDidLoad" alt="" coords="1516,309,1809,336"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#abe0bb47d65ef27c6dc14731b3d6bbb8e" title="ESIB_PAD_SOURCESTests::testPlaning" alt="" coords="1520,360,1805,387"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a2bdfcc2dbd6bb90541beb1802611fed4" title="ESIB_PAD_SOURCESTests::planningDataLoadedFromInternet" alt="" coords="1436,411,1889,437"/>
+<area shape="rect" href="$de/dc4/interface_sub_menu_filter_table_view_controller.html#a426b587c5d28a1101f9b6a516cb5207b" title="Load a list of institution to choise the sub filter." alt="" coords="1472,867,1853,893"/>
+<area shape="rect" href="$d5/d6c/interface_news_view_controller.html#a7d4834c3e0974b30b1c1419764c20747" title="NewsViewController::viewDidLoad" alt="" coords="1531,917,1795,944"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a57d18bb704964c72de476d51c1b696ca" title="ESIB_PAD_SOURCESTests::testNews" alt="" coords="1528,968,1797,995"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a3dd837dce232fe096448d6ae64318b00" title="ESIB_PAD_SOURCESTests::displayNews:" alt="" coords="1513,1019,1812,1045"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ad76f4b8c8e51b287e408d174ad25c0ba" title="ESIB_PAD_SOURCESTests::testDirectory" alt="" coords="1513,461,1812,488"/>
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#ade7f0576438c2860e397ef81984760fe" title="This function will be called at the end of async loading of the data The delegate object have to impl..." alt="" coords="1480,512,1845,539"/>
+<area shape="rect" href="$d3/d04/interface_recto_serv_table_view_controller.html#a274a0ee3c5546e88d6e56ccea0e3ed81" title="RectoServTableViewController::init" alt="" coords="1528,563,1797,589"/>
+</map>

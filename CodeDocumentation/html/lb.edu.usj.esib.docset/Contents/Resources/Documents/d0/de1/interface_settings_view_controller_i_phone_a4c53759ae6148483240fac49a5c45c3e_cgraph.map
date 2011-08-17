@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#af40891c6fbfc2eae73e0aa7fc34f0a8e" title="SettingsViewController::viewDidLoad" alt="" coords="389,31,675,57"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a84940a81f2cbcc944ea3984246bb8b33" title="SettingsViewController::registerNotifications" alt="" coords="723,5,1061,32"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#aa4dcb20d088fdfc3a07688d9ab7c31fd" title="Refresh the values of the field from the DAO." alt="" coords="1109,31,1405,57"/>
+</map>

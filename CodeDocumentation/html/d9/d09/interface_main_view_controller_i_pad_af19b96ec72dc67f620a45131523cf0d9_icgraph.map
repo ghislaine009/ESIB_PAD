@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html#a139e64b51e4ad8cb618f58c715cc1ec8" title="MainViewControllerIPad::viewDidLoad" alt="" coords="489,5,780,32"/>
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html#a7c17b4dd130b88c588ec99474ba61e59" title="MainViewControllerIPad::didRotate:" alt="" coords="497,56,772,83"/>
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html#aa6aa6dd02e963699456385c8e39af757" title="MainViewControllerIPad::loadViewControler:withTheName:" alt="" coords="413,107,856,133"/>
+<area shape="rect" href="$d9/d09/interface_main_view_controller_i_pad.html#aff33cb4aa0cd4b3befd0decaf2aaef08" title="MainViewControllerIPad::menuClicked:" alt="" coords="905,107,1204,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$de/dcd/interface_menu_item.html" title="This class represent an Item of the menu with here Desciption text and here Logo." alt="" coords="7,5,100,32"/>
+<area shape="rect" href="$de/d15/interface_menu_item_i_pad.html" title="Extend the Menu item and draw the label on the right of the logo." alt="" coords="149,5,275,32"/>
+</map>

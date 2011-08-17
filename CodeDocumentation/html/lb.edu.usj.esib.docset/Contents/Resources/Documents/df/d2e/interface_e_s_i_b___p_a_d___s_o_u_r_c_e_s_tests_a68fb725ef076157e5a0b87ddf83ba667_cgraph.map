@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" href="$df/d2e/interface_e_s_i_b___p_a_d___s_o_u_r_c_e_s_tests.html#a66a65bc56036194374262f2bbade205a" title="ESIB_PAD_SOURCESTests::waitForEnableConnection" alt="" coords="328,31,720,57"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#aa29824b1a9b4c8bf957d6c3b84e9084a" title="CampusDAO::getCampusAndDisplayOnMap" alt="" coords="356,132,692,159"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#a53c3b4fd730c422d56a09205a5eb7b6e" title="Save the content of vars to the file system." alt="" coords="885,5,1037,32"/>
+<area shape="rect" href="$d8/deb/interface_settings_d_a_o.html#ab94594d790a8aa9716bf36616fa7d1db" title="Load the value from the fileSystem." alt="" coords="1261,5,1461,32"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#ac7946b2cd7cd17b7bdb1c2b479087a65" title="Return the number of data in cache The data are loaded from the table with name :entityDescription." alt="" coords="769,56,1153,83"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aaca575728ddb299651427e9b5a2ee0f0" title="Remove the data with the specified filteroption The data are deleted from the table with name :entity..." alt="" coords="783,107,1140,133"/>
+<area shape="rect" href="$db/d4c/interface_campus_d_a_o.html#a85bf0c8e3e347acc368e3c2427bf6a0c" title="CampusDAO::returnForDisplay" alt="" coords="841,157,1081,184"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#afb14dd67a4b92f1b8be2c4359ed771cb" title="Create the request and send it asynchronous to the server.It define self as delegate for recieving th..." alt="" coords="855,208,1068,235"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aedfc9be9d0e3b33cbaa1bc33b0ced714" title="Load data from the DB, (dont check if the data are valid in cache) The data are loaded from the table..." alt="" coords="776,259,1147,285"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a0c293c3ffea29c42e8ccbd5d2b39a769" title="Reachability::reachabilityWithHostName:" alt="" coords="1204,183,1519,209"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a8396438436e7ff3770039fb527cd1d34" title="Reachability::currentReachabilityStatus" alt="" coords="1209,233,1513,260"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#aced47c517b02b7fabb76c3e1ccf34a7a" title="Reachability::localWiFiStatusForFlags:" alt="" coords="1569,208,1860,235"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a02eee204b6f5f336b9dc103f087d6d91" title="Reachability::networkStatusForFlags:" alt="" coords="1572,259,1857,285"/>
+</map>

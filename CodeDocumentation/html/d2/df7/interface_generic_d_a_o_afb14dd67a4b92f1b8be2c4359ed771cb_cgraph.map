@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a0c293c3ffea29c42e8ccbd5d2b39a769" title="Reachability::reachabilityWithHostName:" alt="" coords="268,5,583,32"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a8396438436e7ff3770039fb527cd1d34" title="Reachability::currentReachabilityStatus" alt="" coords="273,56,577,83"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#aced47c517b02b7fabb76c3e1ccf34a7a" title="Reachability::localWiFiStatusForFlags:" alt="" coords="633,31,924,57"/>
+<area shape="rect" href="$d3/dfd/interface_reachability.html#a02eee204b6f5f336b9dc103f087d6d91" title="Reachability::networkStatusForFlags:" alt="" coords="636,81,921,108"/>
+</map>

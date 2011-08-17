@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#af40891c6fbfc2eae73e0aa7fc34f0a8e" title="SettingsViewController::viewDidLoad" alt="" coords="736,5,1021,32"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#a84940a81f2cbcc944ea3984246bb8b33" title="SettingsViewController::registerNotifications" alt="" coords="349,31,688,57"/>
+<area shape="rect" href="$d7/df2/interface_settings_view_controller.html#aad78c91c4a819bac7e57dba6fda0d6dc" title="SettingsViewController::resetSettings:" alt="" coords="373,81,664,108"/>
+<area shape="rect" href="$d0/de1/interface_settings_view_controller_i_phone.html#a4c53759ae6148483240fac49a5c45c3e" title="SettingsViewControllerIPhone::viewDidLoad" alt="" coords="1071,5,1404,32"/>
+</map>

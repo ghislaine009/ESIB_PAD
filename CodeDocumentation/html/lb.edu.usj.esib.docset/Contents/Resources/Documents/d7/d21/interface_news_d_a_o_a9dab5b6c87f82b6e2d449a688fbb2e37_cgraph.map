@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#ac7946b2cd7cd17b7bdb1c2b479087a65" title="Return the number of data in cache The data are loaded from the table with name :entityDescription." alt="" coords="289,5,673,32"/>
+<area shape="rect" href="$d2/df7/interface_generic_d_a_o.html#aedfc9be9d0e3b33cbaa1bc33b0ced714" title="Load data from the DB, (dont check if the data are valid in cache) The data are loaded from the table..." alt="" coords="296,56,667,83"/>
+</map>
