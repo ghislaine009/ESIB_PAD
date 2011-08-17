@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ Manage the view of cells in the RectServTabviewController
+ */
 @interface RectServViewController : UITableViewCell {
     IBOutlet UILabel * titreLbl;
     NSString * titre;

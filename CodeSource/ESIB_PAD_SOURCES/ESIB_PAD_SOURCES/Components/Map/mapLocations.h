@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
-
+/**
+ Controller for dispaling the annotation for a specific element on a map
+ */
 @interface MapLocations : NSObject<MKAnnotation> {
     NSString *_name;
     NSString *_description;

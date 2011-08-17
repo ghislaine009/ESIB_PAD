@@ -20,7 +20,9 @@
 #import "SalleDAO.h"
 
 #define METERS_PER_MILE 1609.344
-
+/**
+ Resposible to diplay the map with different options
+ */
 @interface MapViewController : UIViewController<UISearchBarDelegate,MapDisplayerDelegate,CampusDAOProtocol,PersonDAOProtocol,BatimentDAOProtocol,SalleDAOProtocol> {
     
     MKMapView *_map;

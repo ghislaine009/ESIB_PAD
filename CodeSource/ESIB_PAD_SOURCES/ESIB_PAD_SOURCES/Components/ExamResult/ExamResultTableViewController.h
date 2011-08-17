@@ -11,11 +11,26 @@
 #import "ExamResultDAO.h"
 #import "ExamResultCellController.h"
 
+/**
+ Class that manage the table for displaying the exam results.
+ 
+ */
 @interface ExamResultTableViewController : UITableViewController<ExamResultDAOProtocol> {
+    /**
+     Temporary cell used to the reuse of the Graphique design of the nib compiled file
+     */
     IBOutlet ExamResultCellController *tmpCell;
+    /**
+     Array of data recieved from the DAO and to display.
+     */
     NSArray *_ExamResult;
+    /**
+     The different section. The year field of the data is used to determine the sections.
+     */
     NSMutableArray * sections;
-
+    /**
+     The nib file of a cell.
+     */
     UINib *cellNib;
 
 }

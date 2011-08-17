@@ -1,6 +1,7 @@
     cd Source/RapportFinal/
     pdflatex -interaction=nonstopmode index.tex --output-format dvi
     makeglossaries index
+    bibtex index
     pdflatex -interaction=nonstopmode index.tex --output-format dvi
     mv index.pdf ../../RapportFinal.pdf
     cd ../../

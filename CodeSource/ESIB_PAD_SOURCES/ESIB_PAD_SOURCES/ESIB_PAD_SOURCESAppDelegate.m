@@ -6,6 +6,22 @@
 //  Copyright 2011 HEFR. All rights reserved.
 //
 
+
+/** \mainpage ESIB\@PAD Documentation
+ 
+  \section intro_sec Introduction
+ 
+ Ce projet s’inscrit dans le cadre du travail de Bachelor pour l’obtention du diplôme de Bachelor à l’Ecole d’ingénieurs et d’architectes de Fribourg. Il est réalisé à l’Université Saint-Joseph au Liban.
+ Le potentiel des nouveaux appareils mobiles comme l’iPhone et l’iPad est énorme et il n’est jusqu'à présent pas exploité pour accéder au système d’information de l’USJ . A l’aide de ce projet, nous allons exploiter aux mieux les nouvelles technologies et permettre aux utilisateurs du campus de consulter simplement et rapidement des informations telles que le programme des cours, les notes des examens , le plan du campus ou encore l’annuaire du campus.
+ 
+  \section source Repository du projet 
+ Le projet est accécible sur gitHub à l'adresse <a href="https://github.com/eia-fr/ESIB_PAD"> https://github.com/eia-fr/ESIB_PAD</a>
+ 
+ \section copyright Copyright and License
+ Created by Elias Medawar <br>
+ Copyright 2011 HEFR & ESIB . All rights reserved.
+
+ */
 #import "ESIB_PAD_SOURCESAppDelegate.h"
 
 @implementation ESIB_PAD_SOURCESAppDelegate

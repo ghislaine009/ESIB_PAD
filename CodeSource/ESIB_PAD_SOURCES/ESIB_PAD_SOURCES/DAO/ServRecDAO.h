@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "GenericDAO.h"
 #import "ServRectora.h"
-
+/**
+ This protocol have to be implemented by objects how want to consume async returned resul of this DAO.
+ */
 @protocol ServRecDAOProtocol
 -(void) consumeListOfRectorat:(NSArray *)servRecList;
 @end

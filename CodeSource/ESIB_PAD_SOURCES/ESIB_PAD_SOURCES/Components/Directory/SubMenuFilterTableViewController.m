@@ -11,7 +11,7 @@
 
 @implementation SubMenuFilterTableViewController
 
-@synthesize currentData,sectionName,delegate,filterName;
+@synthesize currentData,delegate,filterName;
 
 
 -(id)initWithFilterName:(NSString *) name{

@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
-
+/**
+ Protocol to bee implemented by object how wants to display the Directory.
+ */
 @protocol DirectoryDisplayerProtocol <NSObject>
 -(void) displayMainMenu;
 -(void) displaySubMenu:(NSString *)SubMenuOption;

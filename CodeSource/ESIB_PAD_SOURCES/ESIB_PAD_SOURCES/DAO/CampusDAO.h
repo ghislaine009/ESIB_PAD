@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "GenericDAO.h"
 #import "Campus.h"
-
+/**
+ This protocol have to be implemented by objects how want to consume async returned resul of this DAO.
+ */
 @protocol CampusDAOProtocol
 - (void)consumeListOfCampus:(NSArray *)arrayOfCampus;
 @optional

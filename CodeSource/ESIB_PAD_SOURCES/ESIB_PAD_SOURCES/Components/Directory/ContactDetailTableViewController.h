@@ -12,6 +12,9 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
+/**
+ manage the view for displaing the detail about one personne.
+ */
 @interface ContactDetailTableViewController : UITableViewController<MFMailComposeViewControllerDelegate,UIAlertViewDelegate> {
     IBOutlet ContactViewCellController *tmpCell;
     UINib *cellNib;

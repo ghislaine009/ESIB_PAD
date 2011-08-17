@@ -2,8 +2,8 @@
 //  SelectionListViewController.m
 //  iContractor
 //
-//  Created by Jeff LaMarche on 2/18/09.
-//
+//  Created by Elias Medawar on 12.07.11.
+//  Copyright 2011 HEFR. All rights reserved.
 
 #import "SelectionListViewController.h"
 

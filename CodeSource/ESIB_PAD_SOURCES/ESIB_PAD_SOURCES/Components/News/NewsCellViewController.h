@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "AsyncImageView.h"
 
+/**
+ Responsible to display a cell (with the deseign getted from the NewsCell.xib fille) of the news table
+ */
 @interface NewsCellViewController : UITableViewCell {
     
     IBOutlet AsyncImageView * img;

@@ -120,13 +120,11 @@
 		2F99DAA013B32E3600121C48 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F99DA9E13B32E3600121C48 /* MapViewController.m */; };
 		2F99DAA113B32E3600121C48 /* MapViewIPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F99DA9F13B32E3600121C48 /* MapViewIPad.xib */; };
 		2F99DAA313B32FB600121C48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F99DAA213B32FB600121C48 /* MapKit.framework */; };
-		2F99DAD713B33EF100121C48 /* mapGeneral.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2F99DAD613B33EF100121C48 /* mapGeneral.xml */; };
 		2FA611E213C1FB2E007FA5CF /* School.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA611E113C1FB2E007FA5CF /* School.png */; };
 		2FB2941B13D0138600DF2517 /* DirectoryViewControllerIPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB2941913D0138600DF2517 /* DirectoryViewControllerIPhone.m */; };
 		2FBD308A13E6DA3900CE6CF9 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD308913E6DA3900CE6CF9 /* View.xib */; };
 		2FBD309113E6DEBD00CE6CF9 /* plan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FBD309013E6DEBD00CE6CF9 /* plan.png */; };
 		2FBE124513CAD291000A890A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F71328913B10F7C00876299 /* CoreData.framework */; };
-		2FC8EA0F13C18FC000B650C2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8EA0C13C18FBF00B650C2 /* DetailViewController.m */; };
 		2FC8EA1013C18FC000B650C2 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */; };
 		2FC8EA1313C192D700B650C2 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC8EA1113C192D600B650C2 /* DetailView.xib */; };
 		2FC8EA1413C192D700B650C2 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC8EA1213C192D700B650C2 /* OverlayView.xib */; };
@@ -336,14 +334,11 @@
 		2F99DA9E13B32E3600121C48 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		2F99DA9F13B32E3600121C48 /* MapViewIPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewIPad.xib; sourceTree = "<group>"; };
 		2F99DAA213B32FB600121C48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2F99DAD613B33EF100121C48 /* mapGeneral.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mapGeneral.xml; sourceTree = "<group>"; };
 		2FA611E113C1FB2E007FA5CF /* School.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = School.png; sourceTree = "<group>"; };
 		2FB2941813D0138600DF2517 /* DirectoryViewControllerIPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryViewControllerIPhone.h; sourceTree = "<group>"; };
 		2FB2941913D0138600DF2517 /* DirectoryViewControllerIPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryViewControllerIPhone.m; sourceTree = "<group>"; };
 		2FBD308913E6DA3900CE6CF9 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		2FBD309013E6DEBD00CE6CF9 /* plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plan.png; sourceTree = "<group>"; };
-		2FC8EA0B13C18FBE00B650C2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		2FC8EA0C13C18FBF00B650C2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2FC8EA0D13C18FBF00B650C2 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		2FC8EA1113C192D600B650C2 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
@@ -758,11 +753,8 @@
 			children = (
 				2FC8EA1113C192D600B650C2 /* DetailView.xib */,
 				2FC8EA1213C192D700B650C2 /* OverlayView.xib */,
-				2FC8EA0B13C18FBE00B650C2 /* DetailViewController.h */,
-				2FC8EA0C13C18FBF00B650C2 /* DetailViewController.m */,
 				2FC8EA0D13C18FBF00B650C2 /* OverlayViewController.h */,
 				2FC8EA0E13C18FBF00B650C2 /* OverlayViewController.m */,
-				2F99DAD613B33EF100121C48 /* mapGeneral.xml */,
 				2F99DA9D13B32E3600121C48 /* MapViewController.h */,
 				2F99DA9E13B32E3600121C48 /* MapViewController.m */,
 				2F99DA9F13B32E3600121C48 /* MapViewIPad.xib */,
@@ -930,7 +922,6 @@
 				2F71330813B1103900876299 /* MainViewControllerIPad.xib in Resources */,
 				2F71330D13B1120900876299 /* MainViewController.xib in Resources */,
 				2F99DAA113B32E3600121C48 /* MapViewIPad.xib in Resources */,
-				2F99DAD713B33EF100121C48 /* mapGeneral.xml in Resources */,
 				2F8488EC13B46CEF0034816F /* MapViewiPhone.xib in Resources */,
 				2F3CD71D13B9A81F00D8FC65 /* contact.png in Resources */,
 				2F3CD72013B9AAB600D8FC65 /* news.png in Resources */,
@@ -1039,7 +1030,6 @@
 				2F03BE8013BC742B00B9C20D /* GenericDAO.m in Sources */,
 				2F58BB1513BCB6E20011D6EE /* CampusDAO.m in Sources */,
 				2F5FE88D13BDB169004787CB /* BatimentDAO.m in Sources */,
-				2FC8EA0F13C18FC000B650C2 /* DetailViewController.m in Sources */,
 				2FC8EA1013C18FC000B650C2 /* OverlayViewController.m in Sources */,
 				2F93851613C2E5DC00A3E624 /* NewsViewController.m in Sources */,
 				2F93852813C2ED6E00A3E624 /* NewsDAO.m in Sources */,

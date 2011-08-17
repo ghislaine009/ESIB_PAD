@@ -12,12 +12,23 @@
 #import "HorraireDAO.h"
 #import "EventOnMapDisplayer.h"
 #import "RotableUINavController.h"
-
+/** 
+ Class responsible to matnage the content of the calendar.
+ */
 @interface CalendarViewController : UIViewController<GCCalendarDataSource, GCCalendarDelegate,HorraireDAOProtocol,UIGestureRecognizerDelegate> {
-	UITabBarController *tabController;
-    GCCalendarPortraitView *calendar;
+	
+    /**
+     The view of the calendar
+     */
+     GCCalendarPortraitView *calendar;
+    /** 
+     The DAO to acces the data
+     */
     HorraireDAO * hDao;
 
 }
+/**
+ Function responsible to recize the calendar when we rotate the device.
+ */
 -(void) resizeCenterSubviews;
 @end

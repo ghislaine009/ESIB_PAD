@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "GenericDAO.h"
 #import "Horraires.h"
+/**
+ This protocol have to be implemented by objects how want to consume async returned resul of this DAO.
+ */
 @protocol HorraireDAOProtocol 
 -(void) planningDataLoadedFromInternet;
 @end

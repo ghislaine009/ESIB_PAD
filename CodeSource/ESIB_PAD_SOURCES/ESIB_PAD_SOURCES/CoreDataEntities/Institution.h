@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-
+/**
+ Represent a single elements in the Data Base of the table Institution
+ */
 @interface Institution : NSManagedObject {
 @private
 }

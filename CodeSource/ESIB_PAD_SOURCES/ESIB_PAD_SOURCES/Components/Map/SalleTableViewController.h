@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "MapDisplayerDelegate.h"
 #import "OverlayViewController.h"
-
+/**
+ Display a list of salle with gps coordinate.
+ On click on one cell, the corresponding salle will be displayed on the map.
+ */
 @interface SalleTableViewController  : UITableViewController {
     NSArray * _salles;
     NSMutableArray *copyListOfItems;

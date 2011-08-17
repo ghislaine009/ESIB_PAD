@@ -38,9 +38,7 @@
     [set release];
     [super dealloc];
 }
--(void)returnResponse{
-    
-}
+
 -(NSArray*)getDataFromCacheWithPredicates:(NSPredicate *) predicate{
     NSFetchRequest * crntRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:self.entityDescription inManagedObjectContext:self.managedObjectContext];
@@ -160,6 +158,8 @@
 
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+        // YOU have to manage this function comportment
+
     if([elementName isEqualToString:@"row"]){
         NSError *error;
         if (![self.managedObjectContext save:&error]) {

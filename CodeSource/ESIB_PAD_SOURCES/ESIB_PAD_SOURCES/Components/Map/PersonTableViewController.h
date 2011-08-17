@@ -10,7 +10,11 @@
 #import "Person.h"
 #import "MapDisplayerDelegate.h"
 #import "OverlayViewController.h"
+/**
+ Display a list of person with gps coordinate.
+ On click on one cell, the corresponding salle will be displayed on the map.
 
+ */
 @interface PersonTableViewController : UITableViewController<UISearchBarDelegate> {
     NSArray * _persons;
     NSMutableArray *copyListOfItems;

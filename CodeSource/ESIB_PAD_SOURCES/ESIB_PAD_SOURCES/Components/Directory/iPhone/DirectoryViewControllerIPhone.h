@@ -13,6 +13,10 @@
 #import "RectoServTableViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "PersonListViewController.h"
+/**
+ Class responsible to manage the view of the directory part of the application on the iPhone
+ Implement the DirectoryDisplayerProtocol and here different methode.
+ */
 @interface DirectoryViewControllerIPhone : UINavigationController<DirectoryDisplayerProtocol> {
     SubMenuFilterTableViewController *subCtrl;
 

@@ -15,6 +15,9 @@
 
 #define METERS_PER_MILE_DET 2000
 
+/**
+ Dispalay a map with an anotation at the palce  course occured.
+ */
 @interface EventOnMapDisplayer : UIViewController {
     MKMapView *_map;
     Horraires * horraire;

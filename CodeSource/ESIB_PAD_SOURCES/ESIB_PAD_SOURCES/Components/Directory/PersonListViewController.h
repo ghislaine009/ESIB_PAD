@@ -11,7 +11,10 @@
 #import "OverlayViewController.h"
 #import "ContactDetailTableViewController.h"
 #import "RotableUINavController.h"
-
+/**
+ Responsible to display a list of personns in a table. 
+ have to manage the search functionality 
+ */
 @interface PersonListViewController : UITableViewController<UISearchBarDelegate> {
     NSArray * _persons;
     NSMutableArray *copyListOfItems;

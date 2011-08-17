@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Person.h"
 #import "Salle.h"
-
+/**
+ This protocol define function to be implemented by the map displayer component.
+ */
 @protocol MapDisplayerDelegate
 
 -(void) displaySalleOnMap:(Salle *)salle;

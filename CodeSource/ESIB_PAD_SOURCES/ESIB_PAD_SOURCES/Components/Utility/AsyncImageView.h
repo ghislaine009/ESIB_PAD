@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ Class able to load async an image from the internet
+ */
 @interface AsyncImageView : UIView {
 
 	NSURLConnection* connection;

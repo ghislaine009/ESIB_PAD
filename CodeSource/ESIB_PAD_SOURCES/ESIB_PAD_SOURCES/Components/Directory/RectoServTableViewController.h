@@ -12,6 +12,9 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
+/**
+ Resposible to display the list of rectorat services.
+ */
 @interface RectoServTableViewController : UITableViewController<ServRecDAOProtocol,MFMailComposeViewControllerDelegate> {
     IBOutlet RectServViewController *tmpCell;
     NSMutableArray *_servRec;

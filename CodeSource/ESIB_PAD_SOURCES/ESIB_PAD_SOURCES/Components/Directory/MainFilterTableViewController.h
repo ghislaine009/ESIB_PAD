@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "DirectoryDisplayerProtocol.h"
 
+/**
+ Responsible to display the main menu.
+ */
 @interface MainFilterTableViewController : UITableViewController {
     NSArray * listMainMenu;
 }

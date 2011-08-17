@@ -8,8 +8,8 @@
 \contentsline {lstlisting}{\numberline {5.6}Code de cr\IeC {\'e}ation d'un objet MKMapView et l'ajout d'une annotation.}{72}{lstlisting.5.6}
 \contentsline {lstlisting}{\numberline {5.7}Exemple de 2 animations \IeC {\`a} l'aide de la classe UIView. La premi\IeC {\`e}re change la taille et l'emplacement d'un \IeC {\'e}l\IeC {\'e}ment graphique et la deuxi\IeC {\`e}me change sa transparence.}{79}{lstlisting.5.7}
 \contentsline {lstlisting}{\numberline {5.8}Methode de recherche dans une UITableView.}{79}{lstlisting.5.8}
-\contentsline {lstlisting}{\numberline {6.1}Log des test unitaires}{97}{lstlisting.6.1}
-\contentsline {lstlisting}{\numberline {6.2}Log des test unitaires}{99}{lstlisting.6.2}
-\contentsline {lstlisting}{\numberline {6.3}Log des test unitaires}{101}{lstlisting.6.3}
-\contentsline {lstlisting}{\numberline {6.4}Log des test unitaires}{104}{lstlisting.6.4}
-\contentsline {lstlisting}{\numberline {6.5}Log des test unitaires}{107}{lstlisting.6.5}
+\contentsline {lstlisting}{\numberline {6.1}Log des test unitaires}{98}{lstlisting.6.1}
+\contentsline {lstlisting}{\numberline {6.2}Log des test unitaires}{100}{lstlisting.6.2}
+\contentsline {lstlisting}{\numberline {6.3}Log des test unitaires}{102}{lstlisting.6.3}
+\contentsline {lstlisting}{\numberline {6.4}Log des test unitaires}{105}{lstlisting.6.4}
+\contentsline {lstlisting}{\numberline {6.5}Log des test unitaires}{108}{lstlisting.6.5}

@@ -11,6 +11,9 @@
 #import "NewsDAO.h"
 #import "AsyncImageView.h"
 #import "NewsCellViewController.h"
+/**
+ Responsible to display news.
+ */
 @interface NewsViewController : UITableViewController<NewsDADProtocol> {
 	IBOutlet NewsCellViewController *tmpCell;
     NSMutableArray *_news;

@@ -57,15 +57,32 @@
 @property(nonatomic ,retain) NSNumber * refreshCacheEvery;
 
 /**
- * Save the content of vars to the file system
+    Save the content of vars to the file system
  */
 -(void) save;
 /**
- * Load the value from the fileSystem
+  Load the value from the fileSystem
  */
 -(void) loadValues;
+
+/**
+    Reset the initial data of the settings
+    This function reset the cache information at the same tiem
+ */
 -(void) reset;
+
+/**
+    Save the time of the modification for a key.
+    This values are used to determine if data in cache are valid.
+    @param
+
+ */
 -(void)setLastUpdateTimeForKey:(NSString *) theKey lastUpdate:(NSDate *) uptime;
+
+/**
+    Get the time of the modification for a key.
+    This values are used to determine if data in cache are valid.
+ */
 -(NSDate *)getLastUpdateTimeForKey:(NSString *) theKey;
 
 

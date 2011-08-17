@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-
+/**
+ A simple UINavigationController that accept to be rotated.
+ */
 @interface RotableUINavController : UINavigationController {
     
 }

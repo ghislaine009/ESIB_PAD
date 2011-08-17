@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ Manage the view of cells containg information about a person
+ */
 @interface ContactViewCellController : UITableViewCell {
     IBOutlet UILabel * leftLbl;
     IBOutlet UILabel * rightLbl;  
